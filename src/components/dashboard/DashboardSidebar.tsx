@@ -1,0 +1,90 @@
+'use client'
+
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { LayoutDashboard, FileText, FolderOpen, Settings, Shield, LogOut } from 'lucide-react'
+import { createClient } from '@/lib/supabase/client'
+import { useRouter } from 'next/navigation'
+import type { Profile } from '@/types'
+
+interface Props {
+  profile: Profile | null
+}
+
+const navItems = [
+  { href: '/dashboard', label: 'Oversigt', icon: LayoutDashboard },
+  { href: '/dashboard/ansogning', label: 'Min ansøgning', icon: FileText },
+  { href: '/dashboard/dokumenter', label: 'Dokumenter', icon: FolderOpen },
+  { href: '/dashboard/indstillinger', label: 'Indstillinger', icon: Settings },
+]
+
+export default function DashboardSidebar({ profile }: Props) {
+  const pathname = usePathname()
+  const router = useRouter()
+  const supabase = createClient()
+
+  async function handleLogout() {
+    await supabase.auth.signOut()
+    router.push('/login')
+    router.refresh()
+  }
+
+  return (
+    <aside className="hidden lg:flex flex-col w-64 bg-white border-r border-gray-200 shrink-0">
+      {/* Logo */}
+      <div className="p-5 border-b border-gray-100">
+        <Link href="/" className="flex items-center gap-2">
+          <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#1B3A6B' }}>
+            <Shield className="w-3.5 h-3.5 text-white" />
+          </div>
+          <span className="font-semibold text-gray-900 text-sm">NIE Service</span>
+        </Link>
+      </div>
+
+      {/* Nav */}
+      <nav className="flex-1 p-3 space-y-1">
+        {navItems.map((item) => {
+          const active = pathname === item.href || (item.href !== '/dashboard' && pathname.startsWith(item.href))
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all ${
+                active
+                  ? 'text-white shadow-sm'
+                  : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+              }`}
+              style={active ? { backgroundColor: '#1B3A6B' } : undefined}
+            >
+              <item.icon className="w-4 h-4 shrink-0" />
+              {item.label}
+            </Link>
+          )
+        })}
+      </nav>
+
+      {/* User + logout */}
+      <div className="p-3 border-t border-gray-100">
+        <div className="flex items-center gap-3 px-3 py-2 rounded-lg mb-1">
+          <div
+            className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0"
+            style={{ backgroundColor: '#2A5298' }}
+          >
+            {profile?.name?.[0]?.toUpperCase() ?? 'K'}
+          </div>
+          <div className="min-w-0">
+            <p className="text-xs font-medium text-gray-900 truncate">{profile?.name ?? 'Kunde'}</p>
+            <p className="text-xs text-gray-400 truncate">{profile?.email}</p>
+          </div>
+        </div>
+        <button
+          onClick={handleLogout}
+          className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-gray-500 hover:text-gray-700 hover:bg-gray-50 w-full transition-colors"
+        >
+          <LogOut className="w-4 h-4" />
+          Log ud
+        </button>
+      </div>
+    </aside>
+  )
+}
