@@ -27,6 +27,9 @@ export const ex18Schema = z.object({
     error: 'Vælg køn',
   }),
   place_of_birth: z.string().min(2, 'Fødested er påkrævet'),
+  father_name: z.string().min(1, 'Faderens fulde navn er påkrævet'),
+  mother_name: z.string().min(1, 'Moderens fulde navn er påkrævet'),
+  signature_city: z.string().min(1, 'By for underskrift er påkrævet'),
 })
 
 export type EX18FormData = z.infer<typeof ex18Schema>

@@ -122,7 +122,7 @@ export default function EX18Form({ applicationId, initialData }: Props) {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-1.5">
               <Label htmlFor="full_name">Fulde navn *</Label>
-              <Input id="full_name" {...register('full_name')} placeholder="Som i passet" />
+              <Input id="full_name" {...register('full_name')} placeholder="Fornavn Efternavn (som i passet)" />
               {errors.full_name && <p className="text-xs text-red-500">{errors.full_name.message}</p>}
             </div>
             <div className="space-y-1.5">
@@ -136,9 +136,24 @@ export default function EX18Form({ applicationId, initialData }: Props) {
               {errors.nationality && <p className="text-xs text-red-500">{errors.nationality.message}</p>}
             </div>
             <div className="space-y-1.5">
-              <Label htmlFor="place_of_birth">Fødested *</Label>
-              <Input id="place_of_birth" {...register('place_of_birth')} placeholder="By, Land" />
+              <Label htmlFor="place_of_birth">Fødested (by) *</Label>
+              <Input id="place_of_birth" {...register('place_of_birth')} placeholder="Aarhus" />
               {errors.place_of_birth && <p className="text-xs text-red-500">{errors.place_of_birth.message}</p>}
+            </div>
+            <div className="space-y-1.5">
+              <Label htmlFor="country">Fødselsland *</Label>
+              <Input id="country" {...register('country')} placeholder="Danmark" />
+              {errors.country && <p className="text-xs text-red-500">{errors.country.message}</p>}
+            </div>
+            <div className="space-y-1.5">
+              <Label htmlFor="father_name">Faderens fulde navn *</Label>
+              <Input id="father_name" {...register('father_name')} placeholder="Som i passet" />
+              {errors.father_name && <p className="text-xs text-red-500">{errors.father_name.message}</p>}
+            </div>
+            <div className="space-y-1.5">
+              <Label htmlFor="mother_name">Moderens fulde navn *</Label>
+              <Input id="mother_name" {...register('mother_name')} placeholder="Som i passet" />
+              {errors.mother_name && <p className="text-xs text-red-500">{errors.mother_name.message}</p>}
             </div>
           </div>
         </CardContent>
@@ -173,15 +188,15 @@ export default function EX18Form({ applicationId, initialData }: Props) {
       {/* Address */}
       <Card className="bg-white shadow-sm">
         <CardHeader className="pb-3">
-          <CardTitle className="text-base" style={{ color: '#1B3A6B' }}>Adresse</CardTitle>
+          <CardTitle className="text-base" style={{ color: '#1B3A6B' }}>Kontakt &amp; adresse</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="space-y-1.5">
-            <Label htmlFor="address">Adresse *</Label>
+            <Label htmlFor="address">Hjemmeadresse *</Label>
             <Input id="address" {...register('address')} placeholder="Gadenavn og nummer" />
             {errors.address && <p className="text-xs text-red-500">{errors.address.message}</p>}
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             <div className="space-y-1.5">
               <Label htmlFor="postal_code">Postnummer *</Label>
               <Input id="postal_code" {...register('postal_code')} placeholder="2100" />
@@ -191,11 +206,6 @@ export default function EX18Form({ applicationId, initialData }: Props) {
               <Label htmlFor="city">By *</Label>
               <Input id="city" {...register('city')} placeholder="København" />
               {errors.city && <p className="text-xs text-red-500">{errors.city.message}</p>}
-            </div>
-            <div className="space-y-1.5">
-              <Label htmlFor="country">Land *</Label>
-              <Input id="country" {...register('country')} placeholder="Danmark" />
-              {errors.country && <p className="text-xs text-red-500">{errors.country.message}</p>}
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -208,6 +218,12 @@ export default function EX18Form({ applicationId, initialData }: Props) {
               <Label htmlFor="email">E-mail *</Label>
               <Input id="email" type="email" {...register('email')} placeholder="din@email.dk" />
               {errors.email && <p className="text-xs text-red-500">{errors.email.message}</p>}
+            </div>
+            <div className="space-y-1.5">
+              <Label htmlFor="signature_city">By for underskrift *</Label>
+              <Input id="signature_city" {...register('signature_city')} placeholder="F.eks. København" />
+              <p className="text-xs text-gray-400">Den by der skrives på formularen ved underskrift</p>
+              {errors.signature_city && <p className="text-xs text-red-500">{errors.signature_city.message}</p>}
             </div>
           </div>
         </CardContent>

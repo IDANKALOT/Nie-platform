@@ -58,8 +58,11 @@ export interface ApplicationData {
   marital_status: MaritalStatus
   gender: Gender
   place_of_birth: string
+  father_name: string | null
+  mother_name: string | null
   // Signature
   signature_url: string | null
+  signature_city: string | null
   form_completed: boolean
 }
 

@@ -90,8 +90,11 @@ CREATE TABLE application_data (
   marital_status TEXT CHECK (marital_status IN ('single', 'married', 'divorced', 'widowed', 'partnership')),
   gender TEXT CHECK (gender IN ('male', 'female', 'other')),
   place_of_birth TEXT,
+  father_name TEXT,
+  mother_name TEXT,
   -- Status
   signature_url TEXT,
+  signature_city TEXT,
   form_completed BOOLEAN NOT NULL DEFAULT FALSE,
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
