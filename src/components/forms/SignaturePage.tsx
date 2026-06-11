@@ -39,7 +39,7 @@ export default function SignaturePage({ applicationId, existingSignatureUrl }: P
 
     const pad = new SignaturePad(canvas, {
       penColor: '#1B3A6B',
-      backgroundColor: 'rgb(255,255,255)',
+      backgroundColor: 'rgba(0,0,0,0)',
     })
 
     pad.addEventListener('endStroke', () => {
@@ -60,6 +60,23 @@ export default function SignaturePage({ applicationId, existingSignatureUrl }: P
     setHasSignature(false)
   }
 
+  function getTransparentBlob(): Promise<Blob> {
+    const src = canvasRef.current!
+    const tmp = document.createElement('canvas')
+    tmp.width = src.width
+    tmp.height = src.height
+    const ctx = tmp.getContext('2d')!
+    ctx.drawImage(src, 0, 0)
+    const img = ctx.getImageData(0, 0, tmp.width, tmp.height)
+    for (let i = 0; i < img.data.length; i += 4) {
+      if (img.data[i] > 230 && img.data[i + 1] > 230 && img.data[i + 2] > 230) {
+        img.data[i + 3] = 0
+      }
+    }
+    ctx.putImageData(img, 0, 0)
+    return new Promise(resolve => tmp.toBlob(b => resolve(b!), 'image/png'))
+  }
+
   async function handleSubmit() {
     if (!padRef.current || padRef.current.isEmpty()) {
       toast.error('Venligst underskriv i feltet nedenfor.')
@@ -69,9 +86,7 @@ export default function SignaturePage({ applicationId, existingSignatureUrl }: P
     setLoading(true)
 
     try {
-      const pngDataUrl = padRef.current.toDataURL('image/png')
-      const response = await fetch(pngDataUrl)
-      const blob = await response.blob()
+      const blob = await getTransparentBlob()
 
       const fileName = `signatures/${applicationId}/signature_${Date.now()}.png`
       const { error: uploadError } = await supabase.storage

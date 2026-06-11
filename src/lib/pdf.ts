@@ -125,21 +125,22 @@ export async function generateEX18PDF(data: ApplicationData): Promise<Uint8Array
   check('Check firmante')
 
   // ── SIGNATUR-BILLEDE ─────────────────────────────────────────────────────
-  // Firma-sektionen side 2:
-  //   Check firmante: y=187
-  //   Dato-felter:    y=170
-  //   Barcode/kontor: y=30
-  // Signaturen placeres OVER dato-linjen, på højre side af siden (x=350-530, y=195-240)
+  // Side 2 layout (y fra bunden):
+  //   "FIRMA DEL SOLICITANTE" boks: x≈382–560, y≈58–108
+  //   "FIRMA DEL CIUDADANO"   boks: x≈192–378, y≈58–108
+  //   Stregkode:              x≈45–185,  y≈58–108
+  //   "DIRIGIDA A" linje:     y≈30
+  // Signaturen anbringes i "FIRMA DEL SOLICITANTE" boksen (højre boks)
   if (data.signature_url) {
     try {
       const sigRes = await fetch(data.signature_url)
       const sigBytes = await sigRes.arrayBuffer()
       const sigImage = await pdfDoc.embedPng(new Uint8Array(sigBytes))
       const page = pdfDoc.getPage(1)
-      const scaled = sigImage.scaleToFit(170, 42)
+      const scaled = sigImage.scaleToFit(170, 44)
       page.drawImage(sigImage, {
-        x: 350,
-        y: 196,
+        x: 383,
+        y: 60,
         width: scaled.width,
         height: scaled.height,
       })
