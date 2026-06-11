@@ -37,7 +37,7 @@ export default function Pricing() {
                 <span className="text-5xl font-bold text-white">215</span>
                 <span className="text-2xl font-semibold text-white/80">EUR</span>
               </div>
-              <p className="mt-2 text-white/70 text-sm">Engangsbetaling</p>
+              <p className="mt-2 text-white/70 text-sm">Ekskl. moms · Engangsbetaling</p>
             </div>
 
             {/* Features */}
@@ -74,7 +74,7 @@ export default function Pricing() {
               </Link>
 
               <p className="text-center text-xs text-gray-400 mt-3">
-                Betaling sker sikkert online. Pengene-tilbage-garanti inden 24 timer.
+                Betaling sker sikkert online. Fortrydelsesret i 14 dage, hvis behandlingen ikke er påbegyndt.
               </p>
             </div>
           </div>

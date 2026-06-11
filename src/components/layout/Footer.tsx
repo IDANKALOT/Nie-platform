@@ -81,12 +81,19 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-gray-500">
+        {/* Legal disclaimer */}
+        <div className="mt-8 p-4 bg-gray-800/50 rounded-xl">
+          <p className="text-xs text-gray-500 leading-relaxed">
+            <strong className="text-gray-400">Vigtigt:</strong> NIE Nummer Service er et administrativt servicebureau og ikke et advokatfirma (jf. retsplejeloven). Vi yder ikke juridisk rådgivning. Vores samarbejdende advokater og notarer i Spanien er selvstændige erhvervsdrivende med et direkte retsforhold til kunden. Vi kan ikke garantere godkendelse af NIE-ansøgninger, da dette afgøres af spanske myndigheder. Advokat-, notar- og myndighedsomkostninger betales direkte af kunden og er ikke inkluderet i serviceprisen.
+          </p>
+        </div>
+
+        <div className="mt-6 pt-6 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-2">
+          <p className="text-xs text-gray-600">
             © {new Date().getFullYear()} NIE Nummer Service. Alle rettigheder forbeholdes.
           </p>
-          <p className="text-xs text-gray-500 text-center">
-            Eventuelle advokat-, notar- og myndighedsomkostninger betales direkte af kunden og er ikke inkluderet i vores servicepris.
+          <p className="text-xs text-gray-600">
+            CVR: [INDSÆT CVR] · info@nienummerservice.dk
           </p>
         </div>
       </div>

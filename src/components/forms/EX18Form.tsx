@@ -50,7 +50,7 @@ export default function EX18Form({ applicationId, initialData }: Props) {
     handleSubmit,
     watch,
     setValue,
-    formState: { errors, isDirty },
+    formState: { errors, isDirty, isSubmitting },
   } = useForm<EX18FormData>({
     resolver: zodResolver(ex18Schema),
     defaultValues: initialData ?? {},
@@ -73,38 +73,44 @@ export default function EX18Form({ applicationId, initialData }: Props) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [applicationId])
 
-  async function onSave(data: EX18FormData) {
-    const { error } = await supabase
+  async function upsertData(data: Partial<EX18FormData> & { form_completed: boolean }) {
+    return supabase
       .from('application_data')
-      .update({ ...data, form_completed: false })
-      .eq('application_id', applicationId)
+      .upsert(
+        { ...data, application_id: applicationId },
+        { onConflict: 'application_id' }
+      )
+  }
 
+  async function onSave(data: EX18FormData) {
+    const { error } = await upsertData({ ...data, form_completed: false })
     if (error) {
-      toast.error('Fejl ved gemning. Prøv igen.')
+      toast.error('Fejl ved gemning: ' + error.message)
       return
     }
     toast.success('Gemt!')
   }
 
   async function onSubmit(data: EX18FormData) {
-    const { error } = await supabase
-      .from('application_data')
-      .update({ ...data, form_completed: true })
-      .eq('application_id', applicationId)
-
+    const { error } = await upsertData({ ...data, form_completed: true })
     if (error) {
-      toast.error('Fejl ved indsendelse.')
+      toast.error('Fejl ved indsendelse: ' + error.message)
       return
     }
-
-    toast.success('Formular fuldført! Gå til underskrift.')
     router.push(`/dashboard/ansogning/${applicationId}/underskriv`)
+  }
+
+  function onValidationError() {
+    toast.error('Udfyld alle påkrævede felter før du fortsætter')
+    setTimeout(() => {
+      document.querySelector('.text-red-500')?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    }, 50)
   }
 
   const watchPurpose = watch('nie_purpose')
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+    <form onSubmit={handleSubmit(onSubmit, onValidationError)} className="space-y-6">
       {/* Personal data */}
       <Card className="bg-white shadow-sm">
         <CardHeader className="pb-3">
@@ -293,9 +299,10 @@ export default function EX18Form({ applicationId, initialData }: Props) {
           type="submit"
           className="ml-auto"
           style={{ backgroundColor: '#1B3A6B' }}
+          disabled={isSubmitting}
         >
-          Fortsæt til underskrift
-          <ArrowRight className="w-4 h-4 ml-2" />
+          {isSubmitting ? 'Sender...' : 'Fortsæt til underskrift'}
+          {!isSubmitting && <ArrowRight className="w-4 h-4 ml-2" />}
         </Button>
       </div>
     </form>

@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-8">
           <Shield className="w-3.5 h-3.5 text-green-400" />
           <span className="text-white/90 text-xs font-medium">
-            Sikker og professionel service siden 2018
+            Administrativ service — ikke et advokatfirma
           </span>
         </div>
 
@@ -84,18 +84,12 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* Stats */}
-        <div className="mt-16 grid grid-cols-3 gap-8 max-w-lg mx-auto border-t border-white/10 pt-10">
-          {[
-            { value: '2.400+', label: 'Færdige sager' },
-            { value: '98%', label: 'Tilfredse kunder' },
-            { value: '6+ år', label: 'I branchen' },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-2xl font-bold text-white">{stat.value}</div>
-              <div className="text-xs text-white/60 mt-1">{stat.label}</div>
-            </div>
-          ))}
+        {/* Disclaimer */}
+        <div className="mt-12 max-w-xl mx-auto border-t border-white/10 pt-8">
+          <p className="text-xs text-white/45 leading-relaxed">
+            NIE Nummer Service er et administrativt servicebureau og ikke et advokatfirma. Vi yder ikke juridisk rådgivning.
+            Vores samarbejdende advokater og notarer i Spanien er selvstændige og har et direkte retsforhold med dig som kunde.
+          </p>
         </div>
       </div>
 

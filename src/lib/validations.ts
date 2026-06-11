@@ -15,11 +15,17 @@ export const ex18Schema = z.object({
   phone: z.string().min(8, 'Telefonnummer er påkrævet'),
   email: z.string().email('Ugyldig e-mailadresse'),
   // Spanish purpose
-  nie_purpose: z.enum(['property_purchase', 'bank_account', 'work', 'investment', 'other']),
+  nie_purpose: z.enum(['property_purchase', 'bank_account', 'work', 'investment', 'other'], {
+    error: 'Vælg formål med NIE-nummer',
+  }),
   nie_purpose_other: z.string().optional(),
   // Additional
-  marital_status: z.enum(['single', 'married', 'divorced', 'widowed', 'partnership']),
-  gender: z.enum(['male', 'female', 'other']),
+  marital_status: z.enum(['single', 'married', 'divorced', 'widowed', 'partnership'], {
+    error: 'Vælg civilstatus',
+  }),
+  gender: z.enum(['male', 'female', 'other'], {
+    error: 'Vælg køn',
+  }),
   place_of_birth: z.string().min(2, 'Fødested er påkrævet'),
 })
 

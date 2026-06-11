@@ -35,6 +35,20 @@ CREATE OR REPLACE TRIGGER on_auth_user_created
   FOR EACH ROW EXECUTE FUNCTION public.handle_new_user();
 
 -- =====================
+-- LAWYERS (must be before applications due to FK)
+-- =====================
+CREATE TABLE lawyers (
+  id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+  name TEXT NOT NULL,
+  email TEXT NOT NULL,
+  city TEXT NOT NULL,
+  country TEXT NOT NULL DEFAULT 'Spain',
+  specialization TEXT,
+  active BOOLEAN NOT NULL DEFAULT TRUE,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+-- =====================
 -- APPLICATIONS
 -- =====================
 CREATE TABLE applications (
@@ -104,20 +118,6 @@ CREATE TABLE notes (
   application_id UUID REFERENCES applications(id) ON DELETE CASCADE NOT NULL,
   admin_id UUID REFERENCES profiles(id) NOT NULL,
   note TEXT NOT NULL,
-  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
-);
-
--- =====================
--- LAWYERS
--- =====================
-CREATE TABLE lawyers (
-  id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
-  name TEXT NOT NULL,
-  email TEXT NOT NULL,
-  city TEXT NOT NULL,
-  country TEXT NOT NULL DEFAULT 'Spain',
-  specialization TEXT,
-  active BOOLEAN NOT NULL DEFAULT TRUE,
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 

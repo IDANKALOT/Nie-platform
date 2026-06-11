@@ -32,14 +32,18 @@ export default async function NewApplicationPage() {
     .single()
 
   if (error || !application) {
+    console.error('Application insert error:', error?.message, error?.code, error?.details)
     redirect('/dashboard')
   }
 
-  // Create empty application_data
-  await supabase.from('application_data').insert({
-    application_id: application.id,
-    form_completed: false,
-  })
+  // Create empty application_data (upsert so re-navigation is safe)
+  const { error: adError } = await supabase.from('application_data').upsert(
+    { application_id: application.id, form_completed: false },
+    { onConflict: 'application_id' }
+  )
+  if (adError) {
+    console.error('application_data insert error:', adError.message, adError.code)
+  }
 
   redirect(`/dashboard/ansogning/${application.id}/formular`)
 }
