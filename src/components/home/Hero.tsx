@@ -87,7 +87,7 @@ export default function Hero() {
         {/* Disclaimer */}
         <div className="mt-12 max-w-xl mx-auto border-t border-white/10 pt-8">
           <p className="text-xs text-white/45 leading-relaxed">
-            NIE Spanien er et administrativt servicebureau og ikke et advokatfirma. Vi yder ikke juridisk rådgivning.
+            Espalvo er et administrativt servicebureau og ikke et advokatfirma. Vi yder ikke juridisk rådgivning.
             Vores samarbejdende advokater og notarer i Spanien er selvstændige og har et direkte retsforhold med dig som kunde.
           </p>
         </div>

@@ -12,7 +12,7 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#2A5298' }}>
                 <Shield className="w-4 h-4 text-white" />
               </div>
-              <span className="font-semibold text-lg">NIE Spanien</span>
+              <span className="font-semibold text-lg">Espalvo</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
               Vi hjælper danske kunder med at få et spansk NIE-nummer gennem erfarne
@@ -84,13 +84,13 @@ export default function Footer() {
         {/* Legal disclaimer */}
         <div className="mt-8 p-4 bg-gray-800/50 rounded-xl">
           <p className="text-xs text-gray-500 leading-relaxed">
-            <strong className="text-gray-400">Vigtigt:</strong> NIE Spanien er et administrativt servicebureau og ikke et advokatfirma (jf. retsplejeloven). Vi yder ikke juridisk rådgivning. Vores samarbejdende advokater og notarer i Spanien er selvstændige erhvervsdrivende med et direkte retsforhold til kunden. Vi kan ikke garantere godkendelse af NIE-ansøgninger, da dette afgøres af spanske myndigheder. Advokat-, notar- og myndighedsomkostninger betales direkte af kunden og er ikke inkluderet i serviceprisen.
+            <strong className="text-gray-400">Vigtigt:</strong> Espalvo er et administrativt servicebureau og ikke et advokatfirma (jf. retsplejeloven). Vi yder ikke juridisk rådgivning. Vores samarbejdende advokater og notarer i Spanien er selvstændige erhvervsdrivende med et direkte retsforhold til kunden. Vi kan ikke garantere godkendelse af NIE-ansøgninger, da dette afgøres af spanske myndigheder. Advokat-, notar- og myndighedsomkostninger betales direkte af kunden og er ikke inkluderet i serviceprisen.
           </p>
         </div>
 
         <div className="mt-6 pt-6 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-xs text-gray-600">
-            © {new Date().getFullYear()} NIE Spanien. Alle rettigheder forbeholdes.
+            © {new Date().getFullYear()} Espalvo. Alle rettigheder forbeholdes.
           </p>
           <p className="text-xs text-gray-600">
             CVR: [INDSÆT CVR] · info@nienummerservice.dk

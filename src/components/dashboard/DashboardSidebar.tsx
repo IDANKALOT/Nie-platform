@@ -37,7 +37,7 @@ export default function DashboardSidebar({ profile }: Props) {
           <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#1B3A6B' }}>
             <Shield className="w-3.5 h-3.5 text-white" />
           </div>
-          <span className="font-semibold text-gray-900 text-sm">NIE Spanien</span>
+          <span className="font-semibold text-gray-900 text-sm">Espalvo</span>
         </Link>
       </div>
 

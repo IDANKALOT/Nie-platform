@@ -37,7 +37,7 @@ export default function AdminSidebar({ profile }: Props) {
             <Shield className="w-3.5 h-3.5 text-white" />
           </div>
           <div>
-            <span className="font-semibold text-sm block">NIE Spanien</span>
+            <span className="font-semibold text-sm block">Espalvo</span>
             <span className="text-xs text-gray-400">Admin Panel</span>
           </div>
         </Link>

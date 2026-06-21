@@ -11,8 +11,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'NIE Spanien – Få dit spanske NIE-nummer nemt og sikkert',
-    template: '%s | NIE Spanien',
+    default: 'Espalvo – Få dit spanske NIE-nummer nemt og sikkert',
+    template: '%s | Espalvo',
   },
   description:
     'Professionel hjælp til at få dit spanske NIE-nummer. Vi håndterer hele processen med erfarne advokater og notarer i Spanien. Fast pris 215 EUR.',
@@ -24,19 +24,19 @@ export const metadata: Metadata = {
     'NIE nummer hjælp',
     'spansk identifikationsnummer',
   ],
-  authors: [{ name: 'NIE Spanien' }],
-  creator: 'NIE Spanien',
+  authors: [{ name: 'Espalvo' }],
+  creator: 'Espalvo',
   openGraph: {
     type: 'website',
     locale: 'da_DK',
-    siteName: 'NIE Spanien',
-    title: 'NIE Spanien – Få dit spanske NIE-nummer nemt og sikkert',
+    siteName: 'Espalvo',
+    title: 'Espalvo – Få dit spanske NIE-nummer nemt og sikkert',
     description:
       'Professionel hjælp til at få dit spanske NIE-nummer. Fast pris 215 EUR.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NIE Spanien',
+    title: 'Espalvo',
     description: 'Professionel hjælp til at få dit spanske NIE-nummer.',
   },
   robots: {

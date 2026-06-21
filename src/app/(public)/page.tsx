@@ -8,7 +8,7 @@ import FAQ from '@/components/home/FAQ'
 import Contact from '@/components/home/Contact'
 
 export const metadata: Metadata = {
-  title: 'NIE Spanien – Få dit spanske NIE-nummer nemt og sikkert',
+  title: 'Espalvo – Få dit spanske NIE-nummer nemt og sikkert',
   description:
     'Professionel hjælp til at få dit spanske NIE-nummer. Vi håndterer hele processen med erfarne advokater og notarer i Spanien. Fast pris 215 EUR. Ingen tur til Spanien nødvendig.',
 }
