@@ -51,7 +51,7 @@ export default function Navbar() {
                 scrolled || !isHomePage ? 'text-gray-900' : 'text-white'
               }`}
             >
-              NIE Service
+              NIE Spanien
             </span>
           </Link>
 

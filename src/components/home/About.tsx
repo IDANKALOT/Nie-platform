@@ -37,7 +37,7 @@ export default function About() {
               Din betroede partner til spanske NIE-ansøgninger
             </h2>
             <p className="mt-5 text-gray-500 leading-relaxed">
-              NIE Nummer Service er en dansk virksomhed specialiseret i at hjælpe danskere med at
+              NIE Spanien er en dansk virksomhed specialiseret i at hjælpe danskere med at
               navigere i det spanske bureaukrati. Vi forstår, at det kan være komplekst og tidskrævende
               at ansøge om et spansk NIE-nummer på egen hånd.
             </p>

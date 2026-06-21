@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cookiepolitik – NIE Nummer Service',
-  description: 'Læs om vores brug af cookies på NIE Nummer Service.',
+  title: 'Cookiepolitik – NIE Spanien',
+  description: 'Læs om vores brug af cookies på NIE Spanien.',
 }
 
 export default function CookiepolitikPage() {

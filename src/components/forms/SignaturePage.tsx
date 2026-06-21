@@ -132,7 +132,7 @@ export default function SignaturePage({ applicationId, existingSignatureUrl }: P
         <CardContent className="pt-5 pb-4">
           <p className="text-sm text-gray-700 leading-relaxed font-medium mb-2">Fuldmagtserklæring</p>
           <p className="text-xs text-gray-500 leading-relaxed">
-            Med min underskrift nedenfor giver jeg NIE Nummer Service og deres samarbejdende advokater og
+            Med min underskrift nedenfor giver jeg NIE Spanien og deres samarbejdende advokater og
             notarer i Spanien fuldmagt til at ansøge om et spansk NIE-nummer på mine vegne. Jeg bekræfter,
             at de angivne oplysninger er korrekte og i overensstemmelse med mit pas.
           </p>

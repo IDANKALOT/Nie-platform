@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privatlivspolitik – NIE Nummer Service',
-  description: 'Læs hvordan NIE Nummer Service behandler dine personoplysninger.',
+  title: 'Privatlivspolitik – NIE Spanien',
+  description: 'Læs hvordan NIE Spanien behandler dine personoplysninger.',
 }
 
 export default function PrivatlivspolitikPage() {
@@ -16,7 +16,7 @@ export default function PrivatlivspolitikPage() {
         <section>
           <h2 className="text-xl font-semibold text-gray-900 mb-3">1. Den dataansvarlige</h2>
           <p>
-            NIE Nummer Service (CVR: [INDSÆT CVR]) er dataansvarlig for behandlingen af de
+            NIE Spanien (CVR: [INDSÆT CVR]) er dataansvarlig for behandlingen af de
             personoplysninger, vi indsamler om dig i forbindelse med brug af vores tjeneste.
             Kontakt: info@nienummerservice.dk
           </p>

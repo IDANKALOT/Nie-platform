@@ -13,7 +13,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
             <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#1B3A6B' }}>
               <Shield className="w-3.5 h-3.5 text-white" />
             </div>
-            <span className="font-semibold text-gray-900">NIE Service</span>
+            <span className="font-semibold text-gray-900">NIE Spanien</span>
           </Link>
         </div>
       </header>
@@ -24,7 +24,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
 
       <footer className="py-4 text-center">
         <p className="text-xs text-gray-400">
-          © {new Date().getFullYear()} NIE Nummer Service ·{' '}
+          © {new Date().getFullYear()} NIE Spanien ·{' '}
           <Link href="/privatlivspolitik" className="hover:underline">
             Privatlivspolitik
           </Link>

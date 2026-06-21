@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Handelsbetingelser – NIE Nummer Service',
-  description: 'Læs vores handelsbetingelser for NIE Nummer Service.',
+  title: 'Handelsbetingelser – NIE Spanien',
+  description: 'Læs vores handelsbetingelser for NIE Spanien.',
 }
 
 export default function HandelsbetingelserPage() {
@@ -14,13 +14,13 @@ export default function HandelsbetingelserPage() {
       <div className="prose prose-gray max-w-none space-y-8 text-gray-700 leading-relaxed">
 
         <section>
-          <h2 className="text-xl font-semibold text-gray-900 mb-3">1. Om NIE Nummer Service</h2>
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">1. Om NIE Spanien</h2>
           <p>
-            NIE Nummer Service er et administrativt servicebureau, der hjælper danske kunder med at
+            NIE Spanien er et administrativt servicebureau, der hjælper danske kunder med at
             forberede og indsende ansøgninger om spansk NIE-nummer (Número de Identificación de Extranjero).
           </p>
           <p className="mt-3 p-4 bg-amber-50 border border-amber-200 rounded-xl text-sm text-amber-800">
-            <strong>Vigtigt:</strong> NIE Nummer Service er <strong>ikke et advokatfirma</strong> og er
+            <strong>Vigtigt:</strong> NIE Spanien er <strong>ikke et advokatfirma</strong> og er
             ikke registreret som advokat i henhold til retsplejeloven. Vi yder ikke juridisk rådgivning.
             Vores ydelse består alene af administrativ bistand og formidling af kontakt til selvstændige,
             samarbejdende advokater og notarer i Spanien.
@@ -53,7 +53,7 @@ export default function HandelsbetingelserPage() {
             retsforhold med kunden og er ansvarlige for den juridiske behandling af ansøgningen.
           </p>
           <p className="mt-2">
-            NIE Nummer Service er ikke part i aftalen mellem kunden og advokaten/notaren og hæfter
+            NIE Spanien er ikke part i aftalen mellem kunden og advokaten/notaren og hæfter
             ikke for disses handlinger, rådgivning eller fejl.
           </p>
         </section>
@@ -94,7 +94,7 @@ export default function HandelsbetingelserPage() {
         <section>
           <h2 className="text-xl font-semibold text-gray-900 mb-3">7. Ansvarsbegrænsning</h2>
           <p>
-            NIE Nummer Service er ikke ansvarlig for forsinkelser eller afvisninger forårsaget af
+            NIE Spanien er ikke ansvarlig for forsinkelser eller afvisninger forårsaget af
             spanske myndigheder, samarbejdende advokater/notarer, forkerte oplysninger fra kunden,
             eller forhold uden for vores kontrol. Vores erstatningsansvar er under alle omstændigheder
             begrænset til den betalte servicepris.
@@ -123,7 +123,7 @@ export default function HandelsbetingelserPage() {
         <section>
           <h2 className="text-xl font-semibold text-gray-900 mb-3">10. Kontakt</h2>
           <p>
-            NIE Nummer Service<br />
+            NIE Spanien<br />
             CVR: [INDSÆT CVR]<br />
             E-mail: info@nienummerservice.dk<br />
             Telefon: +45 XX XX XX XX

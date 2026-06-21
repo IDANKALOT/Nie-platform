@@ -9,7 +9,7 @@ export default function AdminHeader({ profile }: Props) {
         <span className="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded-full font-medium">
           Admin
         </span>
-        <span className="text-sm text-gray-500">NIE Service Administration</span>
+        <span className="text-sm text-gray-500">NIE Spanien Administration</span>
       </div>
       <div className="flex items-center gap-2">
         <span className="text-sm text-gray-600">{profile?.name}</span>
