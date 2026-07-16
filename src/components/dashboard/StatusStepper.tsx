@@ -1,11 +1,13 @@
+import { useTranslations } from 'next-intl'
 import { CheckCircle2, Circle, Loader2 } from 'lucide-react'
-import { STATUS_LABELS, STATUS_ORDER, type ApplicationStatus } from '@/types'
+import { STATUS_ORDER, type ApplicationStatus } from '@/types'
 
 interface Props {
   currentStatus: ApplicationStatus
 }
 
 export default function StatusStepper({ currentStatus }: Props) {
+  const t = useTranslations('status.application')
   const currentIndex = STATUS_ORDER.indexOf(currentStatus)
 
   return (
@@ -50,7 +52,7 @@ export default function StatusStepper({ currentStatus }: Props) {
                 }`}
                 style={isCurrent ? { color: '#1B3A6B' } : undefined}
               >
-                {STATUS_LABELS[status]}
+                {t(status)}
               </p>
             </div>
           )

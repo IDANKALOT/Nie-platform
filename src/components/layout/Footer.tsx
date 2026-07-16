@@ -1,7 +1,25 @@
-import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 import { Shield, Mail, Phone } from 'lucide-react'
 
 export default function Footer() {
+  const t = useTranslations('common.footer')
+  const tNav = useTranslations('common.nav')
+
+  const serviceLinks = [
+    { href: '/#how-it-works', label: tNav('howItWorks') },
+    { href: '/#pricing', label: tNav('pricing') },
+    { href: '/register', label: tNav('startApplication') },
+    { href: '/#faq', label: tNav('faq') },
+  ]
+
+  const legalLinks = [
+    { href: '/privatlivspolitik', label: t('privacyPolicy') },
+    { href: '/cookiepolitik', label: t('cookiePolicy') },
+    { href: '/handelsbetingelser', label: t('terms') },
+    { href: '/gdpr', label: t('gdpr') },
+  ]
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -15,8 +33,7 @@ export default function Footer() {
               <span className="font-semibold text-lg">Espalvo</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
-              Vi hjælper danske kunder med at få et spansk NIE-nummer gennem erfarne
-              advokater og notarer i Spanien. Professionelt, sikkert og nemt.
+              {t('tagline')}
             </p>
             <div className="mt-4 space-y-2">
               <a
@@ -38,14 +55,9 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="font-semibold text-sm mb-4 text-gray-200">Tjenester</h3>
+            <h3 className="font-semibold text-sm mb-4 text-gray-200">{t('servicesHeading')}</h3>
             <ul className="space-y-2">
-              {[
-                { href: '/#how-it-works', label: 'Sådan fungerer det' },
-                { href: '/#pricing', label: 'Priser' },
-                { href: '/register', label: 'Start ansøgning' },
-                { href: '/#faq', label: 'FAQ' },
-              ].map((item) => (
+              {serviceLinks.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
@@ -60,14 +72,9 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <h3 className="font-semibold text-sm mb-4 text-gray-200">Juridisk</h3>
+            <h3 className="font-semibold text-sm mb-4 text-gray-200">{t('legalHeading')}</h3>
             <ul className="space-y-2">
-              {[
-                { href: '/privatlivspolitik', label: 'Privatlivspolitik' },
-                { href: '/cookiepolitik', label: 'Cookiepolitik' },
-                { href: '/handelsbetingelser', label: 'Handelsbetingelser' },
-                { href: '/gdpr', label: 'GDPR' },
-              ].map((item) => (
+              {legalLinks.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
@@ -84,16 +91,16 @@ export default function Footer() {
         {/* Legal disclaimer */}
         <div className="mt-8 p-4 bg-gray-800/50 rounded-xl">
           <p className="text-xs text-gray-500 leading-relaxed">
-            <strong className="text-gray-400">Vigtigt:</strong> Espalvo er et administrativt servicebureau og ikke et advokatfirma (jf. retsplejeloven). Vi yder ikke juridisk rådgivning. Vores samarbejdende advokater og notarer i Spanien er selvstændige erhvervsdrivende med et direkte retsforhold til kunden. Vi kan ikke garantere godkendelse af NIE-ansøgninger, da dette afgøres af spanske myndigheder. Advokat-, notar- og myndighedsomkostninger betales direkte af kunden og er ikke inkluderet i serviceprisen.
+            <strong className="text-gray-400">{t('disclaimerLabel')}</strong> {t('disclaimer')}
           </p>
         </div>
 
         <div className="mt-6 pt-6 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-xs text-gray-600">
-            © {new Date().getFullYear()} Espalvo. Alle rettigheder forbeholdes.
+            {t('copyright', { year: new Date().getFullYear() })}
           </p>
           <p className="text-xs text-gray-600">
-            CVR: [INDSÆT CVR] · info@nienummerservice.dk
+            {t('cvrLine')}
           </p>
         </div>
       </div>

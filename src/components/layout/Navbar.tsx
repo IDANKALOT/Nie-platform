@@ -1,19 +1,32 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { useLocale, useTranslations } from 'next-intl'
+import { Link, usePathname } from '@/i18n/navigation'
+import { routing } from '@/i18n/routing'
 import { Button } from '@/components/ui/button'
 import { Menu, X, Shield } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import type { User } from '@supabase/supabase-js'
 
+const localeLabels: Record<string, string> = { da: 'DA', en: 'EN' }
+
 export default function Navbar() {
+  const t = useTranslations('common.nav')
+  const locale = useLocale()
   const [isOpen, setIsOpen] = useState(false)
   const [user, setUser] = useState<User | null>(null)
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
   const supabase = createClient()
+
+  const navItems = [
+    { href: '/#how-it-works', label: t('howItWorks') },
+    { href: '/#pricing', label: t('pricing') },
+    { href: '/#about', label: t('about') },
+    { href: '/#faq', label: t('faq') },
+    { href: '/#contact', label: t('contact') },
+  ]
 
   useEffect(() => {
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_, session) => {
@@ -57,14 +70,8 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-6">
-            {[
-              { href: '/#how-it-works', label: 'Sådan fungerer det' },
-              { href: '/#pricing', label: 'Priser' },
-              { href: '/#about', label: 'Om os' },
-              { href: '/#faq', label: 'FAQ' },
-              { href: '/#contact', label: 'Kontakt' },
-            ].map((item) => (
-              <a
+            {navItems.map((item) => (
+              <Link
                 key={item.href}
                 href={item.href}
                 className={`text-sm font-medium transition-colors hover:opacity-80 ${
@@ -72,16 +79,36 @@ export default function Navbar() {
                 }`}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
+            <div className="flex items-center gap-1 text-xs font-medium">
+              {routing.locales.map((l) => (
+                <Link
+                  key={l}
+                  href={pathname}
+                  locale={l}
+                  className={`px-1.5 py-0.5 rounded transition-colors ${
+                    l === locale
+                      ? scrolled || !isHomePage
+                        ? 'text-gray-900 font-semibold'
+                        : 'text-white font-semibold'
+                      : scrolled || !isHomePage
+                        ? 'text-gray-400 hover:text-gray-700'
+                        : 'text-white/50 hover:text-white/80'
+                  }`}
+                >
+                  {localeLabels[l]}
+                </Link>
+              ))}
+            </div>
             {user ? (
               <Link href="/dashboard">
                 <Button size="sm" style={{ backgroundColor: '#1B3A6B' }}>
-                  Min side
+                  {t('mySite')}
                 </Button>
               </Link>
             ) : (
@@ -92,12 +119,12 @@ export default function Navbar() {
                     size="sm"
                     className={scrolled || !isHomePage ? 'text-gray-700' : 'text-white hover:bg-white/10'}
                   >
-                    Log ind
+                    {t('login')}
                   </Button>
                 </Link>
                 <Link href="/register">
                   <Button size="sm" style={{ backgroundColor: '#1B3A6B' }}>
-                    Start ansøgning
+                    {t('startApplication')}
                   </Button>
                 </Link>
               </>
@@ -108,7 +135,7 @@ export default function Navbar() {
           <button
             className={`md:hidden p-2 rounded-lg ${scrolled || !isHomePage ? 'text-gray-700' : 'text-white'}`}
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
+            aria-label={t('toggleMenu')}
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -119,37 +146,47 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white border-b border-gray-200 shadow-lg">
           <div className="px-4 py-4 space-y-3">
-            {[
-              { href: '/#how-it-works', label: 'Sådan fungerer det' },
-              { href: '/#pricing', label: 'Priser' },
-              { href: '/#about', label: 'Om os' },
-              { href: '/#faq', label: 'FAQ' },
-              { href: '/#contact', label: 'Kontakt' },
-            ].map((item) => (
-              <a
+            {navItems.map((item) => (
+              <Link
                 key={item.href}
                 href={item.href}
                 className="block text-sm font-medium text-gray-700 py-2"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
+            <div className="pt-2 border-t border-gray-100 flex items-center gap-3">
+              <span className="text-xs text-gray-400">{t('language')}</span>
+              {routing.locales.map((l) => (
+                <Link
+                  key={l}
+                  href={pathname}
+                  locale={l}
+                  onClick={() => setIsOpen(false)}
+                  className={`text-xs font-medium px-1.5 py-0.5 rounded ${
+                    l === locale ? 'text-gray-900 font-semibold' : 'text-gray-400 hover:text-gray-700'
+                  }`}
+                >
+                  {localeLabels[l]}
+                </Link>
+              ))}
+            </div>
             <div className="pt-2 border-t border-gray-100 flex flex-col gap-2">
               {user ? (
                 <Link href="/dashboard" onClick={() => setIsOpen(false)}>
                   <Button className="w-full" style={{ backgroundColor: '#1B3A6B' }}>
-                    Min side
+                    {t('mySite')}
                   </Button>
                 </Link>
               ) : (
                 <>
                   <Link href="/login" onClick={() => setIsOpen(false)}>
-                    <Button variant="outline" className="w-full">Log ind</Button>
+                    <Button variant="outline" className="w-full">{t('login')}</Button>
                   </Link>
                   <Link href="/register" onClick={() => setIsOpen(false)}>
                     <Button className="w-full" style={{ backgroundColor: '#1B3A6B' }}>
-                      Start ansøgning
+                      {t('startApplication')}
                     </Button>
                   </Link>
                 </>

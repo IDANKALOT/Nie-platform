@@ -1,7 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { useTranslations } from 'next-intl'
+import { useRouter } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
 import { createClient } from '@/lib/supabase/client'
 import { toast } from 'sonner'
@@ -14,7 +15,7 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Textarea } from '@/components/ui/textarea'
-import { STATUS_LABELS, STATUS_ORDER, type ApplicationStatus } from '@/types'
+import { STATUS_ORDER, type ApplicationStatus } from '@/types'
 
 interface Props {
   applicationId: string
@@ -22,6 +23,8 @@ interface Props {
 }
 
 export default function AdminApplicationActions({ applicationId, currentStatus }: Props) {
+  const t = useTranslations('admin.actions')
+  const tStatus = useTranslations('status.application')
   const [noteOpen, setNoteOpen] = useState(false)
   const [noteText, setNoteText] = useState('')
   const [loading, setLoading] = useState(false)
@@ -36,9 +39,9 @@ export default function AdminApplicationActions({ applicationId, currentStatus }
       .eq('id', applicationId)
 
     if (error) {
-      toast.error('Fejl ved statusopdatering.')
+      toast.error(t('statusUpdateError'))
     } else {
-      toast.success(`Status opdateret til: ${STATUS_LABELS[newStatus]}`)
+      toast.success(t('statusUpdateSuccess', { status: tStatus(newStatus) }))
       router.refresh()
     }
     setLoading(false)
@@ -57,9 +60,9 @@ export default function AdminApplicationActions({ applicationId, currentStatus }
     })
 
     if (error) {
-      toast.error('Fejl ved tilføjelse af note.')
+      toast.error(t('noteError'))
     } else {
-      toast.success('Note tilføjet.')
+      toast.success(t('noteSuccess'))
       setNoteText('')
       setNoteOpen(false)
       router.refresh()
@@ -77,7 +80,7 @@ export default function AdminApplicationActions({ applicationId, currentStatus }
           className="gap-1.5"
         >
           <MessageSquarePlus className="w-3.5 h-3.5" />
-          Tilføj note
+          {t('addNote')}
         </Button>
 
         <DropdownMenu>
@@ -86,7 +89,7 @@ export default function AdminApplicationActions({ applicationId, currentStatus }
             style={{ backgroundColor: '#1B3A6B' }}
             disabled={loading}
           >
-            Skift status
+            {t('changeStatus')}
             <ChevronDown className="w-3.5 h-3.5" />
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
@@ -97,8 +100,8 @@ export default function AdminApplicationActions({ applicationId, currentStatus }
                 disabled={status === currentStatus}
                 className={status === currentStatus ? 'font-semibold opacity-50' : ''}
               >
-                {STATUS_LABELS[status]}
-                {status === currentStatus && ' (nuværende)'}
+                {tStatus(status)}
+                {status === currentStatus && t('current')}
               </DropdownMenuItem>
             ))}
           </DropdownMenuContent>
@@ -108,23 +111,23 @@ export default function AdminApplicationActions({ applicationId, currentStatus }
       <Dialog open={noteOpen} onOpenChange={setNoteOpen}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Tilføj note til sagen</DialogTitle>
+            <DialogTitle>{t('addNoteTitle')}</DialogTitle>
           </DialogHeader>
           <div className="space-y-4">
             <Textarea
-              placeholder="Skriv din note her..."
+              placeholder={t('notePlaceholder')}
               value={noteText}
               onChange={(e) => setNoteText(e.target.value)}
               rows={4}
             />
             <div className="flex justify-end gap-2">
-              <Button variant="outline" onClick={() => setNoteOpen(false)}>Annuller</Button>
+              <Button variant="outline" onClick={() => setNoteOpen(false)}>{t('cancel')}</Button>
               <Button
                 onClick={handleAddNote}
                 disabled={loading || !noteText.trim()}
                 style={{ backgroundColor: '#1B3A6B' }}
               >
-                Gem note
+                {t('saveNote')}
               </Button>
             </div>
           </div>

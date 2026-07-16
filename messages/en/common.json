@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Espalvo – Get your Spanish NIE number easily and securely",
+    "description": "Professional help getting your Spanish NIE number. We handle the entire process with experienced lawyers and notaries in Spain. Fixed price 215 EUR.",
+    "keywords": [
+      "NIE number Spain",
+      "Spanish NIE number",
+      "NIE application Spain",
+      "how to get a NIE number",
+      "NIE number help",
+      "Spanish identification number",
+      "foreigner ID number Spain"
+    ]
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "pricing": "Pricing",
+    "about": "About us",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "login": "Log in",
+    "startApplication": "Start application",
+    "mySite": "My page",
+    "toggleMenu": "Toggle menu",
+    "language": "Language"
+  },
+  "cookieBanner": {
+    "text": "We use cookies to improve your experience and analyze our traffic.",
+    "link": "Read our cookie policy",
+    "decline": "Decline",
+    "accept": "Accept"
+  },
+  "geoBanner": {
+    "text": "Looks like you're visiting from outside Denmark. Would you like to view this page in English?",
+    "switchButton": "Switch to English",
+    "dismiss": "Dismiss"
+  },
+  "footer": {
+    "tagline": "We help clients get a Spanish NIE number through experienced lawyers and notaries in Spain. Professional, secure and simple.",
+    "servicesHeading": "Services",
+    "legalHeading": "Legal",
+    "privacyPolicy": "Privacy policy",
+    "cookiePolicy": "Cookie policy",
+    "terms": "Terms of service",
+    "gdpr": "GDPR",
+    "disclaimerLabel": "Important:",
+    "disclaimer": "Espalvo is an administrative service bureau, not a law firm. We do not provide legal advice. Our partner lawyers and notaries in Spain are independent professionals with a direct legal relationship to the customer. We cannot guarantee approval of NIE applications, as this is decided by the Spanish authorities. Lawyer, notary, and government fees are paid directly by the customer and are not included in the service price.",
+    "copyright": "© {year} Espalvo. All rights reserved.",
+    "cvrLine": "CVR: [INDSÆT CVR] · info@nienummerservice.dk"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "overview": "Oversigt",
+    "myApplication": "Min ansøgning",
+    "documents": "Dokumenter",
+    "settings": "Indstillinger",
+    "logout": "Log ud",
+    "fallbackTitle": "Dashboard",
+    "fallbackName": "Kunde"
+  },
+  "steps": {
+    "form": "Formular",
+    "signature": "Underskrift",
+    "confirmation": "Bekræftelse"
+  },
+  "page": {
+    "greeting": "Goddag 👋",
+    "subtitle": "Her er et overblik over din NIE-ansøgning.",
+    "noApplicationTitle": "Ingen ansøgning endnu",
+    "noApplicationText": "Start din NIE-ansøgning og vi guider dig igennem hele processen.",
+    "startApplication": "Start ny ansøgning",
+    "caseLabel": "Sag #{caseNumber}",
+    "statApplicationStatus": "Ansøgningsstatus",
+    "statDocuments": "Dokumenter",
+    "statPayment": "Betaling",
+    "filesSuffix": "filer",
+    "paid": "Betalt",
+    "pending": "Afventer",
+    "incompleteTitle": "Ansøgningen er ikke fuldført",
+    "incompleteText": "Udfyld formularen og underskriv for at sende din ansøgning.",
+    "continueButton": "Fortsæt"
+  },
+  "list": {
+    "heading": "Mine ansøgninger",
+    "subtitle": "Oversigt over alle dine NIE-ansøgninger",
+    "newApplication": "Ny ansøgning",
+    "emptyText": "Ingen ansøgninger endnu.",
+    "startApplication": "Start ansøgning",
+    "caseLabel": "Sag #{caseNumber}",
+    "noteFromAdmin": "Besked fra sagsbehandler:",
+    "paymentLabel": "Betaling:",
+    "paid": "✓ Betalt",
+    "pending": "⏳ Afventer",
+    "continueFilling": "Fortsæt udfyldelse"
+  },
+  "documents": {
+    "heading": "Mine dokumenter",
+    "subtitle": "Download og se dine NIE-relaterede dokumenter",
+    "emptyText": "Ingen dokumenter endnu.",
+    "emptySubtext": "Dokumenter genereres automatisk, når du har indsendt din ansøgning.",
+    "caseLabel": "Sag #{caseNumber}",
+    "view": "Vis",
+    "download": "Download",
+    "types": {
+      "ex18_filled": "EX-18 (udfyldt)",
+      "power_of_attorney": "Fuldmagt",
+      "signature": "Underskrift",
+      "passport": "Pas",
+      "other": "Andet"
+    }
+  },
+  "settings": {
+    "heading": "Indstillinger",
+    "subtitle": "Administrer din konto og personlige data"
+  },
+  "profile": {
+    "personalInfoTitle": "Personlige oplysninger",
+    "emailLabel": "E-mail",
+    "emailHint": "E-mail kan ikke ændres",
+    "nameLabel": "Navn",
+    "namePlaceholder": "Dit fulde navn",
+    "save": "Gem ændringer",
+    "saving": "Gemmer...",
+    "saveSuccess": "Profil opdateret.",
+    "saveError": "Fejl ved opdatering.",
+    "gdprTitle": "GDPR – Ret til sletning",
+    "gdprText": "I henhold til GDPR har du ret til at få dine personoplysninger slettet fra vores systemer. Bemærk at en sletning kan påvirke din igangværende NIE-ansøgning.",
+    "deleteButton": "Anmod om datasletning",
+    "deleteConfirm": "Er du sikker på, at du vil anmode om sletning af dine data? Dette kan ikke fortrydes.",
+    "deleteToast": "Din anmodning om datasletning er registreret. Vi kontakter dig inden for 30 dage."
+  },
+  "formular": {
+    "title": "EX-18 Formular",
+    "subtitle": "Udfyld alle felter nøjagtigt som de fremgår af dit pas.",
+    "stepLabel": "Trin 1 af 3: Udfyld formular"
+  },
+  "underskriv": {
+    "title": "Digital underskrift",
+    "subtitle": "Underskriv fuldmagtsdokumentet digitalt for at autorisere vores advokater til at handle på dine vegne.",
+    "stepLabel": "Trin 2 af 3: Underskrift"
+  },
+  "bekraeftelse": {
+    "stepLabel": "Trin 3 af 3: Bekræftelse",
+    "title": "Ansøgning indsendt!",
+    "text": "Din NIE-ansøgning er modtaget og dokumenterne er genereret. Vores team vil nu koordinere med vores advokat i Spanien og holde dig opdateret.",
+    "caseNumberLabel": "Sagsnummer:",
+    "whatNextTitle": "Hvad sker der nu?",
+    "whatNextItem1": "Vi sender dig en bekræftelsesmail med sagens detaljer",
+    "whatNextItem2": "Vores advokat i Spanien kontaktes inden for 48 timer",
+    "whatNextItem3": "Du kan følge statusen på dit dashboard",
+    "viewDocuments": "Se dokumenter",
+    "goToDashboard": "Gå til dashboard"
+  }
+}

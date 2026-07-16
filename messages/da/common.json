@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Espalvo – Få dit spanske NIE-nummer nemt og sikkert",
+    "description": "Professionel hjælp til at få dit spanske NIE-nummer. Vi håndterer hele processen med erfarne advokater og notarer i Spanien. Fast pris 215 EUR.",
+    "keywords": [
+      "NIE nummer Spanien",
+      "NIE nummer danskere",
+      "spansk NIE nummer",
+      "NIE ansøgning Spanien",
+      "NIE nummer hjælp",
+      "spansk identifikationsnummer"
+    ]
+  },
+  "nav": {
+    "howItWorks": "Sådan fungerer det",
+    "pricing": "Priser",
+    "about": "Om os",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "login": "Log ind",
+    "startApplication": "Start ansøgning",
+    "mySite": "Min side",
+    "toggleMenu": "Skift menu",
+    "language": "Sprog"
+  },
+  "cookieBanner": {
+    "text": "Vi bruger cookies til at forbedre din oplevelse og analysere vores trafik.",
+    "link": "Læs vores cookiepolitik",
+    "decline": "Afvis",
+    "accept": "Accepter"
+  },
+  "geoBanner": {
+    "text": "Det ser ud til at du besøger fra udlandet. Vil du se siden på engelsk?",
+    "switchButton": "Skift til engelsk",
+    "dismiss": "Luk"
+  },
+  "footer": {
+    "tagline": "Vi hjælper danske kunder med at få et spansk NIE-nummer gennem erfarne advokater og notarer i Spanien. Professionelt, sikkert og nemt.",
+    "servicesHeading": "Tjenester",
+    "legalHeading": "Juridisk",
+    "privacyPolicy": "Privatlivspolitik",
+    "cookiePolicy": "Cookiepolitik",
+    "terms": "Handelsbetingelser",
+    "gdpr": "GDPR",
+    "disclaimerLabel": "Vigtigt:",
+    "disclaimer": "Espalvo er et administrativt servicebureau og ikke et advokatfirma (jf. retsplejeloven). Vi yder ikke juridisk rådgivning. Vores samarbejdende advokater og notarer i Spanien er selvstændige erhvervsdrivende med et direkte retsforhold til kunden. Vi kan ikke garantere godkendelse af NIE-ansøgninger, da dette afgøres af spanske myndigheder. Advokat-, notar- og myndighedsomkostninger betales direkte af kunden og er ikke inkluderet i serviceprisen.",
+    "copyright": "© {year} Espalvo. Alle rettigheder forbeholdes.",
+    "cvrLine": "CVR: [INDSÆT CVR] · info@nienummerservice.dk"
+  }
+}

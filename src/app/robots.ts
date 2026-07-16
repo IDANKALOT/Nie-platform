@@ -1,14 +1,21 @@
 import type { MetadataRoute } from 'next'
+import { routing } from '@/i18n/routing'
+
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://nienummerservice.dk'
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://nienummerservice.dk'
+  const disallow = routing.locales.flatMap((locale) => {
+    const prefix = locale === routing.defaultLocale ? '' : `/${locale}`
+    return [`${prefix}/dashboard/`, `${prefix}/admin/`]
+  })
+  disallow.push('/api/')
 
   return {
     rules: [
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/dashboard/', '/admin/', '/api/'],
+        disallow,
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,

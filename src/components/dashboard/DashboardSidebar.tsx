@@ -1,27 +1,27 @@
 'use client'
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { useTranslations } from 'next-intl'
+import { Link, usePathname, useRouter } from '@/i18n/navigation'
 import { LayoutDashboard, FileText, FolderOpen, Settings, Shield, LogOut } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
-import { useRouter } from 'next/navigation'
 import type { Profile } from '@/types'
 
 interface Props {
   profile: Profile | null
 }
 
-const navItems = [
-  { href: '/dashboard', label: 'Oversigt', icon: LayoutDashboard },
-  { href: '/dashboard/ansogning', label: 'Min ansøgning', icon: FileText },
-  { href: '/dashboard/dokumenter', label: 'Dokumenter', icon: FolderOpen },
-  { href: '/dashboard/indstillinger', label: 'Indstillinger', icon: Settings },
-]
-
 export default function DashboardSidebar({ profile }: Props) {
+  const t = useTranslations('dashboard.nav')
   const pathname = usePathname()
   const router = useRouter()
   const supabase = createClient()
+
+  const navItems = [
+    { href: '/dashboard', label: t('overview'), icon: LayoutDashboard },
+    { href: '/dashboard/ansogning', label: t('myApplication'), icon: FileText },
+    { href: '/dashboard/dokumenter', label: t('documents'), icon: FolderOpen },
+    { href: '/dashboard/indstillinger', label: t('settings'), icon: Settings },
+  ]
 
   async function handleLogout() {
     await supabase.auth.signOut()
@@ -70,10 +70,10 @@ export default function DashboardSidebar({ profile }: Props) {
             className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0"
             style={{ backgroundColor: '#2A5298' }}
           >
-            {profile?.name?.[0]?.toUpperCase() ?? 'K'}
+            {profile?.name?.[0]?.toUpperCase() ?? t('fallbackName')[0]}
           </div>
           <div className="min-w-0">
-            <p className="text-xs font-medium text-gray-900 truncate">{profile?.name ?? 'Kunde'}</p>
+            <p className="text-xs font-medium text-gray-900 truncate">{profile?.name ?? t('fallbackName')}</p>
             <p className="text-xs text-gray-400 truncate">{profile?.email}</p>
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function DashboardSidebar({ profile }: Props) {
           className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-gray-500 hover:text-gray-700 hover:bg-gray-50 w-full transition-colors"
         >
           <LogOut className="w-4 h-4" />
-          Log ud
+          {t('logout')}
         </button>
       </div>
     </aside>

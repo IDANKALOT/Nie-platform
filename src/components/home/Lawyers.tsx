@@ -1,50 +1,30 @@
-import { MapPin, Mail, Star } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import { MapPin, Star } from 'lucide-react'
 
-const lawyers = [
-  {
-    name: 'García & Asociados',
-    city: 'Madrid',
-    specialization: 'NIE-ansøgninger, ejendomshandler',
-    rating: 5,
-    description: 'Erfaret advokatfirma med over 15 års erfaring i hjælp til udlændinge i Spanien.',
-  },
-  {
-    name: 'López Notaría',
-    city: 'Barcelona',
-    specialization: 'Notariale services, NIE',
-    rating: 5,
-    description: 'Anerkendt notarkontor i Barcelona med specialisering i internationale klienter.',
-  },
-  {
-    name: 'Martínez Legal',
-    city: 'Málaga',
-    specialization: 'NIE, residency, ejendom',
-    rating: 5,
-    description: 'Lokalt advokatfirma på Costa del Sol med stærk erfaring i danske klienters behov.',
-  },
-  {
-    name: 'Fernández & Partners',
-    city: 'Valencia',
-    specialization: 'NIE-ansøgninger, skatteret',
-    rating: 5,
-    description: 'Flersprogede advokater med dansk-talende medarbejdere og hurtig sagsbehandling.',
-  },
-]
+type Lawyer = {
+  name: string
+  city: string
+  specialization: string
+  description: string
+}
 
 export default function Lawyers() {
+  const t = useTranslations('home.lawyers')
+  const lawyers = t.raw('list') as Lawyer[]
+  const rating = 5
+
   return (
     <section id="lawyers" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: '#2D8E6C' }}>
-            Vores netværk
+            {t('eyebrow')}
           </span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-gray-900">
-            Samarbejdende advokater i Spanien
+            {t('heading')}
           </h2>
           <p className="mt-4 text-lg text-gray-500 max-w-xl mx-auto">
-            Vi arbejder udelukkende med godkendte og erfarne advokater og notarer i de
-            vigtigste spanske byer.
+            {t('subheading')}
           </p>
         </div>
 
@@ -63,7 +43,7 @@ export default function Lawyers() {
               </div>
 
               <div className="flex items-center gap-0.5 mb-2">
-                {Array.from({ length: lawyer.rating }).map((_, i) => (
+                {Array.from({ length: rating }).map((_, i) => (
                   <Star key={i} className="w-3 h-3 fill-amber-400 text-amber-400" />
                 ))}
               </div>

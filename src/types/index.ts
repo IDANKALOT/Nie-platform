@@ -111,15 +111,6 @@ export interface Lawyer {
   active: boolean
 }
 
-export const STATUS_LABELS: Record<ApplicationStatus, string> = {
-  received: 'Ansøgning modtaget',
-  documents_generated: 'Dokumenter genereret',
-  lawyer_processing: 'Advokat behandler sagen',
-  notary_processing: 'Notar behandling',
-  processing_spain: 'Under behandling i Spanien',
-  completed: 'Færdig',
-}
-
 export const STATUS_ORDER: ApplicationStatus[] = [
   'received',
   'documents_generated',

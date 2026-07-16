@@ -1,7 +1,8 @@
 'use client'
 
 import { useRef, useState, useEffect } from 'react'
-import { useRouter } from 'next/navigation'
+import { useTranslations } from 'next-intl'
+import { useRouter } from '@/i18n/navigation'
 import SignaturePad from 'signature_pad'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
@@ -15,6 +16,7 @@ interface Props {
 }
 
 export default function SignaturePage({ applicationId, existingSignatureUrl }: Props) {
+  const t = useTranslations('forms.signature')
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const padRef = useRef<SignaturePad | null>(null)
   const [loading, setLoading] = useState(false)
@@ -79,7 +81,7 @@ export default function SignaturePage({ applicationId, existingSignatureUrl }: P
 
   async function handleSubmit() {
     if (!padRef.current || padRef.current.isEmpty()) {
-      toast.error('Venligst underskriv i feltet nedenfor.')
+      toast.error(t('errorEmpty'))
       return
     }
 
@@ -117,10 +119,10 @@ export default function SignaturePage({ applicationId, existingSignatureUrl }: P
         body: JSON.stringify({ applicationId }),
       })
 
-      toast.success('Underskrift gemt! Dokumenter genereres...')
+      toast.success(t('successToast'))
       router.push(`/dashboard/ansogning/${applicationId}/bekraeftelse`)
     } catch {
-      toast.error('Fejl ved gemning af underskrift. Prøv igen.')
+      toast.error(t('errorSubmit'))
     } finally {
       setLoading(false)
     }
@@ -130,11 +132,9 @@ export default function SignaturePage({ applicationId, existingSignatureUrl }: P
     <div className="space-y-6">
       <Card className="bg-white shadow-sm">
         <CardContent className="pt-5 pb-4">
-          <p className="text-sm text-gray-700 leading-relaxed font-medium mb-2">Fuldmagtserklæring</p>
+          <p className="text-sm text-gray-700 leading-relaxed font-medium mb-2">{t('declarationTitle')}</p>
           <p className="text-xs text-gray-500 leading-relaxed">
-            Med min underskrift nedenfor giver jeg Espalvo og deres samarbejdende advokater og
-            notarer i Spanien fuldmagt til at ansøge om et spansk NIE-nummer på mine vegne. Jeg bekræfter,
-            at de angivne oplysninger er korrekte og i overensstemmelse med mit pas.
+            {t('declarationText')}
           </p>
         </CardContent>
       </Card>
@@ -142,16 +142,16 @@ export default function SignaturePage({ applicationId, existingSignatureUrl }: P
       <Card className="bg-white shadow-sm">
         <CardContent className="pt-5">
           <p className="text-sm font-medium text-gray-700 mb-3">
-            Underskriv her:{' '}
-            <span className="text-xs text-gray-400 font-normal">(brug mus eller finger)</span>
+            {t('signHereLabel')}{' '}
+            <span className="text-xs text-gray-400 font-normal">{t('signHereHint')}</span>
           </p>
 
           {existingSignatureUrl && !hasSignature ? (
             <div className="border-2 border-dashed border-gray-200 rounded-xl p-4 text-center">
               <CheckCircle2 className="w-8 h-8 mx-auto mb-2" style={{ color: '#2D8E6C' }} />
-              <p className="text-sm font-medium text-gray-700">Underskrift allerede gemt</p>
+              <p className="text-sm font-medium text-gray-700">{t('existingSignature')}</p>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={existingSignatureUrl} alt="Gemt underskrift" className="mx-auto mt-3 max-h-24 object-contain" />
+              <img src={existingSignatureUrl} alt={t('existingSignatureAlt')} className="mx-auto mt-3 max-h-24 object-contain" />
             </div>
           ) : (
             <div
@@ -168,9 +168,9 @@ export default function SignaturePage({ applicationId, existingSignatureUrl }: P
           <div className="flex items-center justify-between mt-3">
             <Button type="button" variant="outline" size="sm" onClick={handleClear}>
               <Eraser className="w-4 h-4 mr-1.5" />
-              Ryd
+              {t('clear')}
             </Button>
-            <p className="text-xs text-gray-400">Underskriften gemmes sikkert og krypteret.</p>
+            <p className="text-xs text-gray-400">{t('encryptedNote')}</p>
           </div>
         </CardContent>
       </Card>
@@ -181,9 +181,9 @@ export default function SignaturePage({ applicationId, existingSignatureUrl }: P
         className="w-full h-12 text-base font-semibold"
         style={{ backgroundColor: '#1B3A6B' }}
       >
-        {loading ? 'Gemmer og genererer dokumenter...' : (
+        {loading ? t('submitting') : (
           <>
-            Bekræft og send ansøgning
+            {t('submit')}
             <ArrowRight className="w-4 h-4 ml-2" />
           </>
         )}

@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "overview": "Overview",
+    "myApplication": "My application",
+    "documents": "Documents",
+    "settings": "Settings",
+    "logout": "Log out",
+    "fallbackTitle": "Dashboard",
+    "fallbackName": "Customer"
+  },
+  "steps": {
+    "form": "Form",
+    "signature": "Signature",
+    "confirmation": "Confirmation"
+  },
+  "page": {
+    "greeting": "Hello 👋",
+    "subtitle": "Here's an overview of your NIE application.",
+    "noApplicationTitle": "No application yet",
+    "noApplicationText": "Start your NIE application and we'll guide you through the entire process.",
+    "startApplication": "Start new application",
+    "caseLabel": "Case #{caseNumber}",
+    "statApplicationStatus": "Application status",
+    "statDocuments": "Documents",
+    "statPayment": "Payment",
+    "filesSuffix": "files",
+    "paid": "Paid",
+    "pending": "Pending",
+    "incompleteTitle": "Application not yet complete",
+    "incompleteText": "Fill out the form and sign it to submit your application.",
+    "continueButton": "Continue"
+  },
+  "list": {
+    "heading": "My applications",
+    "subtitle": "Overview of all your NIE applications",
+    "newApplication": "New application",
+    "emptyText": "No applications yet.",
+    "startApplication": "Start application",
+    "caseLabel": "Case #{caseNumber}",
+    "noteFromAdmin": "Message from case handler:",
+    "paymentLabel": "Payment:",
+    "paid": "✓ Paid",
+    "pending": "⏳ Pending",
+    "continueFilling": "Continue filling out"
+  },
+  "documents": {
+    "heading": "My documents",
+    "subtitle": "Download and view your NIE-related documents",
+    "emptyText": "No documents yet.",
+    "emptySubtext": "Documents are generated automatically once you've submitted your application.",
+    "caseLabel": "Case #{caseNumber}",
+    "view": "View",
+    "download": "Download",
+    "types": {
+      "ex18_filled": "EX-18 (completed)",
+      "power_of_attorney": "Power of attorney",
+      "signature": "Signature",
+      "passport": "Passport",
+      "other": "Other"
+    }
+  },
+  "settings": {
+    "heading": "Settings",
+    "subtitle": "Manage your account and personal data"
+  },
+  "profile": {
+    "personalInfoTitle": "Personal information",
+    "emailLabel": "Email",
+    "emailHint": "Email cannot be changed",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your full name",
+    "save": "Save changes",
+    "saving": "Saving...",
+    "saveSuccess": "Profile updated.",
+    "saveError": "Error updating profile.",
+    "gdprTitle": "GDPR – Right to erasure",
+    "gdprText": "Under GDPR you have the right to have your personal data deleted from our systems. Note that deletion may affect your ongoing NIE application.",
+    "deleteButton": "Request data deletion",
+    "deleteConfirm": "Are you sure you want to request deletion of your data? This cannot be undone.",
+    "deleteToast": "Your data deletion request has been registered. We'll contact you within 30 days."
+  },
+  "formular": {
+    "title": "EX-18 form",
+    "subtitle": "Fill out all fields exactly as they appear in your passport.",
+    "stepLabel": "Step 1 of 3: Fill out form"
+  },
+  "underskriv": {
+    "title": "Digital signature",
+    "subtitle": "Sign the power of attorney document digitally to authorize our lawyers to act on your behalf.",
+    "stepLabel": "Step 2 of 3: Signature"
+  },
+  "bekraeftelse": {
+    "stepLabel": "Step 3 of 3: Confirmation",
+    "title": "Application submitted!",
+    "text": "Your NIE application has been received and the documents have been generated. Our team will now coordinate with our lawyer in Spain and keep you updated.",
+    "caseNumberLabel": "Case number:",
+    "whatNextTitle": "What happens now?",
+    "whatNextItem1": "We'll send you a confirmation email with the case details",
+    "whatNextItem2": "Our lawyer in Spain will be contacted within 48 hours",
+    "whatNextItem3": "You can follow the status on your dashboard",
+    "viewDocuments": "View documents",
+    "goToDashboard": "Go to dashboard"
+  }
+}

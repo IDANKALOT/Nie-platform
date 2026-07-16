@@ -1,11 +1,10 @@
 'use client'
 
 import { useState } from 'react'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { useTranslations } from 'next-intl'
+import { Link, usePathname, useRouter } from '@/i18n/navigation'
 import { Menu, X, Shield, LayoutDashboard, FileText, FolderOpen, Settings, LogOut } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
-import { useRouter } from 'next/navigation'
 import type { Profile } from '@/types'
 
 interface Props {
@@ -13,21 +12,29 @@ interface Props {
 }
 
 export default function DashboardHeader({ profile }: Props) {
+  const t = useTranslations('dashboard.nav')
   const [mobileOpen, setMobileOpen] = useState(false)
   const pathname = usePathname()
   const router = useRouter()
   const supabase = createClient()
 
+  const navItems = [
+    { href: '/dashboard', label: t('overview'), icon: LayoutDashboard },
+    { href: '/dashboard/ansogning', label: t('myApplication'), icon: FileText },
+    { href: '/dashboard/dokumenter', label: t('documents'), icon: FolderOpen },
+    { href: '/dashboard/indstillinger', label: t('settings'), icon: Settings },
+  ]
+
   const titles: Record<string, string> = {
-    '/dashboard': 'Oversigt',
-    '/dashboard/ansogning': 'Min ansøgning',
-    '/dashboard/dokumenter': 'Dokumenter',
-    '/dashboard/indstillinger': 'Indstillinger',
+    '/dashboard': t('overview'),
+    '/dashboard/ansogning': t('myApplication'),
+    '/dashboard/dokumenter': t('documents'),
+    '/dashboard/indstillinger': t('settings'),
   }
 
   const currentTitle = Object.entries(titles).find(([key]) =>
     key === pathname || (key !== '/dashboard' && pathname.startsWith(key))
-  )?.[1] ?? 'Dashboard'
+  )?.[1] ?? t('fallbackTitle')
 
   async function handleLogout() {
     await supabase.auth.signOut()
@@ -55,7 +62,7 @@ export default function DashboardHeader({ profile }: Props) {
             className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold"
             style={{ backgroundColor: '#2A5298' }}
           >
-            {profile?.name?.[0]?.toUpperCase() ?? 'K'}
+            {profile?.name?.[0]?.toUpperCase() ?? t('fallbackName')[0]}
           </div>
         </div>
       </header>
@@ -77,12 +84,7 @@ export default function DashboardHeader({ profile }: Props) {
               </button>
             </div>
             <nav className="flex-1 p-3 space-y-1">
-              {[
-                { href: '/dashboard', label: 'Oversigt', icon: LayoutDashboard },
-                { href: '/dashboard/ansogning', label: 'Min ansøgning', icon: FileText },
-                { href: '/dashboard/dokumenter', label: 'Dokumenter', icon: FolderOpen },
-                { href: '/dashboard/indstillinger', label: 'Indstillinger', icon: Settings },
-              ].map((item) => (
+              {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
@@ -100,7 +102,7 @@ export default function DashboardHeader({ profile }: Props) {
                 className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-gray-500 w-full"
               >
                 <LogOut className="w-4 h-4" />
-                Log ud
+                {t('logout')}
               </button>
             </div>
           </div>

@@ -1,8 +1,17 @@
-import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, CheckCircle2, Clock, Shield } from 'lucide-react'
 
 export default function Hero() {
+  const t = useTranslations('home.hero')
+
+  const trustItems = [
+    { icon: CheckCircle2, text: t('trustFixedPrice') },
+    { icon: Clock, text: t('trustResponseTime') },
+    { icon: Shield, text: t('trustGdpr') },
+  ]
+
   return (
     <section
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
@@ -25,26 +34,25 @@ export default function Hero() {
         <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-8">
           <Shield className="w-3.5 h-3.5 text-green-400" />
           <span className="text-white/90 text-xs font-medium">
-            Administrativ service — ikke et advokatfirma
+            {t('badge')}
           </span>
         </div>
 
         {/* Headline */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-4xl mx-auto">
-          Få dit spanske{' '}
+          {t('headlinePrefix')}{' '}
           <span className="relative inline-block">
-            <span className="relative z-10">NIE-nummer</span>
+            <span className="relative z-10">{t('headlineHighlight')}</span>
             <span
               className="absolute inset-x-0 bottom-1 h-3 -z-10 rounded"
               style={{ backgroundColor: 'rgba(45, 142, 108, 0.5)' }}
             />
           </span>{' '}
-          nemt og sikkert
+          {t('headlineSuffix')}
         </h1>
 
         <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Vi håndterer hele ansøgningsprocessen for dig — fra udfyldelse af formularer til
-          behandling hos spanske myndigheder. Du behøver ikke rejse til Spanien.
+          {t('subtitle')}
         </p>
 
         {/* CTA buttons */}
@@ -55,7 +63,7 @@ export default function Hero() {
               className="text-base px-8 h-12 font-semibold shadow-lg hover:shadow-xl transition-all"
               style={{ backgroundColor: '#2D8E6C', color: 'white' }}
             >
-              Start ansøgning nu
+              {t('ctaPrimary')}
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </Link>
@@ -65,18 +73,14 @@ export default function Hero() {
               variant="outline"
               className="text-base px-8 h-12 border-white/30 text-white hover:bg-white/10 hover:text-white bg-transparent"
             >
-              Se hvordan det fungerer
+              {t('ctaSecondary')}
             </Button>
           </a>
         </div>
 
         {/* Trust indicators */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          {[
-            { icon: CheckCircle2, text: 'Fast pris – 215 EUR' },
-            { icon: Clock, text: 'Svar inden for 48 timer' },
-            { icon: Shield, text: 'GDPR-kompatibel behandling' },
-          ].map((item) => (
+          {trustItems.map((item) => (
             <div key={item.text} className="flex items-center gap-2 text-white/70">
               <item.icon className="w-4 h-4 text-green-400 flex-shrink-0" />
               <span className="text-sm">{item.text}</span>
@@ -87,8 +91,7 @@ export default function Hero() {
         {/* Disclaimer */}
         <div className="mt-12 max-w-xl mx-auto border-t border-white/10 pt-8">
           <p className="text-xs text-white/45 leading-relaxed">
-            Espalvo er et administrativt servicebureau og ikke et advokatfirma. Vi yder ikke juridisk rådgivning.
-            Vores samarbejdende advokater og notarer i Spanien er selvstændige og har et direkte retsforhold med dig som kunde.
+            {t('disclaimer')}
           </p>
         </div>
       </div>

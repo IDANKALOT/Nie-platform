@@ -1,35 +1,40 @@
 import { z } from 'zod'
+import type { useTranslations } from 'next-intl'
 
-export const ex18Schema = z.object({
-  // Personal
-  full_name: z.string().min(2, 'Fulde navn er påkrævet'),
-  date_of_birth: z.string().min(1, 'Fødselsdato er påkrævet'),
-  nationality: z.string().min(1, 'Nationalitet er påkrævet'),
-  passport_number: z.string().min(3, 'Pasnummer er påkrævet'),
-  passport_issue_date: z.string().min(1, 'Udstedelsesdato er påkrævet'),
-  passport_expiry_date: z.string().min(1, 'Udløbsdato er påkrævet'),
-  address: z.string().min(5, 'Adresse er påkrævet'),
-  postal_code: z.string().min(3, 'Postnummer er påkrævet'),
-  city: z.string().min(2, 'By er påkrævet'),
-  country: z.string().min(2, 'Land er påkrævet'),
-  phone: z.string().min(8, 'Telefonnummer er påkrævet'),
-  email: z.string().email('Ugyldig e-mailadresse'),
-  // Spanish purpose
-  nie_purpose: z.enum(['property_purchase', 'bank_account', 'work', 'investment', 'other'], {
-    error: 'Vælg formål med NIE-nummer',
-  }),
-  nie_purpose_other: z.string().optional(),
-  // Additional
-  marital_status: z.enum(['single', 'married', 'divorced', 'widowed', 'partnership'], {
-    error: 'Vælg civilstatus',
-  }),
-  gender: z.enum(['male', 'female', 'other'], {
-    error: 'Vælg køn',
-  }),
-  place_of_birth: z.string().min(2, 'Fødested er påkrævet'),
-  father_name: z.string().min(1, 'Faderens fulde navn er påkrævet'),
-  mother_name: z.string().min(1, 'Moderens fulde navn er påkrævet'),
-  signature_city: z.string().min(1, 'By for underskrift er påkrævet'),
-})
+type FormsTranslator = ReturnType<typeof useTranslations>
 
-export type EX18FormData = z.infer<typeof ex18Schema>
+export function getEX18Schema(t: FormsTranslator) {
+  return z.object({
+    // Personal
+    full_name: z.string().min(2, t('validation.fullName')),
+    date_of_birth: z.string().min(1, t('validation.dateOfBirth')),
+    nationality: z.string().min(1, t('validation.nationality')),
+    passport_number: z.string().min(3, t('validation.passportNumber')),
+    passport_issue_date: z.string().min(1, t('validation.passportIssueDate')),
+    passport_expiry_date: z.string().min(1, t('validation.passportExpiryDate')),
+    address: z.string().min(5, t('validation.address')),
+    postal_code: z.string().min(3, t('validation.postalCode')),
+    city: z.string().min(2, t('validation.city')),
+    country: z.string().min(2, t('validation.country')),
+    phone: z.string().min(8, t('validation.phone')),
+    email: z.string().email(t('validation.email')),
+    // Spanish purpose
+    nie_purpose: z.enum(['property_purchase', 'bank_account', 'work', 'investment', 'other'], {
+      error: t('validation.niePurpose'),
+    }),
+    nie_purpose_other: z.string().optional(),
+    // Additional
+    marital_status: z.enum(['single', 'married', 'divorced', 'widowed', 'partnership'], {
+      error: t('validation.maritalStatus'),
+    }),
+    gender: z.enum(['male', 'female', 'other'], {
+      error: t('validation.gender'),
+    }),
+    place_of_birth: z.string().min(2, t('validation.placeOfBirth')),
+    father_name: z.string().min(1, t('validation.fatherName')),
+    mother_name: z.string().min(1, t('validation.motherName')),
+    signature_city: z.string().min(1, t('validation.signatureCity')),
+  })
+}
+
+export type EX18FormData = z.infer<ReturnType<typeof getEX18Schema>>

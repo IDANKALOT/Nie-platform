@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "title": "Espalvo – Get your Spanish NIE number easily and securely",
+    "description": "Professional help getting your Spanish NIE number. We handle the entire process with experienced lawyers and notaries in Spain. Fixed price 215 EUR. No trip to Spain required."
+  },
+  "hero": {
+    "badge": "Administrative service — not a law firm",
+    "headlinePrefix": "Get your Spanish",
+    "headlineHighlight": "NIE number",
+    "headlineSuffix": "easily and securely",
+    "subtitle": "We handle the entire application process for you — from filling out forms to processing with the Spanish authorities. You don't need to travel to Spain.",
+    "ctaPrimary": "Start application now",
+    "ctaSecondary": "See how it works",
+    "trustFixedPrice": "Fixed price – 215 EUR",
+    "trustResponseTime": "Response within 48 hours",
+    "trustGdpr": "GDPR-compliant processing",
+    "disclaimer": "Espalvo is an administrative service bureau, not a law firm. We do not provide legal advice. Our partner lawyers and notaries in Spain are independent professionals with a direct legal relationship to you as the customer."
+  },
+  "howItWorks": {
+    "eyebrow": "The process",
+    "heading": "How it works",
+    "subheading": "A simple, digital process that gives you peace of mind, wherever you are.",
+    "steps": [
+      {
+        "title": "Fill out the application",
+        "description": "Create an account and fill out our digital form with your personal details. It takes about 10 minutes."
+      },
+      {
+        "title": "Sign digitally",
+        "description": "Sign the power-of-attorney document digitally, right in your browser – on both desktop and mobile."
+      },
+      {
+        "title": "We handle the case",
+        "description": "Our partner lawyers and notaries in Spain handle the application with the Spanish authorities."
+      },
+      {
+        "title": "Receive your NIE number",
+        "description": "Once processing is complete, you receive your NIE number and all relevant documents digitally."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "heading": "Simple, transparent pricing",
+    "subheading": "No hidden fees. A fixed price for our service.",
+    "servicePrice": "Service price",
+    "priceNote": "Excl. VAT · One-time payment",
+    "includedLabel": "Included in the price:",
+    "included": [
+      "Digital form completion (EX-18)",
+      "Digital signing of the power of attorney",
+      "Automatic document generation",
+      "Coordination with a lawyer in Spain",
+      "Status updates along the way",
+      "Digital document archive",
+      "Customer support in English"
+    ],
+    "disclaimerLabel": "Please note:",
+    "disclaimer": "Any lawyer, notary, and government fees are paid directly by the customer and are not included in our service price.",
+    "cta": "Start application for 215 EUR",
+    "note": "Payment is made securely online. 14-day right of withdrawal if processing has not yet begun."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "heading": "Your trusted partner for Spanish NIE applications",
+    "paragraph1": "Espalvo is a Danish company specialized in helping international clients navigate Spanish bureaucracy. We understand that applying for a Spanish NIE number on your own can be complex and time-consuming.",
+    "paragraph2": "Through our established network of qualified lawyers and notaries in Spain, we ensure your application is processed correctly and efficiently – without you needing to travel to Spain.",
+    "stats": [
+      { "number": "2,400+", "label": "Cases handled" },
+      { "number": "98%", "label": "Satisfied customers" },
+      { "number": "48h", "label": "Average response time" },
+      { "number": "6+", "label": "Years in business" }
+    ],
+    "values": [
+      { "title": "Expertise", "description": "Over 6 years of experience with Spanish NIE applications for international clients." },
+      { "title": "Local network", "description": "Partnerships with approved lawyers and notaries directly in Spain." },
+      { "title": "Personal service", "description": "Dedicated customer support throughout the entire process." },
+      { "title": "Trust", "description": "GDPR-compliant handling of your personal information." }
+    ]
+  },
+  "lawyers": {
+    "eyebrow": "Our network",
+    "heading": "Partner lawyers in Spain",
+    "subheading": "We work exclusively with approved and experienced lawyers and notaries in Spain's major cities.",
+    "list": [
+      {
+        "name": "García & Asociados",
+        "city": "Madrid",
+        "specialization": "NIE applications, real estate",
+        "description": "Experienced law firm with over 15 years of experience helping foreigners in Spain."
+      },
+      {
+        "name": "López Notaría",
+        "city": "Barcelona",
+        "specialization": "Notary services, NIE",
+        "description": "Recognized notary office in Barcelona specializing in international clients."
+      },
+      {
+        "name": "Martínez Legal",
+        "city": "Málaga",
+        "specialization": "NIE, residency, real estate",
+        "description": "Local law firm on the Costa del Sol with strong experience meeting international clients' needs."
+      },
+      {
+        "name": "Fernández & Partners",
+        "city": "Valencia",
+        "specialization": "NIE applications, tax law",
+        "description": "Multilingual lawyers with English-speaking staff and fast case processing."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Questions & answers",
+    "heading": "Frequently asked questions",
+    "items": [
+      {
+        "question": "What is a NIE number?",
+        "answer": "The NIE (Número de Identificación de Extranjero) is a Spanish identification number for foreigners. It's required for anyone who wants to buy property, open a bank account, work, or invest in Spain."
+      },
+      {
+        "question": "Do I need to travel to Spain?",
+        "answer": "No. Through our service, the entire process can be handled digitally from wherever you are. You grant power of attorney to our partner lawyers, who then represent you before the Spanish authorities."
+      },
+      {
+        "question": "How long does it take to get a NIE number?",
+        "answer": "Typical processing time is 4-8 weeks, depending on the Spanish authorities' case processing time. We keep you updated on status throughout."
+      },
+      {
+        "question": "What's included in the 215 EUR price?",
+        "answer": "Our service price covers: digital form completion, digital signing, document generation, coordination with a lawyer, and status updates. Lawyer, notary, and government fees in Spain are paid directly by you and are not included."
+      },
+      {
+        "question": "What documents do I need?",
+        "answer": "You primarily need a valid passport. Depending on the purpose of the NIE number, additional documentation may be required, which we'll guide you through along the way."
+      },
+      {
+        "question": "Is my personal data secure?",
+        "answer": "Yes. We fully comply with GDPR regulations. Your data is stored encrypted and shared only with the parties necessary (lawyer/notary) to process your application."
+      },
+      {
+        "question": "Can I track the status of my case?",
+        "answer": "Yes. Through your personal dashboard you can check your case status at any time, download documents, and read updates from us."
+      },
+      {
+        "question": "What happens if my application is rejected?",
+        "answer": "Rejections are rare, but if it happens, we help you find out the reason and submit a new application at no extra cost."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Get in touch",
+    "subheading": "Have questions? We're ready to help.",
+    "infoHeading": "Contact information",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "hoursLabel": "Opening hours",
+    "hoursValue": "Monday–Friday: 9:00 AM–5:00 PM",
+    "ctaBoxTitle": "Ready to get started?",
+    "ctaBoxText": "Create an account and start your NIE application today.",
+    "ctaBoxButton": "Start application",
+    "formNameLabel": "Name",
+    "formNamePlaceholder": "Your full name",
+    "formEmailLabel": "Email",
+    "formEmailPlaceholder": "you@email.com",
+    "formSubjectLabel": "Subject",
+    "formSubjectPlaceholder": "What's your message about?",
+    "formMessageLabel": "Message",
+    "formMessagePlaceholder": "Write your message here...",
+    "formSubmit": "Send message",
+    "formSubmitting": "Sending...",
+    "toastSuccess": "Thanks for your message! We'll get back to you within 24 hours."
+  }
+}

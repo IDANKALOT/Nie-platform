@@ -1,0 +1,17 @@
+{
+  "application": {
+    "received": "Application received",
+    "documents_generated": "Documents generated",
+    "lawyer_processing": "Lawyer processing the case",
+    "notary_processing": "Notary processing",
+    "processing_spain": "Being processed in Spain",
+    "completed": "Completed"
+  },
+  "niePurpose": {
+    "property_purchase": "Property purchase",
+    "bank_account": "Bank account",
+    "work": "Work",
+    "investment": "Investment",
+    "other": "Other"
+  }
+}

@@ -1,10 +1,11 @@
 'use client'
 
-import { useEffect } from 'react'
-import { useRouter } from 'next/navigation'
+import { useEffect, useMemo } from 'react'
+import { useTranslations } from 'next-intl'
+import { useRouter } from '@/i18n/navigation'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { ex18Schema, type EX18FormData } from '@/lib/validations'
+import { getEX18Schema, type EX18FormData } from '@/lib/validations'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -19,46 +20,48 @@ interface Props {
   initialData: Partial<EX18FormData> | null
 }
 
-const purposes = [
-  { value: 'property_purchase', label: 'Ejendomskøb' },
-  { value: 'bank_account', label: 'Bankkonto' },
-  { value: 'work', label: 'Arbejde' },
-  { value: 'investment', label: 'Investering' },
-  { value: 'other', label: 'Andet' },
-] as const
-
-const maritalStatuses = [
-  { value: 'single', label: 'Ugift' },
-  { value: 'married', label: 'Gift' },
-  { value: 'divorced', label: 'Skilt' },
-  { value: 'widowed', label: 'Enke/enkemand' },
-  { value: 'partnership', label: 'Registreret partner' },
-] as const
-
-const genders = [
-  { value: 'male', label: 'Mand' },
-  { value: 'female', label: 'Kvinde' },
-  { value: 'other', label: 'Andet' },
-] as const
-
 export default function EX18Form({ applicationId, initialData }: Props) {
+  const t = useTranslations('forms.ex18')
+  const tValidation = useTranslations('forms')
   const router = useRouter()
   const supabase = createClient()
+
+  const purposes = [
+    { value: 'property_purchase', label: t('purposes.property_purchase') },
+    { value: 'bank_account', label: t('purposes.bank_account') },
+    { value: 'work', label: t('purposes.work') },
+    { value: 'investment', label: t('purposes.investment') },
+    { value: 'other', label: t('purposes.other') },
+  ] as const
+
+  const maritalStatuses = [
+    { value: 'single', label: t('maritalStatuses.single') },
+    { value: 'married', label: t('maritalStatuses.married') },
+    { value: 'divorced', label: t('maritalStatuses.divorced') },
+    { value: 'widowed', label: t('maritalStatuses.widowed') },
+    { value: 'partnership', label: t('maritalStatuses.partnership') },
+  ] as const
+
+  const genders = [
+    { value: 'male', label: t('genders.male') },
+    { value: 'female', label: t('genders.female') },
+    { value: 'other', label: t('genders.other') },
+  ] as const
+
+  const schema = useMemo(() => getEX18Schema(tValidation), [tValidation])
 
   const {
     register,
     handleSubmit,
     watch,
-    setValue,
-    formState: { errors, isDirty, isSubmitting },
+    formState: { errors, isSubmitting },
   } = useForm<EX18FormData>({
-    resolver: zodResolver(ex18Schema),
+    resolver: zodResolver(schema),
     defaultValues: initialData ?? {},
   })
 
   // Autosave every 30 seconds
   useEffect(() => {
-    const values = watch()
     const interval = setInterval(async () => {
       const current = watch()
       if (Object.keys(current).some((k) => current[k as keyof EX18FormData])) {
@@ -85,23 +88,23 @@ export default function EX18Form({ applicationId, initialData }: Props) {
   async function onSave(data: EX18FormData) {
     const { error } = await upsertData({ ...data, form_completed: false })
     if (error) {
-      toast.error('Fejl ved gemning: ' + error.message)
+      toast.error(t('saveError') + error.message)
       return
     }
-    toast.success('Gemt!')
+    toast.success(t('saveSuccess'))
   }
 
   async function onSubmit(data: EX18FormData) {
     const { error } = await upsertData({ ...data, form_completed: true })
     if (error) {
-      toast.error('Fejl ved indsendelse: ' + error.message)
+      toast.error(t('submitError') + error.message)
       return
     }
     router.push(`/dashboard/ansogning/${applicationId}/underskriv`)
   }
 
   function onValidationError() {
-    toast.error('Udfyld alle påkrævede felter før du fortsætter')
+    toast.error(t('validationError'))
     setTimeout(() => {
       document.querySelector('.text-red-500')?.scrollIntoView({ behavior: 'smooth', block: 'center' })
     }, 50)
@@ -115,44 +118,44 @@ export default function EX18Form({ applicationId, initialData }: Props) {
       <Card className="bg-white shadow-sm">
         <CardHeader className="pb-3">
           <CardTitle className="text-base" style={{ color: '#1B3A6B' }}>
-            Personlige oplysninger
+            {t('personalInfoTitle')}
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-1.5">
-              <Label htmlFor="full_name">Fulde navn *</Label>
-              <Input id="full_name" {...register('full_name')} placeholder="Fornavn Efternavn (som i passet)" />
+              <Label htmlFor="full_name">{t('fullNameLabel')}</Label>
+              <Input id="full_name" {...register('full_name')} placeholder={t('fullNamePlaceholder')} />
               {errors.full_name && <p className="text-xs text-red-500">{errors.full_name.message}</p>}
             </div>
             <div className="space-y-1.5">
-              <Label htmlFor="date_of_birth">Fødselsdato *</Label>
+              <Label htmlFor="date_of_birth">{t('dateOfBirthLabel')}</Label>
               <Input id="date_of_birth" type="date" {...register('date_of_birth')} />
               {errors.date_of_birth && <p className="text-xs text-red-500">{errors.date_of_birth.message}</p>}
             </div>
             <div className="space-y-1.5">
-              <Label htmlFor="nationality">Nationalitet *</Label>
-              <Input id="nationality" {...register('nationality')} placeholder="Dansk" />
+              <Label htmlFor="nationality">{t('nationalityLabel')}</Label>
+              <Input id="nationality" {...register('nationality')} placeholder={t('nationalityPlaceholder')} />
               {errors.nationality && <p className="text-xs text-red-500">{errors.nationality.message}</p>}
             </div>
             <div className="space-y-1.5">
-              <Label htmlFor="place_of_birth">Fødested (by) *</Label>
-              <Input id="place_of_birth" {...register('place_of_birth')} placeholder="Aarhus" />
+              <Label htmlFor="place_of_birth">{t('placeOfBirthLabel')}</Label>
+              <Input id="place_of_birth" {...register('place_of_birth')} placeholder={t('placeOfBirthPlaceholder')} />
               {errors.place_of_birth && <p className="text-xs text-red-500">{errors.place_of_birth.message}</p>}
             </div>
             <div className="space-y-1.5">
-              <Label htmlFor="country">Fødselsland *</Label>
-              <Input id="country" {...register('country')} placeholder="Danmark" />
+              <Label htmlFor="country">{t('countryLabel')}</Label>
+              <Input id="country" {...register('country')} placeholder={t('countryPlaceholder')} />
               {errors.country && <p className="text-xs text-red-500">{errors.country.message}</p>}
             </div>
             <div className="space-y-1.5">
-              <Label htmlFor="father_name">Faderens fulde navn *</Label>
-              <Input id="father_name" {...register('father_name')} placeholder="Som i passet" />
+              <Label htmlFor="father_name">{t('fatherNameLabel')}</Label>
+              <Input id="father_name" {...register('father_name')} placeholder={t('parentNamePlaceholder')} />
               {errors.father_name && <p className="text-xs text-red-500">{errors.father_name.message}</p>}
             </div>
             <div className="space-y-1.5">
-              <Label htmlFor="mother_name">Moderens fulde navn *</Label>
-              <Input id="mother_name" {...register('mother_name')} placeholder="Som i passet" />
+              <Label htmlFor="mother_name">{t('motherNameLabel')}</Label>
+              <Input id="mother_name" {...register('mother_name')} placeholder={t('parentNamePlaceholder')} />
               {errors.mother_name && <p className="text-xs text-red-500">{errors.mother_name.message}</p>}
             </div>
           </div>
@@ -162,22 +165,22 @@ export default function EX18Form({ applicationId, initialData }: Props) {
       {/* Passport */}
       <Card className="bg-white shadow-sm">
         <CardHeader className="pb-3">
-          <CardTitle className="text-base" style={{ color: '#1B3A6B' }}>Pasoplysninger</CardTitle>
+          <CardTitle className="text-base" style={{ color: '#1B3A6B' }}>{t('passportInfoTitle')}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="space-y-1.5">
-              <Label htmlFor="passport_number">Pasnummer *</Label>
-              <Input id="passport_number" {...register('passport_number')} placeholder="AB123456" />
+              <Label htmlFor="passport_number">{t('passportNumberLabel')}</Label>
+              <Input id="passport_number" {...register('passport_number')} placeholder={t('passportNumberPlaceholder')} />
               {errors.passport_number && <p className="text-xs text-red-500">{errors.passport_number.message}</p>}
             </div>
             <div className="space-y-1.5">
-              <Label htmlFor="passport_issue_date">Udstedelsesdato *</Label>
+              <Label htmlFor="passport_issue_date">{t('passportIssueDateLabel')}</Label>
               <Input id="passport_issue_date" type="date" {...register('passport_issue_date')} />
               {errors.passport_issue_date && <p className="text-xs text-red-500">{errors.passport_issue_date.message}</p>}
             </div>
             <div className="space-y-1.5">
-              <Label htmlFor="passport_expiry_date">Udløbsdato *</Label>
+              <Label htmlFor="passport_expiry_date">{t('passportExpiryDateLabel')}</Label>
               <Input id="passport_expiry_date" type="date" {...register('passport_expiry_date')} />
               {errors.passport_expiry_date && <p className="text-xs text-red-500">{errors.passport_expiry_date.message}</p>}
             </div>
@@ -188,41 +191,41 @@ export default function EX18Form({ applicationId, initialData }: Props) {
       {/* Address */}
       <Card className="bg-white shadow-sm">
         <CardHeader className="pb-3">
-          <CardTitle className="text-base" style={{ color: '#1B3A6B' }}>Kontakt &amp; adresse</CardTitle>
+          <CardTitle className="text-base" style={{ color: '#1B3A6B' }}>{t('contactAddressTitle')}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="space-y-1.5">
-            <Label htmlFor="address">Hjemmeadresse *</Label>
-            <Input id="address" {...register('address')} placeholder="Gadenavn og nummer" />
+            <Label htmlFor="address">{t('addressLabel')}</Label>
+            <Input id="address" {...register('address')} placeholder={t('addressPlaceholder')} />
             {errors.address && <p className="text-xs text-red-500">{errors.address.message}</p>}
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             <div className="space-y-1.5">
-              <Label htmlFor="postal_code">Postnummer *</Label>
-              <Input id="postal_code" {...register('postal_code')} placeholder="2100" />
+              <Label htmlFor="postal_code">{t('postalCodeLabel')}</Label>
+              <Input id="postal_code" {...register('postal_code')} placeholder={t('postalCodePlaceholder')} />
               {errors.postal_code && <p className="text-xs text-red-500">{errors.postal_code.message}</p>}
             </div>
             <div className="col-span-2 space-y-1.5">
-              <Label htmlFor="city">By *</Label>
-              <Input id="city" {...register('city')} placeholder="København" />
+              <Label htmlFor="city">{t('cityLabel')}</Label>
+              <Input id="city" {...register('city')} placeholder={t('cityPlaceholder')} />
               {errors.city && <p className="text-xs text-red-500">{errors.city.message}</p>}
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-1.5">
-              <Label htmlFor="phone">Telefonnummer *</Label>
-              <Input id="phone" {...register('phone')} placeholder="+45 12 34 56 78" />
+              <Label htmlFor="phone">{t('phoneLabel')}</Label>
+              <Input id="phone" {...register('phone')} placeholder={t('phonePlaceholder')} />
               {errors.phone && <p className="text-xs text-red-500">{errors.phone.message}</p>}
             </div>
             <div className="space-y-1.5">
-              <Label htmlFor="email">E-mail *</Label>
-              <Input id="email" type="email" {...register('email')} placeholder="din@email.dk" />
+              <Label htmlFor="email">{t('emailLabel')}</Label>
+              <Input id="email" type="email" {...register('email')} placeholder={t('emailPlaceholder')} />
               {errors.email && <p className="text-xs text-red-500">{errors.email.message}</p>}
             </div>
             <div className="space-y-1.5">
-              <Label htmlFor="signature_city">By for underskrift *</Label>
-              <Input id="signature_city" {...register('signature_city')} placeholder="F.eks. København" />
-              <p className="text-xs text-gray-400">Den by der skrives på formularen ved underskrift</p>
+              <Label htmlFor="signature_city">{t('signatureCityLabel')}</Label>
+              <Input id="signature_city" {...register('signature_city')} placeholder={t('signatureCityPlaceholder')} />
+              <p className="text-xs text-gray-400">{t('signatureCityHint')}</p>
               {errors.signature_city && <p className="text-xs text-red-500">{errors.signature_city.message}</p>}
             </div>
           </div>
@@ -232,7 +235,7 @@ export default function EX18Form({ applicationId, initialData }: Props) {
       {/* NIE Purpose */}
       <Card className="bg-white shadow-sm">
         <CardHeader className="pb-3">
-          <CardTitle className="text-base" style={{ color: '#1B3A6B' }}>Formål med NIE-nummer</CardTitle>
+          <CardTitle className="text-base" style={{ color: '#1B3A6B' }}>{t('purposeTitle')}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -259,7 +262,7 @@ export default function EX18Form({ applicationId, initialData }: Props) {
           {errors.nie_purpose && <p className="text-xs text-red-500">{errors.nie_purpose.message}</p>}
           {watchPurpose === 'other' && (
             <div className="space-y-1.5">
-              <Label htmlFor="nie_purpose_other">Beskriv formålet *</Label>
+              <Label htmlFor="nie_purpose_other">{t('purposeOtherLabel')}</Label>
               <Textarea id="nie_purpose_other" {...register('nie_purpose_other')} rows={2} />
             </div>
           )}
@@ -269,12 +272,12 @@ export default function EX18Form({ applicationId, initialData }: Props) {
       {/* Additional info */}
       <Card className="bg-white shadow-sm">
         <CardHeader className="pb-3">
-          <CardTitle className="text-base" style={{ color: '#1B3A6B' }}>Yderligere oplysninger</CardTitle>
+          <CardTitle className="text-base" style={{ color: '#1B3A6B' }}>{t('additionalInfoTitle')}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <Label>Civilstatus *</Label>
+              <Label>{t('maritalStatusLabel')}</Label>
               <div className="space-y-2">
                 {maritalStatuses.map((m) => (
                   <label key={m.value} className="flex items-center gap-2 text-sm cursor-pointer">
@@ -286,7 +289,7 @@ export default function EX18Form({ applicationId, initialData }: Props) {
               {errors.marital_status && <p className="text-xs text-red-500">{errors.marital_status.message}</p>}
             </div>
             <div className="space-y-2">
-              <Label>Køn *</Label>
+              <Label>{t('genderLabel')}</Label>
               <div className="space-y-2">
                 {genders.map((g) => (
                   <label key={g.value} className="flex items-center gap-2 text-sm cursor-pointer">
@@ -309,7 +312,7 @@ export default function EX18Form({ applicationId, initialData }: Props) {
           onClick={handleSubmit(onSave)}
         >
           <Save className="w-4 h-4 mr-2" />
-          Gem kladde
+          {t('saveDraft')}
         </Button>
         <Button
           type="submit"
@@ -317,7 +320,7 @@ export default function EX18Form({ applicationId, initialData }: Props) {
           style={{ backgroundColor: '#1B3A6B' }}
           disabled={isSubmitting}
         >
-          {isSubmitting ? 'Sender...' : 'Fortsæt til underskrift'}
+          {isSubmitting ? t('submitting') : t('continueToSignature')}
           {!isSubmitting && <ArrowRight className="w-4 h-4 ml-2" />}
         </Button>
       </div>

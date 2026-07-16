@@ -1,7 +1,7 @@
 'use client'
 
-import Link from 'next/link'
-import { usePathname, useRouter } from 'next/navigation'
+import { useTranslations } from 'next-intl'
+import { Link, usePathname, useRouter } from '@/i18n/navigation'
 import {
   LayoutDashboard, FileText, Users, Settings, Shield, LogOut, Scale
 } from 'lucide-react'
@@ -10,18 +10,19 @@ import type { Profile } from '@/types'
 
 interface Props { profile: Profile | null }
 
-const navItems = [
-  { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
-  { href: '/admin/ansogninger', label: 'Ansøgninger', icon: FileText },
-  { href: '/admin/advokater', label: 'Advokater', icon: Scale },
-  { href: '/admin/brugere', label: 'Brugere', icon: Users },
-  { href: '/admin/indstillinger', label: 'Indstillinger', icon: Settings },
-]
-
 export default function AdminSidebar({ profile }: Props) {
+  const t = useTranslations('admin.nav')
   const pathname = usePathname()
   const router = useRouter()
   const supabase = createClient()
+
+  const navItems = [
+    { href: '/admin', label: t('dashboard'), icon: LayoutDashboard },
+    { href: '/admin/ansogninger', label: t('applications'), icon: FileText },
+    { href: '/admin/advokater', label: t('lawyers'), icon: Scale },
+    { href: '/admin/brugere', label: t('users'), icon: Users },
+    { href: '/admin/indstillinger', label: t('settings'), icon: Settings },
+  ]
 
   async function handleLogout() {
     await supabase.auth.signOut()
@@ -68,7 +69,7 @@ export default function AdminSidebar({ profile }: Props) {
           </div>
           <div className="min-w-0">
             <p className="text-xs font-medium text-white truncate">{profile?.name}</p>
-            <p className="text-xs text-gray-400 truncate">Administrator</p>
+            <p className="text-xs text-gray-400 truncate">{t('administrator')}</p>
           </div>
         </div>
         <button
@@ -76,7 +77,7 @@ export default function AdminSidebar({ profile }: Props) {
           className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-gray-400 hover:text-white hover:bg-gray-800 w-full transition-colors"
         >
           <LogOut className="w-4 h-4" />
-          Log ud
+          {t('logout')}
         </button>
       </div>
     </aside>
