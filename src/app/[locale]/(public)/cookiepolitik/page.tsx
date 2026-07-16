@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cookiepolitik – Espalvo',
-  description: 'Læs om vores brug af cookies på Espalvo.',
+  title: 'Cookiepolitik – Espallo',
+  description: 'Læs om vores brug af cookies på Espallo.',
 }
 
 export default function CookiepolitikPage() {
@@ -69,8 +69,8 @@ export default function CookiepolitikPage() {
           <h2 className="text-xl font-semibold text-gray-900 mb-3">Kontakt</h2>
           <p>
             Spørgsmål til vores cookiepolitik kan rettes til:{' '}
-            <a href="mailto:info@nienummerservice.dk" className="text-blue-600 underline">
-              info@nienummerservice.dk
+            <a href="mailto:info@espallo.com" className="text-blue-600 underline">
+              info@espallo.com
             </a>
           </p>
         </section>

@@ -30,25 +30,25 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#2A5298' }}>
                 <Shield className="w-4 h-4 text-white" />
               </div>
-              <span className="font-semibold text-lg">Espalvo</span>
+              <span className="font-semibold text-lg">Espallo</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
               {t('tagline')}
             </p>
             <div className="mt-4 space-y-2">
               <a
-                href="mailto:info@nienummerservice.dk"
+                href="mailto:info@espallo.com"
                 className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                info@nienummerservice.dk
+                info@espallo.com
               </a>
               <a
-                href="tel:+4512345678"
+                href="tel:+34603527252"
                 className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                +45 12 34 56 78
+                +34 603 527 252
               </a>
             </div>
           </div>

@@ -28,22 +28,22 @@ export async function generateMetadata({
   return {
     title: {
       default: t('title'),
-      template: '%s | Espalvo',
+      template: '%s | Espallo',
     },
     description: t('description'),
     keywords: t.raw('keywords') as string[],
-    authors: [{ name: 'Espalvo' }],
-    creator: 'Espalvo',
+    authors: [{ name: 'Espallo' }],
+    creator: 'Espallo',
     openGraph: {
       type: 'website',
       locale: locale === 'da' ? 'da_DK' : 'en_US',
-      siteName: 'Espalvo',
+      siteName: 'Espallo',
       title: t('title'),
       description: t('description'),
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Espalvo',
+      title: 'Espallo',
       description: t('description'),
     },
     robots: {

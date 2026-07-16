@@ -17,14 +17,14 @@ export default function Contact() {
     {
       icon: Mail,
       title: t('emailLabel'),
-      value: 'info@nienummerservice.dk',
-      href: 'mailto:info@nienummerservice.dk',
+      value: 'info@espallo.com',
+      href: 'mailto:info@espallo.com',
     },
     {
       icon: Phone,
       title: t('phoneLabel'),
-      value: '+45 12 34 56 78',
-      href: 'tel:+4512345678',
+      value: '+34 603 527 252',
+      href: 'tel:+34603527252',
     },
     {
       icon: Clock,

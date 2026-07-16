@@ -64,7 +64,7 @@ export default function Navbar() {
                 scrolled || !isHomePage ? 'text-gray-900' : 'text-white'
               }`}
             >
-              Espalvo
+              Espallo
             </span>
           </Link>
 

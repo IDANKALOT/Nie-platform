@@ -16,7 +16,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
             <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#1B3A6B' }}>
               <Shield className="w-3.5 h-3.5 text-white" />
             </div>
-            <span className="font-semibold text-gray-900">Espalvo</span>
+            <span className="font-semibold text-gray-900">Espallo</span>
           </Link>
         </div>
       </header>

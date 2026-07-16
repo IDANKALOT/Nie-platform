@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Handelsbetingelser – Espalvo',
-  description: 'Læs vores handelsbetingelser for Espalvo.',
+  title: 'Handelsbetingelser – Espallo',
+  description: 'Læs vores handelsbetingelser for Espallo.',
 }
 
 export default function HandelsbetingelserPage() {
@@ -14,13 +14,13 @@ export default function HandelsbetingelserPage() {
       <div className="prose prose-gray max-w-none space-y-8 text-gray-700 leading-relaxed">
 
         <section>
-          <h2 className="text-xl font-semibold text-gray-900 mb-3">1. Om Espalvo</h2>
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">1. Om Espallo</h2>
           <p>
-            Espalvo er et administrativt servicebureau, der hjælper danske kunder med at
+            Espallo er et administrativt servicebureau, der hjælper danske kunder med at
             forberede og indsende ansøgninger om spansk NIE-nummer (Número de Identificación de Extranjero).
           </p>
           <p className="mt-3 p-4 bg-amber-50 border border-amber-200 rounded-xl text-sm text-amber-800">
-            <strong>Vigtigt:</strong> Espalvo er <strong>ikke et advokatfirma</strong> og er
+            <strong>Vigtigt:</strong> Espallo er <strong>ikke et advokatfirma</strong> og er
             ikke registreret som advokat i henhold til retsplejeloven. Vi yder ikke juridisk rådgivning.
             Vores ydelse består alene af administrativ bistand og formidling af kontakt til selvstændige,
             samarbejdende advokater og notarer i Spanien.
@@ -53,7 +53,7 @@ export default function HandelsbetingelserPage() {
             retsforhold med kunden og er ansvarlige for den juridiske behandling af ansøgningen.
           </p>
           <p className="mt-2">
-            Espalvo er ikke part i aftalen mellem kunden og advokaten/notaren og hæfter
+            Espallo er ikke part i aftalen mellem kunden og advokaten/notaren og hæfter
             ikke for disses handlinger, rådgivning eller fejl.
           </p>
         </section>
@@ -87,14 +87,14 @@ export default function HandelsbetingelserPage() {
           </p>
           <p className="mt-2">
             Hvis behandlingen <strong>ikke</strong> er påbegyndt, kan du fortryde inden 14 dage og modtage
-            fuld refundering. Kontakt os på info@nienummerservice.dk.
+            fuld refundering. Kontakt os på info@espallo.com.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold text-gray-900 mb-3">7. Ansvarsbegrænsning</h2>
           <p>
-            Espalvo er ikke ansvarlig for forsinkelser eller afvisninger forårsaget af
+            Espallo er ikke ansvarlig for forsinkelser eller afvisninger forårsaget af
             spanske myndigheder, samarbejdende advokater/notarer, forkerte oplysninger fra kunden,
             eller forhold uden for vores kontrol. Vores erstatningsansvar er under alle omstændigheder
             begrænset til den betalte servicepris.
@@ -104,7 +104,7 @@ export default function HandelsbetingelserPage() {
         <section>
           <h2 className="text-xl font-semibold text-gray-900 mb-3">8. Klager</h2>
           <p>
-            Klager kan rettes til info@nienummerservice.dk. Forbrugere kan desuden indbringe sagen for
+            Klager kan rettes til info@espallo.com. Forbrugere kan desuden indbringe sagen for
             Forbrugerklagenævnet, Nævnenes Hus, Toldboden 2, 8800 Viborg,{' '}
             <a href="https://www.naevneneshus.dk" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">
               www.naevneneshus.dk
@@ -123,10 +123,10 @@ export default function HandelsbetingelserPage() {
         <section>
           <h2 className="text-xl font-semibold text-gray-900 mb-3">10. Kontakt</h2>
           <p>
-            Espalvo<br />
+            Espallo<br />
             CVR: [INDSÆT CVR]<br />
-            E-mail: info@nienummerservice.dk<br />
-            Telefon: +45 XX XX XX XX
+            E-mail: info@espallo.com<br />
+            Telefon: +34 603 527 252
           </p>
         </section>
       </div>

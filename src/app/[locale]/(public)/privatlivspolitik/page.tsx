@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privatlivspolitik – Espalvo',
-  description: 'Læs hvordan Espalvo behandler dine personoplysninger.',
+  title: 'Privatlivspolitik – Espallo',
+  description: 'Læs hvordan Espallo behandler dine personoplysninger.',
 }
 
 export default function PrivatlivspolitikPage() {
@@ -16,9 +16,9 @@ export default function PrivatlivspolitikPage() {
         <section>
           <h2 className="text-xl font-semibold text-gray-900 mb-3">1. Den dataansvarlige</h2>
           <p>
-            Espalvo (CVR: [INDSÆT CVR]) er dataansvarlig for behandlingen af de
+            Espallo (CVR: [INDSÆT CVR]) er dataansvarlig for behandlingen af de
             personoplysninger, vi indsamler om dig i forbindelse med brug af vores tjeneste.
-            Kontakt: info@nienummerservice.dk
+            Kontakt: info@espallo.com
           </p>
         </section>
 
@@ -98,7 +98,7 @@ export default function PrivatlivspolitikPage() {
             <li><strong>Indsigelse:</strong> Du kan gøre indsigelse mod behandling baseret på berettiget interesse</li>
           </ul>
           <p className="mt-3">
-            For at udøve dine rettigheder kontaktes vi på info@nienummerservice.dk. Du kan også klage til
+            For at udøve dine rettigheder kontaktes vi på info@espallo.com. Du kan også klage til
             Datatilsynet: <a href="https://www.datatilsynet.dk" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">datatilsynet.dk</a>, Borgergade 28, 5., 1300 København K.
           </p>
         </section>
