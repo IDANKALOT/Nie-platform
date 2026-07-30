@@ -32,6 +32,21 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Already paid' }, { status: 400 })
     }
 
+    const { data: activePackage } = await supabase
+      .from('packages')
+      .select('name, description, price_cents, currency')
+      .eq('is_active', true)
+      .order('sort_order', { ascending: true })
+      .limit(1)
+      .maybeSingle()
+
+    const priceCents = activePackage?.price_cents ?? APPLICATION_PRICE_EUR_CENTS
+    const currency = activePackage?.currency?.toLowerCase() ?? 'eur'
+    const productName = activePackage
+      ? `${activePackage.name} – Sag #${application.case_number}`
+      : `NIE-ansøgning – Sag #${application.case_number}`
+    const productDescription = activePackage?.description || 'Espallo servicegebyr for behandling af NIE-ansøgning'
+
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL!
 
     const session = await stripe.checkout.sessions.create({
@@ -43,11 +58,11 @@ export async function POST(request: Request) {
       line_items: [
         {
           price_data: {
-            currency: 'eur',
-            unit_amount: APPLICATION_PRICE_EUR_CENTS,
+            currency,
+            unit_amount: priceCents,
             product_data: {
-              name: `NIE-ansøgning – Sag #${application.case_number}`,
-              description: 'Espallo servicegebyr for behandling af NIE-ansøgning',
+              name: productName,
+              description: productDescription,
             },
           },
           quantity: 1,
