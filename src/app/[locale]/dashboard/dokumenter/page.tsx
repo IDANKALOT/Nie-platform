@@ -2,7 +2,9 @@ import { createClient } from '@/lib/supabase/server'
 import { getTranslations, getLocale } from 'next-intl/server'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { FileText, Download, Eye } from 'lucide-react'
+import PayButton from '@/components/dashboard/PayButton'
+import { FileText, Download, Eye, Lock } from 'lucide-react'
+import type { Document } from '@/types'
 
 const typeColors: Record<string, string> = {
   ex18_filled: 'bg-blue-100 text-blue-700',
@@ -22,15 +24,21 @@ export default async function DokumenterPage() {
 
   const { data: applications } = await supabase
     .from('applications')
-    .select('id, case_number, documents(*)')
+    .select('id, case_number, payment_status, documents(*)')
     .eq('user_id', user!.id)
     .order('created_at', { ascending: false })
 
-  const allDocuments = applications?.flatMap((app) =>
-    (app.documents ?? []).map((doc: any) => ({
-      ...doc,
-      case_number: app.case_number,
-    }))
+  const allDocuments = applications
+    ?.filter((app) => app.payment_status === 'paid')
+    .flatMap((app) =>
+      (app.documents ?? []).map((doc: Document) => ({
+        ...doc,
+        case_number: app.case_number,
+      }))
+    ) ?? []
+
+  const lockedApplications = applications?.filter(
+    (app) => app.payment_status !== 'paid' && (app.documents?.length ?? 0) > 0
   ) ?? []
 
   return (
@@ -40,7 +48,29 @@ export default async function DokumenterPage() {
         <p className="text-sm text-gray-500 mt-0.5">{t('subtitle')}</p>
       </div>
 
-      {allDocuments.length === 0 ? (
+      {lockedApplications.length > 0 && (
+        <div className="space-y-3">
+          {lockedApplications.map((app) => (
+            <div
+              key={app.id}
+              className="bg-amber-50 rounded-xl border border-amber-200 p-4 flex items-center gap-4"
+            >
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0 bg-amber-100">
+                <Lock className="w-5 h-5 text-amber-700" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-medium text-amber-900">
+                  {t('paymentRequired', { caseNumber: app.case_number })}
+                </p>
+                <p className="text-xs text-amber-700 mt-0.5">{t('paymentRequiredSubtext')}</p>
+              </div>
+              <PayButton applicationId={app.id} label={t('payToUnlock')} />
+            </div>
+          ))}
+        </div>
+      )}
+
+      {allDocuments.length === 0 && lockedApplications.length === 0 ? (
         <Card className="border-dashed border-2 border-gray-200">
           <CardContent className="py-10 text-center">
             <FileText className="w-10 h-10 text-gray-300 mx-auto mb-3" />
@@ -50,7 +80,7 @@ export default async function DokumenterPage() {
             </p>
           </CardContent>
         </Card>
-      ) : (
+      ) : allDocuments.length > 0 ? (
         <div className="space-y-3">
           {allDocuments.map((doc) => (
             <div
@@ -94,7 +124,7 @@ export default async function DokumenterPage() {
             </div>
           ))}
         </div>
-      )}
+      ) : null}
     </div>
   )
 }
