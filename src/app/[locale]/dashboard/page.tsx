@@ -4,6 +4,7 @@ import { Link } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import StatusStepper from '@/components/dashboard/StatusStepper'
+import PaymentStatCard from '@/components/dashboard/PaymentStatCard'
 import { FileText, FolderOpen, CreditCard, ArrowRight, Plus } from 'lucide-react'
 import { type ApplicationStatus } from '@/types'
 
@@ -94,12 +95,6 @@ export default async function DashboardPage() {
                 value: `${latest.documents?.length ?? 0} ${t('filesSuffix')}`,
                 href: '/dashboard/dokumenter',
               },
-              {
-                icon: CreditCard,
-                label: t('statPayment'),
-                value: latest.payment_status === 'paid' ? t('paid') : t('pending'),
-                href: '/dashboard/indstillinger',
-              },
             ].map((stat) => (
               <Link key={stat.label} href={stat.href}>
                 <Card className="bg-white hover:shadow-md transition-shadow cursor-pointer">
@@ -114,6 +109,27 @@ export default async function DashboardPage() {
                 </Card>
               </Link>
             ))}
+
+            {latest.payment_status === 'paid' ? (
+              <Link href="/dashboard/dokumenter">
+                <Card className="bg-white hover:shadow-md transition-shadow cursor-pointer">
+                  <CardContent className="pt-5 pb-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <CreditCard className="w-5 h-5 text-gray-400" />
+                      <ArrowRight className="w-4 h-4 text-gray-300" />
+                    </div>
+                    <p className="text-xs text-gray-400">{t('statPayment')}</p>
+                    <p className="font-semibold text-gray-900 mt-0.5">{t('paid')}</p>
+                  </CardContent>
+                </Card>
+              </Link>
+            ) : (
+              <PaymentStatCard
+                applicationId={latest.id}
+                label={t('statPayment')}
+                value={t('pending')}
+              />
+            )}
           </div>
 
           {/* Form completion prompt */}
