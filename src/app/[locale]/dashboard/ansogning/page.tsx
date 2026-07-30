@@ -4,6 +4,7 @@ import { Link } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import StatusStepper from '@/components/dashboard/StatusStepper'
+import PayButton from '@/components/dashboard/PayButton'
 import { Plus, ArrowRight } from 'lucide-react'
 import { type ApplicationStatus } from '@/types'
 
@@ -81,6 +82,9 @@ export default async function AnsogningPage() {
                         <ArrowRight className="w-3 h-3 ml-1" />
                       </Button>
                     </Link>
+                  )}
+                  {app.application_data?.form_completed && app.payment_status !== 'paid' && (
+                    <PayButton applicationId={app.id} label={t('payNow')} />
                   )}
                 </div>
               </CardContent>

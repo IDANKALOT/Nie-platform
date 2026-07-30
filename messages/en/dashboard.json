@@ -41,7 +41,8 @@
     "paymentLabel": "Payment:",
     "paid": "✓ Paid",
     "pending": "⏳ Pending",
-    "continueFilling": "Continue filling out"
+    "continueFilling": "Continue filling out",
+    "payNow": "Pay now"
   },
   "documents": {
     "heading": "My documents",

@@ -41,7 +41,8 @@
     "paymentLabel": "Betaling:",
     "paid": "✓ Betalt",
     "pending": "⏳ Afventer",
-    "continueFilling": "Fortsæt udfyldelse"
+    "continueFilling": "Fortsæt udfyldelse",
+    "payNow": "Betal nu"
   },
   "documents": {
     "heading": "Mine dokumenter",
