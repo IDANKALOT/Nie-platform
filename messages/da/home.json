@@ -57,7 +57,7 @@
     ],
     "disclaimerLabel": "Bemærk:",
     "disclaimer": "Eventuelle advokat-, notar- og myndighedsomkostninger betales direkte af kunden og er ikke inkluderet i vores servicepris.",
-    "cta": "Start ansøgning for 215 EUR",
+    "cta": "Start ansøgning for {price}",
     "note": "Betaling sker sikkert online. Fortrydelsesret i 14 dage, hvis behandlingen ikke er påbegyndt."
   },
   "about": {

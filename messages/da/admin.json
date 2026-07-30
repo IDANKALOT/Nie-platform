@@ -6,6 +6,7 @@
   "nav": {
     "dashboard": "Dashboard",
     "applications": "Ansøgninger",
+    "packages": "Pakker",
     "lawyers": "Advokater",
     "users": "Brugere",
     "settings": "Indstillinger",
@@ -87,5 +88,32 @@
     "notePlaceholder": "Skriv din note her...",
     "cancel": "Annuller",
     "saveNote": "Gem note"
+  },
+  "packages": {
+    "heading": "Pakker",
+    "subtitle": "Administrer de pakker der vises på forsiden",
+    "addButton": "Tilføj pakke",
+    "empty": "Ingen pakker endnu.",
+    "active": "Aktiv",
+    "inactive": "Inaktiv",
+    "featuresSuffix": "punkter",
+    "createTitle": "Ny pakke",
+    "editTitle": "Rediger pakke",
+    "nameLabel": "Navn",
+    "descriptionLabel": "Beskrivelse",
+    "priceLabel": "Pris (EUR)",
+    "sortOrderLabel": "Rækkefølge",
+    "featuresLabel": "Inkluderet (én linje pr. punkt)",
+    "featuresPlaceholder": "Digital formularudfyldelse\nDigital underskrift\n...",
+    "activeLabel": "Vis på forsiden",
+    "cancel": "Annuller",
+    "save": "Gem",
+    "validationError": "Udfyld navn og en gyldig pris.",
+    "saveError": "Fejl ved gem af pakke.",
+    "createSuccess": "Pakke oprettet.",
+    "updateSuccess": "Pakke opdateret.",
+    "deleteConfirm": "Slet pakken \"{name}\"?",
+    "deleteError": "Fejl ved sletning af pakke.",
+    "deleteSuccess": "Pakke slettet."
   }
 }

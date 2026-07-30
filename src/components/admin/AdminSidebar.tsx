@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl'
 import { Link, usePathname, useRouter } from '@/i18n/navigation'
 import {
-  LayoutDashboard, FileText, Users, Settings, Shield, LogOut, Scale
+  LayoutDashboard, FileText, Users, Settings, Shield, LogOut, Scale, Package
 } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import type { Profile } from '@/types'
@@ -19,6 +19,7 @@ export default function AdminSidebar({ profile }: Props) {
   const navItems = [
     { href: '/admin', label: t('dashboard'), icon: LayoutDashboard },
     { href: '/admin/ansogninger', label: t('applications'), icon: FileText },
+    { href: '/admin/pakker', label: t('packages'), icon: Package },
     { href: '/admin/advokater', label: t('lawyers'), icon: Scale },
     { href: '/admin/brugere', label: t('users'), icon: Users },
     { href: '/admin/indstillinger', label: t('settings'), icon: Settings },

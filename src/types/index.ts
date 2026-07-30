@@ -101,6 +101,19 @@ export interface Note {
   profiles?: Profile
 }
 
+export interface Package {
+  id: string
+  name: string
+  description: string
+  price_cents: number
+  currency: string
+  features: string[]
+  is_active: boolean
+  sort_order: number
+  created_at: string
+  updated_at: string
+}
+
 export interface Lawyer {
   id: string
   name: string

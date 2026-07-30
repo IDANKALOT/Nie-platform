@@ -57,7 +57,7 @@
     ],
     "disclaimerLabel": "Please note:",
     "disclaimer": "Any lawyer, notary, and government fees are paid directly by the customer and are not included in our service price.",
-    "cta": "Start application for 215 EUR",
+    "cta": "Start application for {price}",
     "note": "Payment is made securely online. 14-day right of withdrawal if processing has not yet begun."
   },
   "about": {

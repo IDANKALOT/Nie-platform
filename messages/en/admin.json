@@ -6,6 +6,7 @@
   "nav": {
     "dashboard": "Dashboard",
     "applications": "Applications",
+    "packages": "Packages",
     "lawyers": "Lawyers",
     "users": "Users",
     "settings": "Settings",
@@ -87,5 +88,32 @@
     "notePlaceholder": "Write your note here...",
     "cancel": "Cancel",
     "saveNote": "Save note"
+  },
+  "packages": {
+    "heading": "Packages",
+    "subtitle": "Manage the packages shown on the homepage",
+    "addButton": "Add package",
+    "empty": "No packages yet.",
+    "active": "Active",
+    "inactive": "Inactive",
+    "featuresSuffix": "items",
+    "createTitle": "New package",
+    "editTitle": "Edit package",
+    "nameLabel": "Name",
+    "descriptionLabel": "Description",
+    "priceLabel": "Price (EUR)",
+    "sortOrderLabel": "Sort order",
+    "featuresLabel": "Included (one line per item)",
+    "featuresPlaceholder": "Digital form completion\nDigital signature\n...",
+    "activeLabel": "Show on homepage",
+    "cancel": "Cancel",
+    "save": "Save",
+    "validationError": "Enter a name and a valid price.",
+    "saveError": "Error saving package.",
+    "createSuccess": "Package created.",
+    "updateSuccess": "Package updated.",
+    "deleteConfirm": "Delete package \"{name}\"?",
+    "deleteError": "Error deleting package.",
+    "deleteSuccess": "Package deleted."
   }
 }
