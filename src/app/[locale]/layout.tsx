@@ -4,6 +4,7 @@ import { hasLocale, NextIntlClientProvider } from 'next-intl'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import '../globals.css'
+import { Analytics } from '@vercel/analytics/next'
 import { Toaster } from '@/components/ui/sonner'
 import { routing } from '@/i18n/routing'
 
@@ -81,6 +82,7 @@ export default async function LocaleLayout({
           {children}
           <Toaster position="top-right" richColors />
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   )
