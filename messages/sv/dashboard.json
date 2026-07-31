@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "overview": "Översikt",
+    "myApplication": "Min ansökan",
+    "documents": "Dokument",
+    "settings": "Inställningar",
+    "logout": "Logga ut",
+    "fallbackTitle": "Dashboard",
+    "fallbackName": "Kund"
+  },
+  "steps": {
+    "form": "Formulär",
+    "signature": "Signering",
+    "confirmation": "Bekräftelse"
+  },
+  "page": {
+    "greeting": "God dag 👋",
+    "subtitle": "Här är en översikt över din NIE-ansökan.",
+    "noApplicationTitle": "Ingen ansökan ännu",
+    "noApplicationText": "Starta din NIE-ansökan så guidar vi dig genom hela processen.",
+    "startApplication": "Starta ny ansökan",
+    "caseLabel": "Ärende #{caseNumber}",
+    "statApplicationStatus": "Ansökningsstatus",
+    "statDocuments": "Dokument",
+    "statPayment": "Betalning",
+    "filesSuffix": "filer",
+    "paid": "Betald",
+    "pending": "Väntande",
+    "incompleteTitle": "Ansökan är inte klar",
+    "incompleteText": "Fyll i formuläret och signera för att skicka in din ansökan.",
+    "continueButton": "Fortsätt"
+  },
+  "list": {
+    "heading": "Mina ansökningar",
+    "subtitle": "Översikt över alla dina NIE-ansökningar",
+    "newApplication": "Ny ansökan",
+    "emptyText": "Inga ansökningar ännu.",
+    "startApplication": "Starta ansökan",
+    "caseLabel": "Ärende #{caseNumber}",
+    "noteFromAdmin": "Meddelande från handläggare:",
+    "paymentLabel": "Betalning:",
+    "paid": "✓ Betald",
+    "pending": "⏳ Väntande",
+    "continueFilling": "Fortsätt fylla i",
+    "payNow": "Betala nu"
+  },
+  "documents": {
+    "heading": "Mina dokument",
+    "subtitle": "Ladda ner och visa dina NIE-relaterade dokument",
+    "emptyText": "Inga dokument ännu.",
+    "emptySubtext": "Dokument genereras automatiskt när du har skickat in din ansökan.",
+    "paymentRequired": "Dokument klara för ärende #{caseNumber}",
+    "paymentRequiredSubtext": "Betala serviceavgiften för att få tillgång till dina dokument.",
+    "payToUnlock": "Betala för att låsa upp",
+    "caseLabel": "Ärende #{caseNumber}",
+    "view": "Visa",
+    "download": "Ladda ner",
+    "types": {
+      "ex18_filled": "EX-18 (ifylld)",
+      "power_of_attorney": "Fullmakt",
+      "signature": "Signatur",
+      "passport": "Pass",
+      "other": "Annat"
+    }
+  },
+  "settings": {
+    "heading": "Inställningar",
+    "subtitle": "Hantera ditt konto och dina personuppgifter"
+  },
+  "profile": {
+    "personalInfoTitle": "Personuppgifter",
+    "emailLabel": "E-post",
+    "emailHint": "E-post kan inte ändras",
+    "nameLabel": "Namn",
+    "namePlaceholder": "Ditt fullständiga namn",
+    "save": "Spara ändringar",
+    "saving": "Sparar...",
+    "saveSuccess": "Profil uppdaterad.",
+    "saveError": "Fel vid uppdatering.",
+    "gdprTitle": "GDPR – Rätt till radering",
+    "gdprText": "Enligt GDPR har du rätt att få dina personuppgifter raderade från våra system. Observera att en radering kan påverka din pågående NIE-ansökan.",
+    "deleteButton": "Begär dataradering",
+    "deleteConfirm": "Är du säker på att du vill begära radering av dina uppgifter? Detta kan inte ångras.",
+    "deleteToast": "Din begäran om dataradering har registrerats. Vi kontaktar dig inom 30 dagar."
+  },
+  "formular": {
+    "title": "EX-18-formulär",
+    "subtitle": "Fyll i alla fält exakt som de anges i ditt pass.",
+    "stepLabel": "Steg 1 av 3: Fyll i formulär"
+  },
+  "underskriv": {
+    "title": "Digital signering",
+    "subtitle": "Signera fullmaktsdokumentet digitalt för att ge våra advokater befogenhet att agera för din räkning.",
+    "stepLabel": "Steg 2 av 3: Signering"
+  },
+  "bekraeftelse": {
+    "stepLabel": "Steg 3 av 3: Bekräftelse",
+    "title": "Ansökan inskickad!",
+    "text": "Din NIE-ansökan har mottagits och dokumenten har genererats. Vårt team koordinerar nu med vår advokat i Spanien och håller dig uppdaterad.",
+    "caseNumberLabel": "Ärendenummer:",
+    "whatNextTitle": "Vad händer nu?",
+    "whatNextItem1": "Vi skickar ett bekräftelsemejl med ärendets detaljer",
+    "whatNextItem2": "Vår advokat i Spanien kontaktas inom 48 timmar",
+    "whatNextItem3": "Du kan följa statusen på din dashboard",
+    "viewDocuments": "Visa dokument",
+    "goToDashboard": "Gå till dashboard"
+  }
+}

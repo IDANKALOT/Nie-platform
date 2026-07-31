@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "title": "Espallo – Uw Spaanse NIE-nummer eenvoudig en veilig verkrijgen",
+    "description": "Professionele hulp bij het verkrijgen van uw Spaanse NIE-nummer. Wij regelen het hele proces met ervaren advocaten en notarissen in Spanje. Vaste prijs 215 EUR. Geen reis naar Spanje nodig."
+  },
+  "hero": {
+    "badge": "Administratieve dienst — geen advocatenkantoor",
+    "headlinePrefix": "Verkrijg uw Spaanse",
+    "headlineHighlight": "NIE-nummer",
+    "headlineSuffix": "eenvoudig en veilig",
+    "subtitle": "Wij regelen het volledige aanvraagproces voor u — van het invullen van formulieren tot de afhandeling bij de Spaanse autoriteiten. U hoeft niet naar Spanje te reizen.",
+    "ctaPrimary": "Start nu uw aanvraag",
+    "ctaSecondary": "Bekijk hoe het werkt",
+    "trustFixedPrice": "Vaste prijs – 215 EUR",
+    "trustResponseTime": "Reactie binnen 48 uur",
+    "trustGdpr": "AVG-conforme verwerking",
+    "disclaimer": "Espallo is een administratief dienstverleningsbureau en geen advocatenkantoor. Wij verlenen geen juridisch advies. Onze samenwerkende advocaten en notarissen in Spanje zijn zelfstandig en hebben een directe rechtsverhouding met u als klant."
+  },
+  "howItWorks": {
+    "eyebrow": "Het proces",
+    "heading": "Zo werkt het",
+    "subheading": "Een eenvoudig, digitaal proces dat u gemoedsrust geeft, waar u ook bent.",
+    "steps": [
+      {
+        "title": "Vul de aanvraag in",
+        "description": "Maak een account aan en vul ons digitale formulier in met uw persoonlijke gegevens. Dit duurt ongeveer 10 minuten."
+      },
+      {
+        "title": "Onderteken digitaal",
+        "description": "Onderteken het volmachtdocument digitaal, rechtstreeks in uw browser – op zowel desktop als mobiel."
+      },
+      {
+        "title": "Wij behandelen de zaak",
+        "description": "Onze samenwerkende advocaten en notarissen in Spanje regelen de aanvraag bij de Spaanse autoriteiten."
+      },
+      {
+        "title": "Ontvang uw NIE-nummer",
+        "description": "Zodra de afhandeling is voltooid, ontvangt u uw NIE-nummer en alle relevante documenten digitaal."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Prijzen",
+    "heading": "Eenvoudige, transparante prijzen",
+    "subheading": "Geen verborgen kosten. Een vaste prijs voor onze dienst.",
+    "servicePrice": "Serviceprijs",
+    "priceNote": "Excl. btw · Eenmalige betaling",
+    "includedLabel": "Inbegrepen in de prijs:",
+    "included": [
+      "Digitaal invullen van het formulier (EX-18)",
+      "Digitaal ondertekenen van de volmacht",
+      "Automatisch genereren van documenten",
+      "Coördinatie met een advocaat in Spanje",
+      "Statusupdates onderweg",
+      "Digitaal documentarchief",
+      "Klantenservice in het Nederlands"
+    ],
+    "disclaimerLabel": "Let op:",
+    "disclaimer": "Eventuele advocaat-, notaris- en overheidskosten worden rechtstreeks door de klant betaald en zijn niet inbegrepen in onze serviceprijs.",
+    "cta": "Start aanvraag voor {price}",
+    "note": "Betaling gebeurt veilig online. 14 dagen herroepingsrecht als de behandeling nog niet is gestart."
+  },
+  "about": {
+    "eyebrow": "Over ons",
+    "heading": "Uw betrouwbare partner voor Spaanse NIE-aanvragen",
+    "paragraph1": "Espallo is een Deens bedrijf gespecialiseerd in het helpen van internationale klanten bij het navigeren door de Spaanse bureaucratie. Wij begrijpen dat het aanvragen van een Spaans NIE-nummer op eigen houtje complex en tijdrovend kan zijn.",
+    "paragraph2": "Dankzij ons gevestigde netwerk van gekwalificeerde advocaten en notarissen in Spanje zorgen wij ervoor dat uw aanvraag correct en efficiënt wordt afgehandeld – zonder dat u naar Spanje hoeft te reizen.",
+    "stats": [
+      { "number": "2.400+", "label": "Behandelde zaken" },
+      { "number": "98%", "label": "Tevreden klanten" },
+      { "number": "48u", "label": "Gemiddelde reactietijd" },
+      { "number": "6+", "label": "Jaar ervaring" }
+    ],
+    "values": [
+      { "title": "Expertise", "description": "Meer dan 6 jaar ervaring met Spaanse NIE-aanvragen voor internationale klanten." },
+      { "title": "Lokaal netwerk", "description": "Samenwerking met erkende advocaten en notarissen rechtstreeks in Spanje." },
+      { "title": "Persoonlijke service", "description": "Toegewijde klantenservice gedurende het hele proces." },
+      { "title": "Vertrouwen", "description": "AVG-conforme verwerking van uw persoonsgegevens." }
+    ]
+  },
+  "lawyers": {
+    "eyebrow": "Ons netwerk",
+    "heading": "Samenwerkende advocaten in Spanje",
+    "subheading": "Wij werken uitsluitend met erkende en ervaren advocaten en notarissen in de belangrijkste Spaanse steden.",
+    "list": [
+      {
+        "name": "García & Asociados",
+        "city": "Madrid",
+        "specialization": "NIE-aanvragen, vastgoedtransacties",
+        "description": "Ervaren advocatenkantoor met meer dan 15 jaar ervaring in het helpen van buitenlanders in Spanje."
+      },
+      {
+        "name": "López Notaría",
+        "city": "Barcelona",
+        "specialization": "Notariële diensten, NIE",
+        "description": "Erkend notariskantoor in Barcelona, gespecialiseerd in internationale cliënten."
+      },
+      {
+        "name": "Martínez Legal",
+        "city": "Málaga",
+        "specialization": "NIE, verblijf, vastgoed",
+        "description": "Lokaal advocatenkantoor aan de Costa del Sol met sterke ervaring in de behoeften van internationale cliënten."
+      },
+      {
+        "name": "Fernández & Partners",
+        "city": "Valencia",
+        "specialization": "NIE-aanvragen, belastingrecht",
+        "description": "Meertalige advocaten met Nederlandssprekend personeel en snelle afhandeling."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Vragen & antwoorden",
+    "heading": "Veelgestelde vragen",
+    "items": [
+      {
+        "question": "Wat is een NIE-nummer?",
+        "answer": "Het NIE (Número de Identificación de Extranjero) is een Spaans identificatienummer voor buitenlanders. Het is vereist voor iedereen die in Spanje een woning wil kopen, een bankrekening wil openen, wil werken of wil investeren."
+      },
+      {
+        "question": "Moet ik naar Spanje reizen?",
+        "answer": "Nee. Via onze dienst kan het hele proces digitaal worden afgehandeld, waar u ook bent. U verleent volmacht aan onze samenwerkende advocaten, die u vervolgens vertegenwoordigen bij de Spaanse autoriteiten."
+      },
+      {
+        "question": "Hoe lang duurt het om een NIE-nummer te krijgen?",
+        "answer": "De gebruikelijke behandeltijd is 4–8 weken, afhankelijk van de behandeltijd van de Spaanse autoriteiten. Wij houden u voortdurend op de hoogte van de status."
+      },
+      {
+        "question": "Wat is inbegrepen in de prijs van 215 EUR?",
+        "answer": "Onze serviceprijs dekt: digitaal invullen van het formulier, digitaal ondertekenen, documentgeneratie, coördinatie met een advocaat en statusupdates. Advocaat-, notaris- en overheidskosten in Spanje worden rechtstreeks door u betaald en zijn niet inbegrepen."
+      },
+      {
+        "question": "Welke documenten heb ik nodig?",
+        "answer": "U heeft vooral een geldig paspoort nodig. Afhankelijk van het doel van het NIE-nummer kan aanvullende documentatie nodig zijn, waarbij wij u onderweg begeleiden."
+      },
+      {
+        "question": "Zijn mijn persoonsgegevens veilig?",
+        "answer": "Ja. Wij houden ons volledig aan de AVG-regels. Uw gegevens worden versleuteld opgeslagen en alleen gedeeld met de partijen die nodig zijn (advocaat/notaris) om uw aanvraag te behandelen."
+      },
+      {
+        "question": "Kan ik de status van mijn zaak volgen?",
+        "answer": "Ja. Via uw persoonlijke dashboard kunt u op elk moment de status van uw zaak bekijken, documenten downloaden en updates van ons lezen."
+      },
+      {
+        "question": "Wat gebeurt er als mijn aanvraag wordt afgewezen?",
+        "answer": "Afwijzingen zijn zeldzaam, maar als het gebeurt, helpen wij u gratis de reden te achterhalen en een nieuwe aanvraag in te dienen."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Neem contact op",
+    "subheading": "Heeft u vragen? Wij helpen u graag.",
+    "infoHeading": "Contactgegevens",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Telefoon",
+    "hoursLabel": "Openingstijden",
+    "hoursValue": "Maandag–vrijdag: 9:00–17:00",
+    "ctaBoxTitle": "Klaar om te beginnen?",
+    "ctaBoxText": "Maak een account aan en start vandaag nog uw NIE-aanvraag.",
+    "ctaBoxButton": "Aanvraag starten",
+    "formNameLabel": "Naam",
+    "formNamePlaceholder": "Uw volledige naam",
+    "formEmailLabel": "E-mail",
+    "formEmailPlaceholder": "u@email.nl",
+    "formSubjectLabel": "Onderwerp",
+    "formSubjectPlaceholder": "Waar gaat uw bericht over?",
+    "formMessageLabel": "Bericht",
+    "formMessagePlaceholder": "Schrijf hier uw bericht...",
+    "formSubmit": "Bericht verzenden",
+    "formSubmitting": "Verzenden...",
+    "toastSuccess": "Bedankt voor uw bericht! Wij nemen binnen 24 uur contact met u op."
+  }
+}

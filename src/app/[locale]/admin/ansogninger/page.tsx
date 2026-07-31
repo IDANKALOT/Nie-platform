@@ -4,7 +4,7 @@ import { Link } from '@/i18n/navigation'
 import { Card, CardContent } from '@/components/ui/card'
 import { STATUS_ORDER, type ApplicationStatus } from '@/types'
 
-const dateLocales: Record<string, string> = { da: 'da-DK', en: 'en-US' }
+const dateLocales: Record<string, string> = { da: 'da-DK', en: 'en-US', no: 'nb-NO', sv: 'sv-SE', de: 'de-DE', nl: 'nl-NL' }
 
 interface SearchParams {
   search?: string

@@ -1,0 +1,17 @@
+{
+  "application": {
+    "received": "Antrag eingegangen",
+    "documents_generated": "Dokumente erstellt",
+    "lawyer_processing": "Anwalt bearbeitet den Fall",
+    "notary_processing": "Notarielle Bearbeitung",
+    "processing_spain": "In Bearbeitung in Spanien",
+    "completed": "Abgeschlossen"
+  },
+  "niePurpose": {
+    "property_purchase": "Immobilienkauf",
+    "bank_account": "Bankkonto",
+    "work": "Arbeit",
+    "investment": "Investition",
+    "other": "Sonstiges"
+  }
+}

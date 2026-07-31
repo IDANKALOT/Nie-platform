@@ -1,0 +1,17 @@
+{
+  "application": {
+    "received": "Søknad mottatt",
+    "documents_generated": "Dokumenter generert",
+    "lawyer_processing": "Advokat behandler saken",
+    "notary_processing": "Notarbehandling",
+    "processing_spain": "Under behandling i Spania",
+    "completed": "Ferdig"
+  },
+  "niePurpose": {
+    "property_purchase": "Eiendomskjøp",
+    "bank_account": "Bankkonto",
+    "work": "Arbeid",
+    "investment": "Investering",
+    "other": "Annet"
+  }
+}

@@ -14,7 +14,7 @@ const typeColors: Record<string, string> = {
   other: 'bg-gray-100 text-gray-600',
 }
 
-const dateLocales: Record<string, string> = { da: 'da-DK', en: 'en-US' }
+const dateLocales: Record<string, string> = { da: 'da-DK', en: 'en-US', no: 'nb-NO', sv: 'sv-SE', de: 'de-DE', nl: 'nl-NL' }
 
 export default async function DokumenterPage() {
   const t = await getTranslations('dashboard.documents')

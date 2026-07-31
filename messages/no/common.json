@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Espallo – Få ditt spanske NIE-nummer enkelt og trygt",
+    "description": "Profesjonell hjelp til å få ditt spanske NIE-nummer. Vi håndterer hele prosessen med erfarne advokater og notarer i Spania. Fast pris 215 EUR.",
+    "keywords": [
+      "NIE-nummer Spania",
+      "NIE-nummer for nordmenn",
+      "spansk NIE-nummer",
+      "NIE-søknad Spania",
+      "hjelp med NIE-nummer",
+      "spansk identifikasjonsnummer"
+    ]
+  },
+  "nav": {
+    "howItWorks": "Slik fungerer det",
+    "pricing": "Priser",
+    "about": "Om oss",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "login": "Logg inn",
+    "startApplication": "Start søknad",
+    "mySite": "Min side",
+    "toggleMenu": "Bytt meny",
+    "language": "Språk"
+  },
+  "cookieBanner": {
+    "text": "Vi bruker informasjonskapsler for å forbedre din opplevelse og analysere trafikken vår.",
+    "link": "Les vår personvernerklæring for informasjonskapsler",
+    "decline": "Avvis",
+    "accept": "Godta"
+  },
+  "footer": {
+    "tagline": "Vi hjelper kunder med å få et spansk NIE-nummer gjennom erfarne advokater og notarer i Spania. Profesjonelt, trygt og enkelt.",
+    "servicesHeading": "Tjenester",
+    "legalHeading": "Juridisk",
+    "privacyPolicy": "Personvernerklæring",
+    "cookiePolicy": "Cookiepolicy",
+    "terms": "Vilkår",
+    "gdpr": "GDPR",
+    "disclaimerLabel": "Viktig:",
+    "disclaimer": "Espallo er et administrativt servicebyrå og ikke et advokatfirma. Vi yter ikke juridisk rådgivning. Våre samarbeidende advokater og notarer i Spania er selvstendige næringsdrivende med et direkte rettsforhold til kunden. Vi kan ikke garantere godkjenning av NIE-søknader, da dette avgjøres av spanske myndigheter. Advokat-, notar- og myndighetskostnader betales direkte av kunden og er ikke inkludert i serviceprisen.",
+    "copyright": "© {year} Espallo. Alle rettigheter forbeholdt.",
+    "cvrLine": "CVR: [INDSÆT CVR] · info@espallo.com"
+  }
+}

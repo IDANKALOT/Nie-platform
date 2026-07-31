@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "overview": "Oversikt",
+    "myApplication": "Min søknad",
+    "documents": "Dokumenter",
+    "settings": "Innstillinger",
+    "logout": "Logg ut",
+    "fallbackTitle": "Dashbord",
+    "fallbackName": "Kunde"
+  },
+  "steps": {
+    "form": "Skjema",
+    "signature": "Signatur",
+    "confirmation": "Bekreftelse"
+  },
+  "page": {
+    "greeting": "God dag 👋",
+    "subtitle": "Her er en oversikt over din NIE-søknad.",
+    "noApplicationTitle": "Ingen søknad ennå",
+    "noApplicationText": "Start din NIE-søknad, så guider vi deg gjennom hele prosessen.",
+    "startApplication": "Start ny søknad",
+    "caseLabel": "Sak #{caseNumber}",
+    "statApplicationStatus": "Søknadsstatus",
+    "statDocuments": "Dokumenter",
+    "statPayment": "Betaling",
+    "filesSuffix": "filer",
+    "paid": "Betalt",
+    "pending": "Venter",
+    "incompleteTitle": "Søknaden er ikke fullført",
+    "incompleteText": "Fyll ut skjemaet og signer for å sende inn søknaden din.",
+    "continueButton": "Fortsett"
+  },
+  "list": {
+    "heading": "Mine søknader",
+    "subtitle": "Oversikt over alle dine NIE-søknader",
+    "newApplication": "Ny søknad",
+    "emptyText": "Ingen søknader ennå.",
+    "startApplication": "Start søknad",
+    "caseLabel": "Sak #{caseNumber}",
+    "noteFromAdmin": "Melding fra saksbehandler:",
+    "paymentLabel": "Betaling:",
+    "paid": "✓ Betalt",
+    "pending": "⏳ Venter",
+    "continueFilling": "Fortsett utfylling",
+    "payNow": "Betal nå"
+  },
+  "documents": {
+    "heading": "Mine dokumenter",
+    "subtitle": "Last ned og se dine NIE-relaterte dokumenter",
+    "emptyText": "Ingen dokumenter ennå.",
+    "emptySubtext": "Dokumenter genereres automatisk når du har sendt inn søknaden din.",
+    "paymentRequired": "Dokumenter klare for sak #{caseNumber}",
+    "paymentRequiredSubtext": "Betal servicegebyret for å få tilgang til dokumentene dine.",
+    "payToUnlock": "Betal for å låse opp",
+    "caseLabel": "Sak #{caseNumber}",
+    "view": "Vis",
+    "download": "Last ned",
+    "types": {
+      "ex18_filled": "EX-18 (utfylt)",
+      "power_of_attorney": "Fullmakt",
+      "signature": "Signatur",
+      "passport": "Pass",
+      "other": "Annet"
+    }
+  },
+  "settings": {
+    "heading": "Innstillinger",
+    "subtitle": "Administrer kontoen din og dine personopplysninger"
+  },
+  "profile": {
+    "personalInfoTitle": "Personlige opplysninger",
+    "emailLabel": "E-post",
+    "emailHint": "E-post kan ikke endres",
+    "nameLabel": "Navn",
+    "namePlaceholder": "Ditt fulle navn",
+    "save": "Lagre endringer",
+    "saving": "Lagrer...",
+    "saveSuccess": "Profil oppdatert.",
+    "saveError": "Feil ved oppdatering.",
+    "gdprTitle": "GDPR – Rett til sletting",
+    "gdprText": "I henhold til GDPR har du rett til å få dine personopplysninger slettet fra våre systemer. Merk at en sletting kan påvirke din pågående NIE-søknad.",
+    "deleteButton": "Be om datasletting",
+    "deleteConfirm": "Er du sikker på at du vil be om sletting av dataene dine? Dette kan ikke angres.",
+    "deleteToast": "Din forespørsel om datasletting er registrert. Vi kontakter deg innen 30 dager."
+  },
+  "formular": {
+    "title": "EX-18-skjema",
+    "subtitle": "Fyll ut alle felt nøyaktig som de fremgår av passet ditt.",
+    "stepLabel": "Trinn 1 av 3: Fyll ut skjema"
+  },
+  "underskriv": {
+    "title": "Digital signering",
+    "subtitle": "Signer fullmaktsdokumentet digitalt for å autorisere våre advokater til å handle på dine vegne.",
+    "stepLabel": "Trinn 2 av 3: Signering"
+  },
+  "bekraeftelse": {
+    "stepLabel": "Trinn 3 av 3: Bekreftelse",
+    "title": "Søknad sendt inn!",
+    "text": "Din NIE-søknad er mottatt og dokumentene er generert. Vårt team koordinerer nå med vår advokat i Spania og holder deg oppdatert.",
+    "caseNumberLabel": "Saksnummer:",
+    "whatNextTitle": "Hva skjer nå?",
+    "whatNextItem1": "Vi sender deg en bekreftelses-e-post med sakens detaljer",
+    "whatNextItem2": "Vår advokat i Spania kontaktes innen 48 timer",
+    "whatNextItem3": "Du kan følge statusen på dashbordet ditt",
+    "viewDocuments": "Se dokumenter",
+    "goToDashboard": "Gå til dashbord"
+  }
+}

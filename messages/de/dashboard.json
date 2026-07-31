@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "overview": "Übersicht",
+    "myApplication": "Mein Antrag",
+    "documents": "Dokumente",
+    "settings": "Einstellungen",
+    "logout": "Abmelden",
+    "fallbackTitle": "Dashboard",
+    "fallbackName": "Kunde"
+  },
+  "steps": {
+    "form": "Formular",
+    "signature": "Unterschrift",
+    "confirmation": "Bestätigung"
+  },
+  "page": {
+    "greeting": "Guten Tag 👋",
+    "subtitle": "Hier ist eine Übersicht über Ihren NIE-Antrag.",
+    "noApplicationTitle": "Noch kein Antrag",
+    "noApplicationText": "Starten Sie Ihren NIE-Antrag und wir führen Sie durch den gesamten Prozess.",
+    "startApplication": "Neuen Antrag starten",
+    "caseLabel": "Fall #{caseNumber}",
+    "statApplicationStatus": "Antragsstatus",
+    "statDocuments": "Dokumente",
+    "statPayment": "Zahlung",
+    "filesSuffix": "Dateien",
+    "paid": "Bezahlt",
+    "pending": "Ausstehend",
+    "incompleteTitle": "Der Antrag ist nicht abgeschlossen",
+    "incompleteText": "Füllen Sie das Formular aus und unterschreiben Sie, um Ihren Antrag einzureichen.",
+    "continueButton": "Fortfahren"
+  },
+  "list": {
+    "heading": "Meine Anträge",
+    "subtitle": "Übersicht über alle Ihre NIE-Anträge",
+    "newApplication": "Neuer Antrag",
+    "emptyText": "Noch keine Anträge.",
+    "startApplication": "Antrag starten",
+    "caseLabel": "Fall #{caseNumber}",
+    "noteFromAdmin": "Nachricht vom Sachbearbeiter:",
+    "paymentLabel": "Zahlung:",
+    "paid": "✓ Bezahlt",
+    "pending": "⏳ Ausstehend",
+    "continueFilling": "Ausfüllen fortsetzen",
+    "payNow": "Jetzt bezahlen"
+  },
+  "documents": {
+    "heading": "Meine Dokumente",
+    "subtitle": "Laden Sie Ihre NIE-bezogenen Dokumente herunter und sehen Sie sie an",
+    "emptyText": "Noch keine Dokumente.",
+    "emptySubtext": "Dokumente werden automatisch erstellt, sobald Sie Ihren Antrag eingereicht haben.",
+    "paymentRequired": "Dokumente bereit für Fall #{caseNumber}",
+    "paymentRequiredSubtext": "Zahlen Sie die Servicegebühr, um auf Ihre Dokumente zuzugreifen.",
+    "payToUnlock": "Zum Freischalten bezahlen",
+    "caseLabel": "Fall #{caseNumber}",
+    "view": "Ansehen",
+    "download": "Herunterladen",
+    "types": {
+      "ex18_filled": "EX-18 (ausgefüllt)",
+      "power_of_attorney": "Vollmacht",
+      "signature": "Unterschrift",
+      "passport": "Reisepass",
+      "other": "Sonstiges"
+    }
+  },
+  "settings": {
+    "heading": "Einstellungen",
+    "subtitle": "Verwalten Sie Ihr Konto und Ihre persönlichen Daten"
+  },
+  "profile": {
+    "personalInfoTitle": "Persönliche Angaben",
+    "emailLabel": "E-Mail",
+    "emailHint": "E-Mail kann nicht geändert werden",
+    "nameLabel": "Name",
+    "namePlaceholder": "Ihr vollständiger Name",
+    "save": "Änderungen speichern",
+    "saving": "Wird gespeichert...",
+    "saveSuccess": "Profil aktualisiert.",
+    "saveError": "Fehler bei der Aktualisierung.",
+    "gdprTitle": "DSGVO – Recht auf Löschung",
+    "gdprText": "Gemäß der DSGVO haben Sie das Recht, Ihre personenbezogenen Daten aus unseren Systemen löschen zu lassen. Bitte beachten Sie, dass eine Löschung Ihren laufenden NIE-Antrag beeinträchtigen kann.",
+    "deleteButton": "Datenlöschung anfordern",
+    "deleteConfirm": "Sind Sie sicher, dass Sie die Löschung Ihrer Daten beantragen möchten? Dies kann nicht rückgängig gemacht werden.",
+    "deleteToast": "Ihre Anfrage zur Datenlöschung wurde registriert. Wir kontaktieren Sie innerhalb von 30 Tagen."
+  },
+  "formular": {
+    "title": "EX-18-Formular",
+    "subtitle": "Füllen Sie alle Felder genau so aus, wie sie in Ihrem Reisepass angegeben sind.",
+    "stepLabel": "Schritt 1 von 3: Formular ausfüllen"
+  },
+  "underskriv": {
+    "title": "Digitale Unterschrift",
+    "subtitle": "Unterschreiben Sie das Vollmachtsdokument digital, um unsere Anwälte zu bevollmächtigen, in Ihrem Namen zu handeln.",
+    "stepLabel": "Schritt 2 von 3: Unterschrift"
+  },
+  "bekraeftelse": {
+    "stepLabel": "Schritt 3 von 3: Bestätigung",
+    "title": "Antrag eingereicht!",
+    "text": "Ihr NIE-Antrag wurde erhalten und die Dokumente wurden erstellt. Unser Team koordiniert sich nun mit unserem Anwalt in Spanien und hält Sie auf dem Laufenden.",
+    "caseNumberLabel": "Fallnummer:",
+    "whatNextTitle": "Wie geht es weiter?",
+    "whatNextItem1": "Wir senden Ihnen eine Bestätigungs-E-Mail mit den Details des Falls",
+    "whatNextItem2": "Unser Anwalt in Spanien wird innerhalb von 48 Stunden kontaktiert",
+    "whatNextItem3": "Sie können den Status in Ihrem Dashboard verfolgen",
+    "viewDocuments": "Dokumente ansehen",
+    "goToDashboard": "Zum Dashboard"
+  }
+}

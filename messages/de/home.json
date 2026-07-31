@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "title": "Espallo – Ihre spanische NIE-Nummer einfach und sicher erhalten",
+    "description": "Professionelle Hilfe beim Erhalt Ihrer spanischen NIE-Nummer. Wir übernehmen den gesamten Prozess mit erfahrenen Anwälten und Notaren in Spanien. Festpreis 215 EUR. Keine Reise nach Spanien erforderlich."
+  },
+  "hero": {
+    "badge": "Administrativer Dienstleister — keine Anwaltskanzlei",
+    "headlinePrefix": "Erhalten Sie Ihre spanische",
+    "headlineHighlight": "NIE-Nummer",
+    "headlineSuffix": "einfach und sicher",
+    "subtitle": "Wir übernehmen den gesamten Antragsprozess für Sie — von der Formularausfüllung bis zur Bearbeitung bei den spanischen Behörden. Sie müssen nicht nach Spanien reisen.",
+    "ctaPrimary": "Jetzt Antrag starten",
+    "ctaSecondary": "So funktioniert es",
+    "trustFixedPrice": "Festpreis – 215 EUR",
+    "trustResponseTime": "Antwort innerhalb von 48 Stunden",
+    "trustGdpr": "DSGVO-konforme Verarbeitung",
+    "disclaimer": "Espallo ist ein administratives Dienstleistungsunternehmen und keine Anwaltskanzlei. Wir erbringen keine Rechtsberatung. Unsere Partneranwälte und -notare in Spanien sind selbstständig und stehen in einem direkten Rechtsverhältnis zu Ihnen als Kunde."
+  },
+  "howItWorks": {
+    "eyebrow": "Der Ablauf",
+    "heading": "So funktioniert es",
+    "subheading": "Ein einfacher, digitaler Prozess, der Ihnen Sicherheit gibt, egal wo Sie sich befinden.",
+    "steps": [
+      {
+        "title": "Antrag ausfüllen",
+        "description": "Erstellen Sie ein Konto und füllen Sie unser digitales Formular mit Ihren persönlichen Daten aus. Das dauert etwa 10 Minuten."
+      },
+      {
+        "title": "Digital unterschreiben",
+        "description": "Unterschreiben Sie die Vollmacht digital direkt im Browser – am Desktop und mobil."
+      },
+      {
+        "title": "Wir bearbeiten den Fall",
+        "description": "Unsere Partneranwälte und -notare in Spanien bearbeiten den Antrag bei den spanischen Behörden."
+      },
+      {
+        "title": "Erhalten Sie Ihre NIE-Nummer",
+        "description": "Nach Abschluss der Bearbeitung erhalten Sie Ihre NIE-Nummer und alle relevanten Dokumente digital."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Preise",
+    "heading": "Einfache, transparente Preisgestaltung",
+    "subheading": "Keine versteckten Gebühren. Ein Festpreis für unseren Service.",
+    "servicePrice": "Servicepreis",
+    "priceNote": "Zzgl. MwSt. · Einmalzahlung",
+    "includedLabel": "Im Preis enthalten:",
+    "included": [
+      "Digitale Formularausfüllung (EX-18)",
+      "Digitale Unterschrift der Vollmacht",
+      "Automatische Dokumentenerstellung",
+      "Koordination mit einem Anwalt in Spanien",
+      "Statusaktualisierungen unterwegs",
+      "Digitales Dokumentenarchiv",
+      "Kundensupport auf Deutsch"
+    ],
+    "disclaimerLabel": "Bitte beachten:",
+    "disclaimer": "Etwaige Anwalts-, Notar- und Behördenkosten werden direkt vom Kunden getragen und sind nicht in unserem Servicepreis enthalten.",
+    "cta": "Antrag starten für {price}",
+    "note": "Die Zahlung erfolgt sicher online. 14 Tage Widerrufsrecht, sofern die Bearbeitung noch nicht begonnen hat."
+  },
+  "about": {
+    "eyebrow": "Über uns",
+    "heading": "Ihr vertrauenswürdiger Partner für spanische NIE-Anträge",
+    "paragraph1": "Espallo ist ein dänisches Unternehmen, das internationalen Kunden hilft, sich in der spanischen Bürokratie zurechtzufinden. Wir wissen, dass die eigenständige Beantragung einer spanischen NIE-Nummer komplex und zeitaufwendig sein kann.",
+    "paragraph2": "Durch unser etabliertes Netzwerk qualifizierter Anwälte und Notare in Spanien stellen wir sicher, dass Ihr Antrag korrekt und effizient bearbeitet wird – ohne dass Sie nach Spanien reisen müssen.",
+    "stats": [
+      { "number": "2.400+", "label": "Bearbeitete Fälle" },
+      { "number": "98%", "label": "Zufriedene Kunden" },
+      { "number": "48h", "label": "Durchschnittliche Antwortzeit" },
+      { "number": "6+", "label": "Jahre Branchenerfahrung" }
+    ],
+    "values": [
+      { "title": "Expertise", "description": "Über 6 Jahre Erfahrung mit spanischen NIE-Anträgen für internationale Kunden." },
+      { "title": "Lokales Netzwerk", "description": "Zusammenarbeit mit zugelassenen Anwälten und Notaren direkt in Spanien." },
+      { "title": "Persönlicher Service", "description": "Engagierter Kundensupport während des gesamten Prozesses." },
+      { "title": "Vertrauen", "description": "DSGVO-konforme Verarbeitung Ihrer persönlichen Daten." }
+    ]
+  },
+  "lawyers": {
+    "eyebrow": "Unser Netzwerk",
+    "heading": "Partneranwälte in Spanien",
+    "subheading": "Wir arbeiten ausschließlich mit zugelassenen und erfahrenen Anwälten und Notaren in den wichtigsten spanischen Städten zusammen.",
+    "list": [
+      {
+        "name": "García & Asociados",
+        "city": "Madrid",
+        "specialization": "NIE-Anträge, Immobiliengeschäfte",
+        "description": "Erfahrene Anwaltskanzlei mit über 15 Jahren Erfahrung in der Unterstützung von Ausländern in Spanien."
+      },
+      {
+        "name": "López Notaría",
+        "city": "Barcelona",
+        "specialization": "Notardienstleistungen, NIE",
+        "description": "Anerkanntes Notariat in Barcelona, spezialisiert auf internationale Mandanten."
+      },
+      {
+        "name": "Martínez Legal",
+        "city": "Málaga",
+        "specialization": "NIE, Aufenthalt, Immobilien",
+        "description": "Örtliche Anwaltskanzlei an der Costa del Sol mit großer Erfahrung in den Bedürfnissen internationaler Mandanten."
+      },
+      {
+        "name": "Fernández & Partners",
+        "city": "Valencia",
+        "specialization": "NIE-Anträge, Steuerrecht",
+        "description": "Mehrsprachige Anwälte mit deutschsprachigen Mitarbeitern und schneller Fallbearbeitung."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Fragen & Antworten",
+    "heading": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "question": "Was ist eine NIE-Nummer?",
+        "answer": "Die NIE (Número de Identificación de Extranjero) ist eine spanische Identifikationsnummer für Ausländer. Sie ist erforderlich für alle, die in Spanien eine Immobilie kaufen, ein Bankkonto eröffnen, arbeiten oder investieren möchten."
+      },
+      {
+        "question": "Muss ich nach Spanien reisen?",
+        "answer": "Nein. Mit unserem Service kann der gesamte Prozess digital von überall aus abgewickelt werden. Sie erteilen unseren Partneranwälten eine Vollmacht, die Sie anschließend gegenüber den spanischen Behörden vertreten."
+      },
+      {
+        "question": "Wie lange dauert es, eine NIE-Nummer zu erhalten?",
+        "answer": "Die typische Bearbeitungszeit beträgt 4–8 Wochen, abhängig von der Bearbeitungszeit der spanischen Behörden. Wir halten Sie laufend über den Status auf dem Laufenden."
+      },
+      {
+        "question": "Was ist im Preis von 215 EUR enthalten?",
+        "answer": "Unser Servicepreis umfasst: digitale Formularausfüllung, digitale Unterschrift, Dokumentenerstellung, Koordination mit einem Anwalt und Statusaktualisierungen. Anwalts-, Notar- und Behördengebühren in Spanien werden direkt von Ihnen getragen und sind nicht enthalten."
+      },
+      {
+        "question": "Welche Dokumente benötige ich?",
+        "answer": "Sie benötigen in erster Linie einen gültigen Reisepass. Je nach Zweck der NIE-Nummer kann zusätzliche Dokumentation erforderlich sein, durch die wir Sie im Verlauf begleiten."
+      },
+      {
+        "question": "Sind meine persönlichen Daten sicher?",
+        "answer": "Ja. Wir halten die DSGVO-Vorschriften vollständig ein. Ihre Daten werden verschlüsselt gespeichert und nur mit den notwendigen Parteien (Anwalt/Notar) geteilt, um Ihren Antrag zu bearbeiten."
+      },
+      {
+        "question": "Kann ich den Status meines Falls verfolgen?",
+        "answer": "Ja. Über Ihr persönliches Dashboard können Sie jederzeit den Status Ihres Falls einsehen, Dokumente herunterladen und Updates von uns lesen."
+      },
+      {
+        "question": "Was passiert, wenn mein Antrag abgelehnt wird?",
+        "answer": "Ablehnungen sind selten, aber falls dies passiert, helfen wir Ihnen kostenlos, die Ursache zu finden und einen neuen Antrag einzureichen."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "heading": "Nehmen Sie Kontakt auf",
+    "subheading": "Haben Sie Fragen? Wir helfen Ihnen gerne.",
+    "infoHeading": "Kontaktinformationen",
+    "emailLabel": "E-Mail",
+    "phoneLabel": "Telefon",
+    "hoursLabel": "Öffnungszeiten",
+    "hoursValue": "Montag–Freitag: 9:00–17:00 Uhr",
+    "ctaBoxTitle": "Bereit loszulegen?",
+    "ctaBoxText": "Erstellen Sie ein Konto und starten Sie noch heute Ihren NIE-Antrag.",
+    "ctaBoxButton": "Antrag starten",
+    "formNameLabel": "Name",
+    "formNamePlaceholder": "Ihr vollständiger Name",
+    "formEmailLabel": "E-Mail",
+    "formEmailPlaceholder": "ihre@email.de",
+    "formSubjectLabel": "Betreff",
+    "formSubjectPlaceholder": "Worum geht es in Ihrer Anfrage?",
+    "formMessageLabel": "Nachricht",
+    "formMessagePlaceholder": "Schreiben Sie hier Ihre Nachricht...",
+    "formSubmit": "Nachricht senden",
+    "formSubmitting": "Wird gesendet...",
+    "toastSuccess": "Danke für Ihre Nachricht! Wir melden uns innerhalb von 24 Stunden bei Ihnen."
+  }
+}

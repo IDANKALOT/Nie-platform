@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "overview": "Overzicht",
+    "myApplication": "Mijn aanvraag",
+    "documents": "Documenten",
+    "settings": "Instellingen",
+    "logout": "Uitloggen",
+    "fallbackTitle": "Dashboard",
+    "fallbackName": "Klant"
+  },
+  "steps": {
+    "form": "Formulier",
+    "signature": "Ondertekening",
+    "confirmation": "Bevestiging"
+  },
+  "page": {
+    "greeting": "Goedendag 👋",
+    "subtitle": "Hier is een overzicht van uw NIE-aanvraag.",
+    "noApplicationTitle": "Nog geen aanvraag",
+    "noApplicationText": "Start uw NIE-aanvraag en wij begeleiden u door het hele proces.",
+    "startApplication": "Nieuwe aanvraag starten",
+    "caseLabel": "Zaak #{caseNumber}",
+    "statApplicationStatus": "Aanvraagstatus",
+    "statDocuments": "Documenten",
+    "statPayment": "Betaling",
+    "filesSuffix": "bestanden",
+    "paid": "Betaald",
+    "pending": "In afwachting",
+    "incompleteTitle": "De aanvraag is niet voltooid",
+    "incompleteText": "Vul het formulier in en onderteken om uw aanvraag in te dienen.",
+    "continueButton": "Doorgaan"
+  },
+  "list": {
+    "heading": "Mijn aanvragen",
+    "subtitle": "Overzicht van al uw NIE-aanvragen",
+    "newApplication": "Nieuwe aanvraag",
+    "emptyText": "Nog geen aanvragen.",
+    "startApplication": "Aanvraag starten",
+    "caseLabel": "Zaak #{caseNumber}",
+    "noteFromAdmin": "Bericht van behandelaar:",
+    "paymentLabel": "Betaling:",
+    "paid": "✓ Betaald",
+    "pending": "⏳ In afwachting",
+    "continueFilling": "Verdergaan met invullen",
+    "payNow": "Nu betalen"
+  },
+  "documents": {
+    "heading": "Mijn documenten",
+    "subtitle": "Download en bekijk uw NIE-gerelateerde documenten",
+    "emptyText": "Nog geen documenten.",
+    "emptySubtext": "Documenten worden automatisch gegenereerd zodra u uw aanvraag heeft ingediend.",
+    "paymentRequired": "Documenten klaar voor zaak #{caseNumber}",
+    "paymentRequiredSubtext": "Betaal de servicekosten om toegang te krijgen tot uw documenten.",
+    "payToUnlock": "Betalen om te ontgrendelen",
+    "caseLabel": "Zaak #{caseNumber}",
+    "view": "Bekijken",
+    "download": "Downloaden",
+    "types": {
+      "ex18_filled": "EX-18 (ingevuld)",
+      "power_of_attorney": "Volmacht",
+      "signature": "Handtekening",
+      "passport": "Paspoort",
+      "other": "Anders"
+    }
+  },
+  "settings": {
+    "heading": "Instellingen",
+    "subtitle": "Beheer uw account en persoonlijke gegevens"
+  },
+  "profile": {
+    "personalInfoTitle": "Persoonlijke gegevens",
+    "emailLabel": "E-mail",
+    "emailHint": "E-mail kan niet worden gewijzigd",
+    "nameLabel": "Naam",
+    "namePlaceholder": "Uw volledige naam",
+    "save": "Wijzigingen opslaan",
+    "saving": "Bezig met opslaan...",
+    "saveSuccess": "Profiel bijgewerkt.",
+    "saveError": "Fout bij bijwerken.",
+    "gdprTitle": "AVG – Recht op verwijdering",
+    "gdprText": "Volgens de AVG heeft u het recht om uw persoonsgegevens uit onze systemen te laten verwijderen. Let op: verwijdering kan gevolgen hebben voor uw lopende NIE-aanvraag.",
+    "deleteButton": "Verwijdering van gegevens aanvragen",
+    "deleteConfirm": "Weet u zeker dat u de verwijdering van uw gegevens wilt aanvragen? Dit kan niet ongedaan worden gemaakt.",
+    "deleteToast": "Uw verzoek tot gegevensverwijdering is geregistreerd. Wij nemen binnen 30 dagen contact met u op."
+  },
+  "formular": {
+    "title": "EX-18-formulier",
+    "subtitle": "Vul alle velden exact in zoals ze in uw paspoort staan.",
+    "stepLabel": "Stap 1 van 3: Formulier invullen"
+  },
+  "underskriv": {
+    "title": "Digitale ondertekening",
+    "subtitle": "Onderteken het volmachtdocument digitaal om onze advocaten te machtigen namens u op te treden.",
+    "stepLabel": "Stap 2 van 3: Ondertekening"
+  },
+  "bekraeftelse": {
+    "stepLabel": "Stap 3 van 3: Bevestiging",
+    "title": "Aanvraag ingediend!",
+    "text": "Uw NIE-aanvraag is ontvangen en de documenten zijn gegenereerd. Ons team coördineert nu met onze advocaat in Spanje en houdt u op de hoogte.",
+    "caseNumberLabel": "Zaaknummer:",
+    "whatNextTitle": "Wat gebeurt er nu?",
+    "whatNextItem1": "Wij sturen u een bevestigingsmail met de details van de zaak",
+    "whatNextItem2": "Onze advocaat in Spanje wordt binnen 48 uur gecontacteerd",
+    "whatNextItem3": "U kunt de status volgen op uw dashboard",
+    "viewDocuments": "Documenten bekijken",
+    "goToDashboard": "Naar dashboard"
+  }
+}

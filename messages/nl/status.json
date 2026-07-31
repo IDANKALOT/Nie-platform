@@ -1,0 +1,17 @@
+{
+  "application": {
+    "received": "Aanvraag ontvangen",
+    "documents_generated": "Documenten gegenereerd",
+    "lawyer_processing": "Advocaat behandelt de zaak",
+    "notary_processing": "Notariële afhandeling",
+    "processing_spain": "In behandeling in Spanje",
+    "completed": "Voltooid"
+  },
+  "niePurpose": {
+    "property_purchase": "Aankoop onroerend goed",
+    "bank_account": "Bankrekening",
+    "work": "Werk",
+    "investment": "Investering",
+    "other": "Anders"
+  }
+}

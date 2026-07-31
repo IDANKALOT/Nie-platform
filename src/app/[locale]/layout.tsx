@@ -14,6 +14,15 @@ const inter = Inter({
   display: 'swap',
 })
 
+const ogLocales: Record<string, string> = {
+  da: 'da_DK',
+  en: 'en_US',
+  no: 'nb_NO',
+  sv: 'sv_SE',
+  de: 'de_DE',
+  nl: 'nl_NL',
+}
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
 }
@@ -37,7 +46,7 @@ export async function generateMetadata({
     creator: 'Espallo',
     openGraph: {
       type: 'website',
-      locale: locale === 'da' ? 'da_DK' : 'en_US',
+      locale: ogLocales[locale] ?? 'en_US',
       siteName: 'Espallo',
       title: t('title'),
       description: t('description'),

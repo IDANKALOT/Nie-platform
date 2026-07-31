@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { FileText, Clock, CheckCircle2, CreditCard, ArrowRight } from 'lucide-react'
 import { type ApplicationStatus } from '@/types'
 
-const dateLocales: Record<string, string> = { da: 'da-DK', en: 'en-US' }
+const dateLocales: Record<string, string> = { da: 'da-DK', en: 'en-US', no: 'nb-NO', sv: 'sv-SE', de: 'de-DE', nl: 'nl-NL' }
 
 export default async function AdminDashboardPage() {
   const t = await getTranslations('admin.dashboard')

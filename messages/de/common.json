@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Espallo – Ihre spanische NIE-Nummer einfach und sicher erhalten",
+    "description": "Professionelle Hilfe beim Erhalt Ihrer spanischen NIE-Nummer. Wir übernehmen den gesamten Prozess mit erfahrenen Anwälten und Notaren in Spanien. Festpreis 215 EUR.",
+    "keywords": [
+      "NIE-Nummer Spanien",
+      "NIE-Nummer für Deutsche",
+      "spanische NIE-Nummer",
+      "NIE-Antrag Spanien",
+      "Hilfe NIE-Nummer",
+      "spanische Identifikationsnummer"
+    ]
+  },
+  "nav": {
+    "howItWorks": "So funktioniert es",
+    "pricing": "Preise",
+    "about": "Über uns",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "login": "Anmelden",
+    "startApplication": "Antrag starten",
+    "mySite": "Mein Bereich",
+    "toggleMenu": "Menü umschalten",
+    "language": "Sprache"
+  },
+  "cookieBanner": {
+    "text": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und unseren Traffic zu analysieren.",
+    "link": "Unsere Cookie-Richtlinie lesen",
+    "decline": "Ablehnen",
+    "accept": "Akzeptieren"
+  },
+  "footer": {
+    "tagline": "Wir helfen Kunden dabei, eine spanische NIE-Nummer über erfahrene Anwälte und Notare in Spanien zu erhalten. Professionell, sicher und einfach.",
+    "servicesHeading": "Leistungen",
+    "legalHeading": "Rechtliches",
+    "privacyPolicy": "Datenschutzerklärung",
+    "cookiePolicy": "Cookie-Richtlinie",
+    "terms": "AGB",
+    "gdpr": "DSGVO",
+    "disclaimerLabel": "Wichtig:",
+    "disclaimer": "Espallo ist ein administratives Dienstleistungsunternehmen und keine Anwaltskanzlei. Wir erbringen keine Rechtsberatung. Unsere Partneranwälte und -notare in Spanien sind selbstständige Freiberufler mit einem direkten Rechtsverhältnis zum Kunden. Wir können die Genehmigung von NIE-Anträgen nicht garantieren, da diese von den spanischen Behörden entschieden wird. Anwalts-, Notar- und Behördenkosten werden direkt vom Kunden getragen und sind nicht im Servicepreis enthalten.",
+    "copyright": "© {year} Espallo. Alle Rechte vorbehalten.",
+    "cvrLine": "CVR: [INDSÆT CVR] · info@espallo.com"
+  }
+}

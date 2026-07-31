@@ -6,7 +6,7 @@ import AdminApplicationActions from '@/components/admin/AdminApplicationActions'
 import { type ApplicationStatus } from '@/types'
 import { FileText, Download } from 'lucide-react'
 
-const dateLocales: Record<string, string> = { da: 'da-DK', en: 'en-US' }
+const dateLocales: Record<string, string> = { da: 'da-DK', en: 'en-US', no: 'nb-NO', sv: 'sv-SE', de: 'de-DE', nl: 'nl-NL' }
 
 interface Props {
   params: Promise<{ id: string }>

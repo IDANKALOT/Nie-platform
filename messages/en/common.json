@@ -30,11 +30,6 @@
     "decline": "Decline",
     "accept": "Accept"
   },
-  "geoBanner": {
-    "text": "Looks like you're visiting from outside Denmark. Would you like to view this page in English?",
-    "switchButton": "Switch to English",
-    "dismiss": "Dismiss"
-  },
   "footer": {
     "tagline": "We help clients get a Spanish NIE number through experienced lawyers and notaries in Spain. Professional, secure and simple.",
     "servicesHeading": "Services",

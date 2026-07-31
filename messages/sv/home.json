@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "title": "Espallo – Få ditt spanska NIE-nummer enkelt och tryggt",
+    "description": "Professionell hjälp med att få ditt spanska NIE-nummer. Vi hanterar hela processen med erfarna advokater och notarier i Spanien. Fast pris 215 EUR. Ingen resa till Spanien krävs."
+  },
+  "hero": {
+    "badge": "Administrativ tjänst — inte en advokatbyrå",
+    "headlinePrefix": "Få ditt spanska",
+    "headlineHighlight": "NIE-nummer",
+    "headlineSuffix": "enkelt och tryggt",
+    "subtitle": "Vi hanterar hela ansökningsprocessen åt dig — från ifyllnad av formulär till handläggning hos spanska myndigheter. Du behöver inte resa till Spanien.",
+    "ctaPrimary": "Starta ansökan nu",
+    "ctaSecondary": "Se hur det fungerar",
+    "trustFixedPrice": "Fast pris – 215 EUR",
+    "trustResponseTime": "Svar inom 48 timmar",
+    "trustGdpr": "GDPR-kompatibel hantering",
+    "disclaimer": "Espallo är en administrativ servicebyrå och inte en advokatbyrå. Vi tillhandahåller inte juridisk rådgivning. Våra samarbetande advokater och notarier i Spanien är egenföretagare med ett direkt rättsförhållande till dig som kund."
+  },
+  "howItWorks": {
+    "eyebrow": "Processen",
+    "heading": "Så fungerar det",
+    "subheading": "En enkel, digital process som ger dig sinnesro, var du än befinner dig.",
+    "steps": [
+      {
+        "title": "Fyll i ansökan",
+        "description": "Skapa ett konto och fyll i vårt digitala formulär med dina personuppgifter. Det tar ca 10 minuter."
+      },
+      {
+        "title": "Signera digitalt",
+        "description": "Signera fullmaktsdokumentet digitalt direkt i webbläsaren – på både dator och mobil."
+      },
+      {
+        "title": "Vi hanterar ärendet",
+        "description": "Våra samarbetande advokater och notarier i Spanien hanterar ansökan hos de spanska myndigheterna."
+      },
+      {
+        "title": "Ta emot ditt NIE-nummer",
+        "description": "När handläggningen är klar får du ditt NIE-nummer och alla relevanta dokument digitalt."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Priser",
+    "heading": "Enkel och transparent prissättning",
+    "subheading": "Inga dolda avgifter. Fast pris för vår tjänst.",
+    "servicePrice": "Servicepris",
+    "priceNote": "Exkl. moms · Engångsbetalning",
+    "includedLabel": "Ingår i priset:",
+    "included": [
+      "Digital formulärifyllnad (EX-18)",
+      "Digital signering av fullmakt",
+      "Automatisk dokumentgenerering",
+      "Koordinering med advokat i Spanien",
+      "Statusuppdateringar under resans gång",
+      "Digitalt dokumentarkiv",
+      "Kundsupport på svenska"
+    ],
+    "disclaimerLabel": "Observera:",
+    "disclaimer": "Eventuella advokat-, notarie- och myndighetskostnader betalas direkt av kunden och ingår inte i vårt servicepris.",
+    "cta": "Starta ansökan för {price}",
+    "note": "Betalning sker säkert online. 14 dagars ångerrätt om handläggningen inte har påbörjats."
+  },
+  "about": {
+    "eyebrow": "Om oss",
+    "heading": "Din betrodda partner för spanska NIE-ansökningar",
+    "paragraph1": "Espallo är ett danskt företag specialiserat på att hjälpa internationella kunder att navigera den spanska byråkratin. Vi förstår att det kan vara komplicerat och tidskrävande att ansöka om ett spanskt NIE-nummer på egen hand.",
+    "paragraph2": "Genom vårt etablerade nätverk av kvalificerade advokater och notarier i Spanien säkerställer vi att din ansökan hanteras korrekt och effektivt – utan att du behöver resa till Spanien.",
+    "stats": [
+      { "number": "2 400+", "label": "Hanterade ärenden" },
+      { "number": "98%", "label": "Nöjda kunder" },
+      { "number": "48h", "label": "Genomsnittlig svarstid" },
+      { "number": "6+", "label": "År i branschen" }
+    ],
+    "values": [
+      { "title": "Expertis", "description": "Över 6 års erfarenhet av spanska NIE-ansökningar för internationella kunder." },
+      { "title": "Lokalt nätverk", "description": "Samarbete med godkända advokater och notarier direkt i Spanien." },
+      { "title": "Personlig service", "description": "Dedikerad kundsupport genom hela processen." },
+      { "title": "Förtroende", "description": "GDPR-kompatibel hantering av dina personuppgifter." }
+    ]
+  },
+  "lawyers": {
+    "eyebrow": "Vårt nätverk",
+    "heading": "Samarbetande advokater i Spanien",
+    "subheading": "Vi arbetar uteslutande med godkända och erfarna advokater och notarier i Spaniens viktigaste städer.",
+    "list": [
+      {
+        "name": "García & Asociados",
+        "city": "Madrid",
+        "specialization": "NIE-ansökningar, fastighetsaffärer",
+        "description": "Erfaren advokatbyrå med över 15 års erfarenhet av att hjälpa utlänningar i Spanien."
+      },
+      {
+        "name": "López Notaría",
+        "city": "Barcelona",
+        "specialization": "Notarietjänster, NIE",
+        "description": "Erkänt notariekontor i Barcelona specialiserat på internationella klienter."
+      },
+      {
+        "name": "Martínez Legal",
+        "city": "Málaga",
+        "specialization": "NIE, uppehållstillstånd, fastigheter",
+        "description": "Lokal advokatbyrå på Costa del Sol med stark erfarenhet av internationella klienters behov."
+      },
+      {
+        "name": "Fernández & Partners",
+        "city": "Valencia",
+        "specialization": "NIE-ansökningar, skatterätt",
+        "description": "Flerspråkiga advokater med svensktalande medarbetare och snabb ärendehantering."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Frågor & svar",
+    "heading": "Vanliga frågor",
+    "items": [
+      {
+        "question": "Vad är ett NIE-nummer?",
+        "answer": "NIE (Número de Identificación de Extranjero) är ett spanskt identifikationsnummer för utlänningar. Det krävs för alla som vill köpa fastighet, öppna bankkonto, arbeta eller investera i Spanien."
+      },
+      {
+        "question": "Behöver jag resa till Spanien?",
+        "answer": "Nej. Genom vår tjänst kan hela processen hanteras digitalt var du än befinner dig. Du ger fullmakt till våra samarbetande advokater, som därefter representerar dig inför de spanska myndigheterna."
+      },
+      {
+        "question": "Hur lång tid tar det att få ett NIE-nummer?",
+        "answer": "Den typiska handläggningstiden är 4–8 veckor, beroende på de spanska myndigheternas handläggningstid. Vi håller dig löpande uppdaterad om statusen."
+      },
+      {
+        "question": "Vad ingår i priset på 215 EUR?",
+        "answer": "Vårt servicepris täcker: digital formulärifyllnad, digital signering, dokumentgenerering, koordinering med advokat och statusuppdateringar. Advokat-, notarie- och myndighetsavgifter i Spanien betalas direkt av dig och ingår inte."
+      },
+      {
+        "question": "Vilka dokument behöver jag?",
+        "answer": "Du behöver i första hand ett giltigt pass. Beroende på syftet med NIE-numret kan ytterligare dokumentation krävas, vilket vi vägleder dig genom under processens gång."
+      },
+      {
+        "question": "Är mina personuppgifter säkra?",
+        "answer": "Ja. Vi följer GDPR-reglerna fullt ut. Dina uppgifter lagras krypterat och delas endast med de parter som är nödvändiga (advokat/notarie) för att handlägga din ansökan."
+      },
+      {
+        "question": "Kan jag följa status på mitt ärende?",
+        "answer": "Ja. Via din personliga dashboard kan du när som helst se status på ditt ärende, ladda ner dokument och läsa uppdateringar från oss."
+      },
+      {
+        "question": "Vad händer om min ansökan avslås?",
+        "answer": "Avslag är ovanliga, men om det skulle hända hjälper vi dig kostnadsfritt att ta reda på orsaken och skicka in en ny ansökan."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "heading": "Kontakta oss",
+    "subheading": "Har du frågor? Vi är redo att hjälpa till.",
+    "infoHeading": "Kontaktuppgifter",
+    "emailLabel": "E-post",
+    "phoneLabel": "Telefon",
+    "hoursLabel": "Öppettider",
+    "hoursValue": "Måndag–fredag: 9:00–17:00",
+    "ctaBoxTitle": "Redo att komma igång?",
+    "ctaBoxText": "Skapa ett konto och starta din NIE-ansökan idag.",
+    "ctaBoxButton": "Starta ansökan",
+    "formNameLabel": "Namn",
+    "formNamePlaceholder": "Ditt fullständiga namn",
+    "formEmailLabel": "E-post",
+    "formEmailPlaceholder": "din@epost.se",
+    "formSubjectLabel": "Ämne",
+    "formSubjectPlaceholder": "Vad handlar ditt ärende om?",
+    "formMessageLabel": "Meddelande",
+    "formMessagePlaceholder": "Skriv ditt meddelande här...",
+    "formSubmit": "Skicka meddelande",
+    "formSubmitting": "Skickar...",
+    "toastSuccess": "Tack för ditt meddelande! Vi återkommer inom 24 timmar."
+  }
+}

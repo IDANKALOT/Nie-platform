@@ -29,11 +29,6 @@
     "decline": "Afvis",
     "accept": "Accepter"
   },
-  "geoBanner": {
-    "text": "Det ser ud til at du besøger fra udlandet. Vil du se siden på engelsk?",
-    "switchButton": "Skift til engelsk",
-    "dismiss": "Luk"
-  },
   "footer": {
     "tagline": "Vi hjælper danske kunder med at få et spansk NIE-nummer gennem erfarne advokater og notarer i Spanien. Professionelt, sikkert og nemt.",
     "servicesHeading": "Tjenester",

@@ -8,7 +8,7 @@ import PayButton from '@/components/dashboard/PayButton'
 import { Plus, ArrowRight } from 'lucide-react'
 import { type ApplicationStatus } from '@/types'
 
-const dateLocales: Record<string, string> = { da: 'da-DK', en: 'en-US' }
+const dateLocales: Record<string, string> = { da: 'da-DK', en: 'en-US', no: 'nb-NO', sv: 'sv-SE', de: 'de-DE', nl: 'nl-NL' }
 
 export default async function AnsogningPage() {
   const t = await getTranslations('dashboard.list')
