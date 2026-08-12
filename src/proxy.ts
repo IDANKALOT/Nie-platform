@@ -22,7 +22,6 @@ function detectLocaleFromCountry(request: NextRequest): string {
 
 function stripLocale(pathname: string): { pathname: string; locale: string } {
   for (const locale of routing.locales) {
-    if (locale === routing.defaultLocale) continue
     if (pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)) {
       return { pathname: pathname.slice(locale.length + 1) || '/', locale }
     }

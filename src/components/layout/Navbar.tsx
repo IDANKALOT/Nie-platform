@@ -7,6 +7,7 @@ import { routing } from '@/i18n/routing'
 import { Button } from '@/components/ui/button'
 import { Menu, X, Shield } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
+import { resolveArticleSwitchSlug } from '@/lib/articles/href'
 import type { User } from '@supabase/supabase-js'
 
 const localeLabels: Record<string, string> = {
@@ -100,7 +101,7 @@ export default function Navbar() {
               {routing.locales.map((l) => (
                 <Link
                   key={l}
-                  href={pathname}
+                  href={resolveArticleSwitchSlug(pathname, l) ?? pathname}
                   locale={l}
                   onClick={() => setLocaleCookie(l)}
                   className={`px-1.5 py-0.5 rounded transition-colors ${
@@ -173,7 +174,7 @@ export default function Navbar() {
               {routing.locales.map((l) => (
                 <Link
                   key={l}
-                  href={pathname}
+                  href={resolveArticleSwitchSlug(pathname, l) ?? pathname}
                   locale={l}
                   onClick={() => {
                     setLocaleCookie(l)

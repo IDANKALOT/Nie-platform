@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { routing } from '@/i18n/routing'
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://nienummerservice.dk'
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://espallo.com'
 
 export default function robots(): MetadataRoute.Robots {
   const disallow = routing.locales.flatMap((locale) => {
