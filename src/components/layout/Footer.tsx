@@ -99,9 +99,6 @@ export default function Footer() {
           <p className="text-xs text-gray-600">
             {t('copyright', { year: new Date().getFullYear() })}
           </p>
-          <p className="text-xs text-gray-600">
-            {t('cvrLine')}
-          </p>
         </div>
       </div>
     </footer>

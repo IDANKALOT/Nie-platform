@@ -124,7 +124,6 @@ export default function HandelsbetingelserPage() {
           <h2 className="text-xl font-semibold text-gray-900 mb-3">10. Kontakt</h2>
           <p>
             Espallo<br />
-            CVR: [INDSÆT CVR]<br />
             E-mail: info@espallo.com<br />
             Telefon: +34 603 527 252
           </p>

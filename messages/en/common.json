@@ -40,7 +40,6 @@
     "gdpr": "GDPR",
     "disclaimerLabel": "Important:",
     "disclaimer": "Espallo is an administrative service bureau, not a law firm. We do not provide legal advice. Our partner lawyers and notaries in Spain are independent professionals with a direct legal relationship to the customer. We cannot guarantee approval of NIE applications, as this is decided by the Spanish authorities. Lawyer, notary, and government fees are paid directly by the customer and are not included in the service price.",
-    "copyright": "© {year} Espallo. All rights reserved.",
-    "cvrLine": "CVR: [INDSÆT CVR] · info@espallo.com"
+    "copyright": "© {year} Espallo. All rights reserved."
   }
 }

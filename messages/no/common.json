@@ -39,7 +39,6 @@
     "gdpr": "GDPR",
     "disclaimerLabel": "Viktig:",
     "disclaimer": "Espallo er et administrativt servicebyrå og ikke et advokatfirma. Vi yter ikke juridisk rådgivning. Våre samarbeidende advokater og notarer i Spania er selvstendige næringsdrivende med et direkte rettsforhold til kunden. Vi kan ikke garantere godkjenning av NIE-søknader, da dette avgjøres av spanske myndigheter. Advokat-, notar- og myndighetskostnader betales direkte av kunden og er ikke inkludert i serviceprisen.",
-    "copyright": "© {year} Espallo. Alle rettigheter forbeholdt.",
-    "cvrLine": "CVR: [INDSÆT CVR] · info@espallo.com"
+    "copyright": "© {year} Espallo. Alle rettigheter forbeholdt."
   }
 }

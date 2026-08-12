@@ -16,7 +16,7 @@ export default function PrivatlivspolitikPage() {
         <section>
           <h2 className="text-xl font-semibold text-gray-900 mb-3">1. Den dataansvarlige</h2>
           <p>
-            Espallo (CVR: [INDSÆT CVR]) er dataansvarlig for behandlingen af de
+            Espallo er dataansvarlig for behandlingen af de
             personoplysninger, vi indsamler om dig i forbindelse med brug af vores tjeneste.
             Kontakt: info@espallo.com
           </p>
