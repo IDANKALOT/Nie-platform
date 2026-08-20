@@ -212,7 +212,7 @@ export default function PackagesManager({ initialPackages }: { initialPackages: 
                 <Input
                   id="pkg-price"
                   inputMode="decimal"
-                  placeholder="215"
+                  placeholder="195"
                   value={form.price}
                   onChange={(e) => setForm({ ...form, price: e.target.value })}
                 />

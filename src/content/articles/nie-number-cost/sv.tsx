@@ -37,7 +37,7 @@ const content: ArticleContent = {
         <p>
           Avgiften du betalar en tjänst är inte för själva NIE-numret — den är för
           arbetet med att få tiden, förbereda EX-15 korrekt, lämna in åt dig, och slippa
-          resa för det. Espallo tar ett enda fast pris på 215 EUR per ansökan, som
+          resa för det. Espallo tar ett enda fast pris på 195 EUR per ansökan, som
           täcker hela processen från början till slut — även i fall där du aldrig
           sätter din fot i Spanien.
         </p>
@@ -84,7 +84,7 @@ const content: ArticleContent = {
   ],
   ctaHeading: 'Vet priset i förväg',
   ctaText:
-    'Espallo tar ett fast pris på 215 EUR för hela NIE-ansökan — ingen timdebitering, inga överraskande avgifter.',
+    'Espallo tar ett fast pris på 195 EUR för hela NIE-ansökan — ingen timdebitering, inga överraskande avgifter.',
   ctaButton: 'Skaffa ditt NIE-nummer',
   disclaimer:
     'Espallo är en administrativ tjänst, inte en advokatbyrå. Vi ger ingen juridisk rådgivning. Våra samarbetande jurister och notarier i Spanien har ett direkt uppdragsförhållande med dig som kund.',

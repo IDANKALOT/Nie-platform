@@ -39,7 +39,7 @@ const content: ArticleContent = {
           De vergoeding die u aan een service betaalt, is niet voor de NIE zelf — het
           is voor het werk om de afspraak te regelen, het EX-15 correct voor te
           bereiden, namens u in te dienen, en zelf niet te hoeven reizen. Espallo
-          rekent één vaste prijs van 215 EUR per aanvraag, die het volledige proces
+          rekent één vaste prijs van 195 EUR per aanvraag, die het volledige proces
           van begin tot eind dekt — ook wanneer u nooit naar Spanje hoeft te reizen.
         </p>
       </section>
@@ -86,7 +86,7 @@ const content: ArticleContent = {
   ],
   ctaHeading: 'Ken de prijs vooraf',
   ctaText:
-    'Espallo rekent één vaste prijs van 215 EUR voor de volledige NIE-aanvraag — geen uurtarief, geen verrassende kosten.',
+    'Espallo rekent één vaste prijs van 195 EUR voor de volledige NIE-aanvraag — geen uurtarief, geen verrassende kosten.',
   ctaButton: 'Vraag uw NIE nummer aan',
   disclaimer:
     'Espallo is een administratieve dienstverlener, geen advocatenkantoor. Wij geven geen juridisch advies; de samenwerkende juristen en notarissen in Spanje hebben een directe cliëntrelatie met u.',

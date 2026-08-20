@@ -37,7 +37,7 @@ const content: ArticleContent = {
           The fee you pay a service isn&apos;t for the NIE itself — it&apos;s for the work of
           getting the appointment, preparing the EX-15 correctly, submitting on your
           behalf, and not having to travel to do it. Espallo charges a single fixed
-          price of 215 EUR per application, covering the full process end to end,
+          price of 195 EUR per application, covering the full process end to end,
           including cases handled entirely without you setting foot in Spain.
         </p>
       </section>
@@ -84,7 +84,7 @@ const content: ArticleContent = {
   ],
   ctaHeading: 'Know the price upfront',
   ctaText:
-    'Espallo charges one fixed price of 215 EUR for the full NIE application — no hourly billing, no surprise fees.',
+    'Espallo charges one fixed price of 195 EUR for the full NIE application — no hourly billing, no surprise fees.',
   ctaButton: 'Get your NIE number',
   disclaimer:
     'Espallo is an administrative service, not a law firm. We do not provide legal advice; the partner lawyers and notaries in Spain who process your case have a direct professional relationship with you as their client.',

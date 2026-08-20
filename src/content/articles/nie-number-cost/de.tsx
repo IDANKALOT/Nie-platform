@@ -39,7 +39,7 @@ const content: ArticleContent = {
           Die Gebühr, die Sie einem Service zahlen, ist nicht für die NIE selbst —
           sondern für die Arbeit, einen Termin zu bekommen, das EX-15 korrekt
           vorzubereiten, die Einreichung für Sie zu übernehmen, und nicht dafür reisen
-          zu müssen. Espallo berechnet einen einzigen Festpreis von 215 EUR pro
+          zu müssen. Espallo berechnet einen einzigen Festpreis von 195 EUR pro
           Antrag, der den gesamten Prozess von Anfang bis Ende abdeckt — auch Fälle,
           in denen Sie nie nach Spanien reisen müssen.
         </p>
@@ -87,7 +87,7 @@ const content: ArticleContent = {
   ],
   ctaHeading: 'Kennen Sie den Preis im Voraus',
   ctaText:
-    'Espallo berechnet einen Festpreis von 215 EUR für den gesamten NIE-Antrag — keine Stundenabrechnung, keine versteckten Gebühren.',
+    'Espallo berechnet einen Festpreis von 195 EUR für den gesamten NIE-Antrag — keine Stundenabrechnung, keine versteckten Gebühren.',
   ctaButton: 'NIE Nummer jetzt beantragen',
   disclaimer:
     'Espallo ist ein administrativer Dienstleister, kein Anwaltsbüro. Wir erteilen keine Rechtsberatung; die kooperierenden Anwälte und Notare in Spanien stehen in direktem Mandatsverhältnis zu Ihnen als Mandant.',

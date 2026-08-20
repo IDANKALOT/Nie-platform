@@ -29,7 +29,7 @@ export default function HandelsbetingelserPage() {
 
         <section>
           <h2 className="text-xl font-semibold text-gray-900 mb-3">2. Vores ydelse</h2>
-          <p>Serviceprisen på 215 EUR (ekskl. moms) inkluderer:</p>
+          <p>Serviceprisen på 195 EUR (ekskl. moms) inkluderer:</p>
           <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
             <li>Digital formularudfyldelse af EX-18 ansøgning</li>
             <li>Digital underskrift af fuldmagtsdokument</li>
@@ -71,7 +71,7 @@ export default function HandelsbetingelserPage() {
         <section>
           <h2 className="text-xl font-semibold text-gray-900 mb-3">5. Betaling og moms</h2>
           <p>
-            Serviceprisen er 215 EUR ekskl. moms. Dansk moms (25%) tillægges for kunder med bopæl i
+            Serviceprisen er 195 EUR ekskl. moms. Dansk moms (25%) tillægges for kunder med bopæl i
             Danmark, medmindre der er tale om en erhvervskunde med gyldigt momsregistreringsnummer.
             Betaling sker sikkert via vores betalingsplatform.
           </p>

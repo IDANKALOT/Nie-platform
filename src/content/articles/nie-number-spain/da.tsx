@@ -109,7 +109,7 @@ const content: ArticleContent = {
   ],
   ctaHeading: 'Har du brug for hjælp til dit NIE-nummer?',
   ctaText:
-    'Espallo håndterer ansøgning, tidsbestilling og papirarbejde for danske kunder — til en fast pris på 215 EUR, uden at du behøver rejse til Spanien.',
+    'Espallo håndterer ansøgning, tidsbestilling og papirarbejde for danske kunder — til en fast pris på 195 EUR, uden at du behøver rejse til Spanien.',
   ctaButton: 'Få hjælp til dit NIE-nummer',
   disclaimer:
     'Espallo er et administrativt servicebureau og ikke et advokatfirma. Vi yder ikke juridisk rådgivning. Vores samarbejdende advokater og notarer i Spanien er selvstændige og har et direkte retsforhold med dig som kunde.',
