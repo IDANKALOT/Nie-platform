@@ -39,6 +39,30 @@
       }
     ]
   },
+  "chatPreview": {
+    "greeting": "Hoi! 👋 Ik ben Espallo. Hoe kan ik je vandaag helpen?",
+    "links": ["Hoe werkt het?", "Welke documenten heb ik nodig?", "Waar is mijn afspraak?", "Praat met een echt persoon"],
+    "annotation": "Echte mensen. Echte support. Altijd."
+  },
+  "dashboardPreview": {
+    "eyebrow": "Jouw overzicht",
+    "heading": "Volg alles. In realtime.",
+    "subheading": "Log op elk moment in en zie precies waar je aanvraag staat — geen giswerk.",
+    "annotation": "Dezelfde begeleider. Elke stap van de weg.",
+    "windowTitle": "Mijn aanvraag",
+    "steps": [
+      { "label": "Persoonlijke gegevens", "done": true },
+      { "label": "Documenten", "done": true },
+      { "label": "Afspraak", "done": false },
+      { "label": "Status", "done": false }
+    ],
+    "statusDone": "Klaar",
+    "statusInProgress": "Bezig"
+  },
+  "everywhere": {
+    "eyebrow": "Espallo overal",
+    "captions": ["NIE eenvoudig gemaakt.", "Minder papierwerk. Meer Spanje.", "Echte mensen. Echte support.", "Jouw nieuwe leven begint hier."]
+  },
   "pricing": {
     "eyebrow": "Prijzen",
     "heading": "Eenvoudige, transparante prijzen",

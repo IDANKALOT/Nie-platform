@@ -39,6 +39,30 @@
       }
     ]
   },
+  "chatPreview": {
+    "greeting": "Hei! 👋 Jeg er Espallo. Hvordan kan jeg hjelpe deg i dag?",
+    "links": ["Hvordan fungerer det?", "Hvilke dokumenter trenger jeg?", "Hvor er avtalen min?", "Snakk med en ekte person"],
+    "annotation": "Ekte mennesker. Ekte støtte. Alltid."
+  },
+  "dashboardPreview": {
+    "eyebrow": "Din oversikt",
+    "heading": "Følg alt. I sanntid.",
+    "subheading": "Logg inn når som helst og se nøyaktig hvor søknaden din står — ingen gjetting.",
+    "annotation": "Samme hjelper. Hvert steg på veien.",
+    "windowTitle": "Min søknad",
+    "steps": [
+      { "label": "Personopplysninger", "done": true },
+      { "label": "Dokumenter", "done": true },
+      { "label": "Avtale", "done": false },
+      { "label": "Status", "done": false }
+    ],
+    "statusDone": "Ferdig",
+    "statusInProgress": "Pågår"
+  },
+  "everywhere": {
+    "eyebrow": "Espallo overalt",
+    "captions": ["NIE gjort enkelt.", "Mindre papirarbeid. Mer Spania.", "Ekte mennesker. Ekte støtte.", "Ditt nye liv starter her."]
+  },
   "pricing": {
     "eyebrow": "Priser",
     "heading": "Enkel og transparent prissetting",

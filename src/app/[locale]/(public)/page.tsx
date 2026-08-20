@@ -4,6 +4,9 @@ import { routing } from '@/i18n/routing'
 import { getPathname } from '@/i18n/navigation'
 import Hero from '@/components/home/Hero'
 import HowItWorks from '@/components/home/HowItWorks'
+import ChatPreview from '@/components/home/ChatPreview'
+import DashboardPreview from '@/components/home/DashboardPreview'
+import Everywhere from '@/components/home/Everywhere'
 import Pricing from '@/components/home/Pricing'
 import About from '@/components/home/About'
 import Lawyers from '@/components/home/Lawyers'
@@ -36,6 +39,9 @@ export default function HomePage() {
     <>
       <Hero />
       <HowItWorks />
+      <ChatPreview />
+      <DashboardPreview />
+      <Everywhere />
       <Pricing />
       <About />
       <Lawyers />

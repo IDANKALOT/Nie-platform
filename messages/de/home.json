@@ -39,6 +39,30 @@
       }
     ]
   },
+  "chatPreview": {
+    "greeting": "Hallo! 👋 Ich bin Espallo. Wie kann ich dir heute helfen?",
+    "links": ["Wie funktioniert das?", "Welche Dokumente brauche ich?", "Wo ist mein Termin?", "Mit einer echten Person sprechen"],
+    "annotation": "Echte Menschen. Echter Support. Immer."
+  },
+  "dashboardPreview": {
+    "eyebrow": "Deine Übersicht",
+    "heading": "Alles im Blick. In Echtzeit.",
+    "subheading": "Logge dich jederzeit ein und sieh genau, wo dein Antrag steht — kein Rätselraten.",
+    "annotation": "Derselbe Begleiter. Bei jedem Schritt.",
+    "windowTitle": "Mein Antrag",
+    "steps": [
+      { "label": "Persönliche Daten", "done": true },
+      { "label": "Dokumente", "done": true },
+      { "label": "Termin", "done": false },
+      { "label": "Status", "done": false }
+    ],
+    "statusDone": "Erledigt",
+    "statusInProgress": "In Bearbeitung"
+  },
+  "everywhere": {
+    "eyebrow": "Espallo überall",
+    "captions": ["NIE ganz einfach.", "Weniger Papierkram. Mehr Spanien.", "Echte Menschen. Echter Support.", "Dein neues Leben beginnt hier."]
+  },
   "pricing": {
     "eyebrow": "Preise",
     "heading": "Einfache, transparente Preisgestaltung",

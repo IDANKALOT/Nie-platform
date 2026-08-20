@@ -39,6 +39,30 @@
       }
     ]
   },
+  "chatPreview": {
+    "greeting": "Hej! 👋 Jag är Espallo. Hur kan jag hjälpa dig idag?",
+    "links": ["Hur fungerar det?", "Vilka dokument behöver jag?", "Var är min bokning?", "Prata med en riktig person"],
+    "annotation": "Riktiga människor. Riktig support. Alltid."
+  },
+  "dashboardPreview": {
+    "eyebrow": "Din översikt",
+    "heading": "Följ allt. I realtid.",
+    "subheading": "Logga in när som helst och se exakt var din ansökan står — inga gissningar.",
+    "annotation": "Samma hjälpare. Varje steg på vägen.",
+    "windowTitle": "Min ansökan",
+    "steps": [
+      { "label": "Personuppgifter", "done": true },
+      { "label": "Dokument", "done": true },
+      { "label": "Bokning", "done": false },
+      { "label": "Status", "done": false }
+    ],
+    "statusDone": "Klar",
+    "statusInProgress": "Pågår"
+  },
+  "everywhere": {
+    "eyebrow": "Espallo överallt",
+    "captions": ["NIE gjort enkelt.", "Mindre pappersarbete. Mer Spanien.", "Riktiga människor. Riktig support.", "Ditt nya liv börjar här."]
+  },
   "pricing": {
     "eyebrow": "Priser",
     "heading": "Enkel och transparent prissättning",

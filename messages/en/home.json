@@ -39,6 +39,30 @@
       }
     ]
   },
+  "chatPreview": {
+    "greeting": "Hi! 👋 I'm Espallo. How can I help you today?",
+    "links": ["How does it work?", "What documents do I need?", "Where is my appointment?", "Talk to a real person"],
+    "annotation": "Real people. Real support. Always."
+  },
+  "dashboardPreview": {
+    "eyebrow": "Your overview",
+    "heading": "Track everything. In real time.",
+    "subheading": "Log in anytime and see exactly where your application stands — no guesswork.",
+    "annotation": "Same guardian. Every step of the way.",
+    "windowTitle": "My application",
+    "steps": [
+      { "label": "Personal details", "done": true },
+      { "label": "Documents", "done": true },
+      { "label": "Appointment", "done": false },
+      { "label": "Status", "done": false }
+    ],
+    "statusDone": "Done",
+    "statusInProgress": "In progress"
+  },
+  "everywhere": {
+    "eyebrow": "Espallo everywhere",
+    "captions": ["NIE made simple.", "Less paper. More Spain.", "Real people. Real support.", "Your new life starts here."]
+  },
   "pricing": {
     "eyebrow": "Pricing",
     "heading": "Simple, transparent pricing",
