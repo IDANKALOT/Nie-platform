@@ -10,6 +10,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Eye, EyeOff, LogIn } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import { toast } from 'sonner'
+import { PURPLE } from '@/lib/theme'
 
 export default function LoginPage() {
   const t = useTranslations('auth.login')
@@ -39,7 +40,7 @@ export default function LoginPage() {
   return (
     <Card className="shadow-lg border-gray-100">
       <CardHeader className="text-center pb-2">
-        <CardTitle className="text-2xl font-bold" style={{ color: '#1B3A6B' }}>
+        <CardTitle className="text-2xl font-bold" style={{ color: PURPLE }}>
           {t('title')}
         </CardTitle>
         <CardDescription>
@@ -66,7 +67,7 @@ export default function LoginPage() {
               <Link
                 href="/glemt-adgangskode"
                 className="text-xs hover:underline"
-                style={{ color: '#2D8E6C' }}
+                style={{ color: PURPLE }}
               >
                 {t('forgotPassword')}
               </Link>
@@ -95,7 +96,7 @@ export default function LoginPage() {
             type="submit"
             className="w-full h-11 font-semibold"
             disabled={loading}
-            style={{ backgroundColor: '#1B3A6B' }}
+            style={{ backgroundColor: PURPLE }}
           >
             {loading ? t('submitting') : (
               <>
@@ -108,7 +109,7 @@ export default function LoginPage() {
 
         <div className="mt-5 text-center text-sm text-gray-500">
           {t('noAccount')}{' '}
-          <Link href="/register" className="font-medium hover:underline" style={{ color: '#1B3A6B' }}>
+          <Link href="/register" className="font-medium hover:underline" style={{ color: PURPLE }}>
             {t('createAccount')}
           </Link>
         </div>

@@ -10,6 +10,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { CheckCircle2, ArrowLeft } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import { toast } from 'sonner'
+import { PURPLE } from '@/lib/theme'
 
 export default function ForgotPasswordPage() {
   const t = useTranslations('auth.forgotPassword')
@@ -58,7 +59,7 @@ export default function ForgotPasswordPage() {
   return (
     <Card className="shadow-lg border-gray-100">
       <CardHeader className="text-center pb-2">
-        <CardTitle className="text-2xl font-bold" style={{ color: '#1B3A6B' }}>
+        <CardTitle className="text-2xl font-bold" style={{ color: PURPLE }}>
           {t('title')}
         </CardTitle>
         <CardDescription>
@@ -82,7 +83,7 @@ export default function ForgotPasswordPage() {
             type="submit"
             className="w-full h-11"
             disabled={loading}
-            style={{ backgroundColor: '#1B3A6B' }}
+            style={{ backgroundColor: PURPLE }}
           >
             {loading ? t('submitting') : t('submit')}
           </Button>

@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
-import { Shield, Mail, Phone } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
+import Logo from '@/components/layout/Logo'
 
 export default function Footer() {
   const t = useTranslations('common.footer')
@@ -27,9 +28,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#2A5298' }}>
-                <Shield className="w-4 h-4 text-white" />
-              </div>
+              <Logo size={32} />
               <span className="font-semibold text-lg">Espallo</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">

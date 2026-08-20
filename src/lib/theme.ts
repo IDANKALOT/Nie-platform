@@ -1,0 +1,5 @@
+export const PURPLE = '#7C5CFC'
+export const PURPLE_DARK = '#5B3DF0'
+export const PURPLE_DARKER = '#4A2FD6'
+export const PURPLE_BG = '#F5F3FF'
+export const PURPLE_PILL_BG = '#EDE9FE'

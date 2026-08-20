@@ -5,9 +5,11 @@ import { useLocale, useTranslations } from 'next-intl'
 import { Link, usePathname } from '@/i18n/navigation'
 import { routing } from '@/i18n/routing'
 import { Button } from '@/components/ui/button'
-import { Menu, X, Shield } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import { resolveArticleSwitchSlug } from '@/lib/articles/href'
+import Logo from '@/components/layout/Logo'
+import { PURPLE } from '@/lib/theme'
 import type { User } from '@supabase/supabase-js'
 
 const localeLabels: Record<string, string> = {
@@ -64,9 +66,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#1B3A6B' }}>
-              <Shield className="w-4 h-4 text-white" />
-            </div>
+            <Logo size={32} />
             <span className="font-semibold text-lg text-gray-900">
               Espallo
             </span>
@@ -106,7 +106,7 @@ export default function Navbar() {
             </div>
             {user ? (
               <Link href="/dashboard">
-                <Button size="sm" style={{ backgroundColor: '#1B3A6B' }}>
+                <Button size="sm" style={{ backgroundColor: PURPLE }}>
                   {t('mySite')}
                 </Button>
               </Link>
@@ -122,7 +122,7 @@ export default function Navbar() {
                   </Button>
                 </Link>
                 <Link href="/register">
-                  <Button size="sm" style={{ backgroundColor: '#1B3A6B' }}>
+                  <Button size="sm" style={{ backgroundColor: PURPLE }}>
                     {t('startApplication')}
                   </Button>
                 </Link>
@@ -177,7 +177,7 @@ export default function Navbar() {
             <div className="pt-2 border-t border-gray-100 flex flex-col gap-2">
               {user ? (
                 <Link href="/dashboard" onClick={() => setIsOpen(false)}>
-                  <Button className="w-full" style={{ backgroundColor: '#1B3A6B' }}>
+                  <Button className="w-full" style={{ backgroundColor: PURPLE }}>
                     {t('mySite')}
                   </Button>
                 </Link>
@@ -187,7 +187,7 @@ export default function Navbar() {
                     <Button variant="outline" className="w-full">{t('login')}</Button>
                   </Link>
                   <Link href="/register" onClick={() => setIsOpen(false)}>
-                    <Button className="w-full" style={{ backgroundColor: '#1B3A6B' }}>
+                    <Button className="w-full" style={{ backgroundColor: PURPLE }}>
                       {t('startApplication')}
                     </Button>
                   </Link>

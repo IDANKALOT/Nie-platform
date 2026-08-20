@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
 import { Cookie } from 'lucide-react'
+import { PURPLE } from '@/lib/theme'
 
 export default function CookieBanner() {
   const t = useTranslations('common.cookieBanner')
@@ -40,7 +41,7 @@ export default function CookieBanner() {
         </div>
         <div className="flex items-center gap-2 shrink-0">
           <Button variant="outline" size="sm" onClick={decline}>{t('decline')}</Button>
-          <Button size="sm" onClick={accept} style={{ backgroundColor: '#1B3A6B' }}>
+          <Button size="sm" onClick={accept} style={{ backgroundColor: PURPLE }}>
             {t('accept')}
           </Button>
         </div>

@@ -91,10 +91,10 @@ export default function Hero() {
           />
           <div className="relative w-[240px] sm:w-[340px]">
             <Image
-              src="/images/hero-mascot.png"
+              src="/images/mascot.png"
               alt="Espallo"
-              width={896}
-              height={1200}
+              width={1536}
+              height={1024}
               priority
               unoptimized
               className="w-full h-auto drop-shadow-xl"

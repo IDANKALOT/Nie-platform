@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl'
 import { MapPin, Star } from 'lucide-react'
+import { PURPLE, PURPLE_PILL_BG, PURPLE_DARK } from '@/lib/theme'
 
 type Lawyer = {
   name: string
@@ -17,7 +18,7 @@ export default function Lawyers() {
     <section id="lawyers" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: '#2D8E6C' }}>
+          <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: PURPLE }}>
             {t('eyebrow')}
           </span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-gray-900">
@@ -37,7 +38,7 @@ export default function Lawyers() {
               {/* Avatar placeholder */}
               <div
                 className="w-12 h-12 rounded-xl flex items-center justify-center text-white font-bold text-lg mb-4"
-                style={{ backgroundColor: '#1B3A6B' }}
+                style={{ backgroundColor: PURPLE_DARK }}
               >
                 {lawyer.name[0]}
               </div>
@@ -59,7 +60,7 @@ export default function Lawyers() {
 
               <span
                 className="inline-block text-xs px-2 py-1 rounded-md"
-                style={{ backgroundColor: '#EBF5F0', color: '#2D8E6C' }}
+                style={{ backgroundColor: PURPLE_PILL_BG, color: PURPLE }}
               >
                 {lawyer.specialization}
               </span>

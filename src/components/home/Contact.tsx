@@ -8,6 +8,7 @@ import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { Mail, Phone, Clock, Send } from 'lucide-react'
 import { toast } from 'sonner'
+import { PURPLE, PURPLE_PILL_BG } from '@/lib/theme'
 
 export default function Contact() {
   const t = useTranslations('home.contact')
@@ -48,7 +49,7 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: '#2D8E6C' }}>
+          <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: PURPLE }}>
             {t('eyebrow')}
           </span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-gray-900">
@@ -68,9 +69,9 @@ export default function Contact() {
               <div key={item.title} className="flex items-start gap-4">
                 <div
                   className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                  style={{ backgroundColor: '#EBF0FF' }}
+                  style={{ backgroundColor: PURPLE_PILL_BG }}
                 >
-                  <item.icon className="w-5 h-5" style={{ color: '#1B3A6B' }} />
+                  <item.icon className="w-5 h-5" style={{ color: PURPLE }} />
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 mb-0.5">{item.title}</p>
@@ -87,16 +88,16 @@ export default function Contact() {
 
             <div
               className="mt-8 p-5 rounded-xl"
-              style={{ backgroundColor: '#F0F4FF', border: '1px solid #D6E0FF' }}
+              style={{ backgroundColor: PURPLE_PILL_BG, border: '1px solid #DCD3FF' }}
             >
-              <p className="text-sm font-semibold" style={{ color: '#1B3A6B' }}>
+              <p className="text-sm font-semibold" style={{ color: PURPLE }}>
                 {t('ctaBoxTitle')}
               </p>
               <p className="text-sm text-gray-600 mt-1 mb-4">
                 {t('ctaBoxText')}
               </p>
               <a href="/register">
-                <Button size="sm" style={{ backgroundColor: '#1B3A6B' }}>
+                <Button size="sm" style={{ backgroundColor: PURPLE }}>
                   {t('ctaBoxButton')}
                 </Button>
               </a>
@@ -133,7 +134,7 @@ export default function Contact() {
                 type="submit"
                 className="w-full h-11"
                 disabled={loading}
-                style={{ backgroundColor: '#1B3A6B' }}
+                style={{ backgroundColor: PURPLE }}
               >
                 {loading ? (
                   t('formSubmitting')

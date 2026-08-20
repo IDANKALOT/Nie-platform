@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl'
 import { FileText, PenLine, Building2, CheckCircle } from 'lucide-react'
+import { PURPLE, PURPLE_PILL_BG } from '@/lib/theme'
 
 const stepIcons = [FileText, PenLine, Building2, CheckCircle]
 
@@ -11,7 +12,7 @@ export default function HowItWorks() {
     <section id="how-it-works" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: '#2D8E6C' }}>
+          <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: PURPLE }}>
             {t('eyebrow')}
           </span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-gray-900">
@@ -33,13 +34,13 @@ export default function HowItWorks() {
                 <div key={step.title} className="relative flex flex-col items-center text-center group">
                   <div
                     className="w-20 h-20 rounded-2xl flex items-center justify-center mb-5 shadow-md transition-transform group-hover:-translate-y-1"
-                    style={{ backgroundColor: '#F0F4FF' }}
+                    style={{ backgroundColor: PURPLE_PILL_BG }}
                   >
-                    <Icon className="w-8 h-8" style={{ color: '#1B3A6B' }} />
+                    <Icon className="w-8 h-8" style={{ color: PURPLE }} />
                   </div>
                   <div
                     className="absolute top-0 right-0 sm:right-auto sm:left-14 text-xs font-bold px-2 py-0.5 rounded-full text-white"
-                    style={{ backgroundColor: '#2D8E6C' }}
+                    style={{ backgroundColor: PURPLE }}
                   >
                     {String(index + 1).padStart(2, '0')}
                   </div>

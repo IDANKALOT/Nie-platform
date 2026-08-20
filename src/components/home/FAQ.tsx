@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { ChevronDown } from 'lucide-react'
+import { PURPLE } from '@/lib/theme'
 
 type FaqItem = { question: string; answer: string }
 
@@ -15,7 +16,7 @@ export default function FAQ() {
     <section id="faq" className="py-20 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: '#2D8E6C' }}>
+          <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: PURPLE }}>
             {t('eyebrow')}
           </span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-gray-900">

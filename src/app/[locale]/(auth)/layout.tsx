@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
-import { Shield } from 'lucide-react'
+import Logo from '@/components/layout/Logo'
+import { PURPLE_BG } from '@/lib/theme'
 
 export const dynamic = 'force-dynamic'
 
@@ -8,14 +9,12 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
   const t = useTranslations('auth.layout')
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#F5F7FA' }}>
+    <div className="min-h-screen flex flex-col" style={{ backgroundColor: PURPLE_BG }}>
       {/* Simple header */}
       <header className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 h-14 flex items-center">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#1B3A6B' }}>
-              <Shield className="w-3.5 h-3.5 text-white" />
-            </div>
+            <Logo size={28} />
             <span className="font-semibold text-gray-900">Espallo</span>
           </Link>
         </div>

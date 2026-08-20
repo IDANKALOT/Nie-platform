@@ -10,6 +10,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Eye, EyeOff, UserPlus, CheckCircle2 } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import { toast } from 'sonner'
+import { PURPLE } from '@/lib/theme'
 
 export default function RegisterPage() {
   const t = useTranslations('auth.register')
@@ -70,7 +71,7 @@ export default function RegisterPage() {
   return (
     <Card className="shadow-lg border-gray-100">
       <CardHeader className="text-center pb-2">
-        <CardTitle className="text-2xl font-bold" style={{ color: '#1B3A6B' }}>
+        <CardTitle className="text-2xl font-bold" style={{ color: PURPLE }}>
           {t('title')}
         </CardTitle>
         <CardDescription>
@@ -135,7 +136,7 @@ export default function RegisterPage() {
             />
             <label htmlFor="consent" className="text-xs text-gray-500 leading-relaxed cursor-pointer">
               {t('consentPrefix')}{' '}
-              <Link href="/privatlivspolitik" className="underline" style={{ color: '#1B3A6B' }}>
+              <Link href="/privatlivspolitik" className="underline" style={{ color: PURPLE }}>
                 {t('consentLink')}
               </Link>{' '}
               {t('consentSuffix')}
@@ -146,7 +147,7 @@ export default function RegisterPage() {
             type="submit"
             className="w-full h-11 font-semibold"
             disabled={loading}
-            style={{ backgroundColor: '#1B3A6B' }}
+            style={{ backgroundColor: PURPLE }}
           >
             {loading ? t('submitting') : (
               <>
@@ -159,7 +160,7 @@ export default function RegisterPage() {
 
         <div className="mt-5 text-center text-sm text-gray-500">
           {t('haveAccount')}{' '}
-          <Link href="/login" className="font-medium hover:underline" style={{ color: '#1B3A6B' }}>
+          <Link href="/login" className="font-medium hover:underline" style={{ color: PURPLE }}>
             {t('loginHere')}
           </Link>
         </div>

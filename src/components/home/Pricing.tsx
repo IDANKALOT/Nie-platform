@@ -3,6 +3,7 @@ import { Link } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
 import { createClient } from '@/lib/supabase/server'
 import { CheckCircle2, Info } from 'lucide-react'
+import { PURPLE, PURPLE_DARK } from '@/lib/theme'
 import type { Package } from '@/types'
 
 export default async function Pricing() {
@@ -21,7 +22,7 @@ export default async function Pricing() {
     <section id="pricing" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: '#2D8E6C' }}>
+          <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: PURPLE }}>
             {t('eyebrow')}
           </span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-gray-900">
@@ -39,7 +40,7 @@ export default async function Pricing() {
               <div key={pkg.id} className="w-full max-w-sm">
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden h-full flex flex-col">
                   {/* Header */}
-                  <div className="p-8 text-center" style={{ background: 'linear-gradient(135deg, #1B3A6B, #2A5298)' }}>
+                  <div className="p-8 text-center" style={{ background: `linear-gradient(135deg, ${PURPLE_DARK}, ${PURPLE})` }}>
                     <span className="text-white/70 text-sm font-medium">{pkg.name}</span>
                     <div className="mt-2 flex items-baseline justify-center gap-1">
                       <span className="text-5xl font-bold text-white">{(pkg.price_cents / 100).toFixed(0)}</span>
@@ -61,7 +62,7 @@ export default async function Pricing() {
                             <li key={item} className="flex items-start gap-3">
                               <CheckCircle2
                                 className="w-4 h-4 mt-0.5 flex-shrink-0"
-                                style={{ color: '#2D8E6C' }}
+                                style={{ color: PURPLE }}
                               />
                               <span className="text-sm text-gray-700">{item}</span>
                             </li>
@@ -74,7 +75,7 @@ export default async function Pricing() {
                       <Link href="/register" className="block">
                         <Button
                           className="w-full h-12 text-base font-semibold"
-                          style={{ backgroundColor: '#1B3A6B' }}
+                          style={{ backgroundColor: PURPLE }}
                         >
                           {t('cta', { price })}
                         </Button>
