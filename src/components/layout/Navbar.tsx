@@ -54,14 +54,10 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const isHomePage = pathname === '/'
-
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled || !isHomePage
-          ? 'bg-white border-b border-gray-200 shadow-sm'
-          : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white border-b border-gray-200 ${
+        scrolled ? 'shadow-sm' : ''
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,11 +67,7 @@ export default function Navbar() {
             <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#1B3A6B' }}>
               <Shield className="w-4 h-4 text-white" />
             </div>
-            <span
-              className={`font-semibold text-lg transition-colors ${
-                scrolled || !isHomePage ? 'text-gray-900' : 'text-white'
-              }`}
-            >
+            <span className="font-semibold text-lg text-gray-900">
               Espallo
             </span>
           </Link>
@@ -86,9 +78,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-sm font-medium transition-colors hover:opacity-80 ${
-                  scrolled || !isHomePage ? 'text-gray-700' : 'text-white/90'
-                }`}
+                className="text-sm font-medium text-gray-700 transition-colors hover:opacity-80"
               >
                 {item.label}
               </Link>
@@ -106,12 +96,8 @@ export default function Navbar() {
                   onClick={() => setLocaleCookie(l)}
                   className={`px-1.5 py-0.5 rounded transition-colors ${
                     l === locale
-                      ? scrolled || !isHomePage
-                        ? 'text-gray-900 font-semibold'
-                        : 'text-white font-semibold'
-                      : scrolled || !isHomePage
-                        ? 'text-gray-400 hover:text-gray-700'
-                        : 'text-white/50 hover:text-white/80'
+                      ? 'text-gray-900 font-semibold'
+                      : 'text-gray-400 hover:text-gray-700'
                   }`}
                 >
                   {localeLabels[l]}
@@ -130,7 +116,7 @@ export default function Navbar() {
                   <Button
                     variant="ghost"
                     size="sm"
-                    className={scrolled || !isHomePage ? 'text-gray-700' : 'text-white hover:bg-white/10'}
+                    className="text-gray-700"
                   >
                     {t('login')}
                   </Button>
@@ -146,7 +132,7 @@ export default function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className={`md:hidden p-2 rounded-lg ${scrolled || !isHomePage ? 'text-gray-700' : 'text-white'}`}
+            className="md:hidden p-2 rounded-lg text-gray-700"
             onClick={() => setIsOpen(!isOpen)}
             aria-label={t('toggleMenu')}
           >
