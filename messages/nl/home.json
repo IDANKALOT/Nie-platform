@@ -11,10 +11,31 @@
     "subtitle": "Wij regelen het volledige aanvraagproces voor u — van het invullen van formulieren tot de afhandeling bij de Spaanse autoriteiten. U hoeft niet naar Spanje te reizen.",
     "ctaPrimary": "Start nu uw aanvraag",
     "ctaSecondary": "Bekijk hoe het werkt",
-    "trustFixedPrice": "Vaste prijs – 195 EUR",
-    "trustResponseTime": "Reactie binnen 48 uur",
-    "trustGdpr": "AVG-conforme verwerking",
+    "trustPersonalAssistance": "Persoonlijke ondersteuning",
+    "trustFastReliable": "Snel en betrouwbaar",
+    "trustStressFree": "100% stressvrij",
+    "priceCaption": "Vanaf 195 EUR – alles inbegrepen",
+    "mascotGreeting": "Hoi! Ik ben Espallo",
+    "mascotTagline": "Jouw NIE-metgezel",
     "disclaimer": "Espallo is een administratief dienstverleningsbureau en geen advocatenkantoor. Wij verlenen geen juridisch advies. Onze samenwerkende advocaten en notarissen in Spanje zijn zelfstandig en hebben een directe rechtsverhouding met u als klant."
+  },
+  "whyEspallo": {
+    "eyebrow": "Waarom Espallo",
+    "headingPrefix": "Meer dan",
+    "headingHighlight": "papierwerk.",
+    "cards": [
+      { "title": "Persoonlijke ondersteuning", "description": "Krijg echte begeleiding van ons vriendelijke team — altijd." },
+      { "title": "Snel en betrouwbaar", "description": "Wij regelen het ingewikkelde, zodat jij het niet hoeft te doen." },
+      { "title": "100% stressvrij", "description": "Duidelijke stappen, geen verrassingen, alleen resultaten." },
+      { "title": "Echte mensen", "description": "We zijn er voor je, van begin tot eind." }
+    ]
+  },
+  "ctaBanner": {
+    "eyebrow": "Klaar om je NIE eenvoudig te maken?",
+    "heading": "Laten we beginnen.",
+    "subtext": "Sluit je aan bij honderden tevreden klanten.",
+    "button": "Start je NIE",
+    "priceCaption": "Vanaf 195 EUR – alles inbegrepen"
   },
   "howItWorks": {
     "eyebrow": "Het proces",

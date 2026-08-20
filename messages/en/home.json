@@ -11,10 +11,31 @@
     "subtitle": "We handle the entire application process for you — from filling out forms to processing with the Spanish authorities. You don't need to travel to Spain.",
     "ctaPrimary": "Start application now",
     "ctaSecondary": "See how it works",
-    "trustFixedPrice": "Fixed price – 195 EUR",
-    "trustResponseTime": "Response within 48 hours",
-    "trustGdpr": "GDPR-compliant processing",
+    "trustPersonalAssistance": "Personal assistance",
+    "trustFastReliable": "Fast & reliable",
+    "trustStressFree": "100% stress-free",
+    "priceCaption": "From 195 EUR – all included",
+    "mascotGreeting": "Hey! I'm Espallo",
+    "mascotTagline": "Your NIE co-pilot",
     "disclaimer": "Espallo is an administrative service bureau, not a law firm. We do not provide legal advice. Our partner lawyers and notaries in Spain are independent professionals with a direct legal relationship to you as the customer."
+  },
+  "whyEspallo": {
+    "eyebrow": "Why Espallo",
+    "headingPrefix": "More than",
+    "headingHighlight": "paperwork.",
+    "cards": [
+      { "title": "Personal support", "description": "Get real guidance from our friendly team — always." },
+      { "title": "Fast & reliable", "description": "We handle the complex so you don't have to." },
+      { "title": "100% stress-free", "description": "Clear steps, no surprises, just results." },
+      { "title": "Real people", "description": "We're here for you, from start to finish." }
+    ]
+  },
+  "ctaBanner": {
+    "eyebrow": "Ready to make your NIE simple?",
+    "heading": "Let's get started.",
+    "subtext": "Join hundreds of happy customers.",
+    "button": "Start your NIE",
+    "priceCaption": "From 195 EUR – all included"
   },
   "howItWorks": {
     "eyebrow": "The process",

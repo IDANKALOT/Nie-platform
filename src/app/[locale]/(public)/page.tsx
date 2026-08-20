@@ -3,6 +3,8 @@ import { getTranslations } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
 import { getPathname } from '@/i18n/navigation'
 import Hero from '@/components/home/Hero'
+import WhyEspallo from '@/components/home/WhyEspallo'
+import CtaBanner from '@/components/home/CtaBanner'
 import HowItWorks from '@/components/home/HowItWorks'
 import ChatPreview from '@/components/home/ChatPreview'
 import DashboardPreview from '@/components/home/DashboardPreview'
@@ -38,6 +40,8 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <WhyEspallo />
+      <CtaBanner />
       <HowItWorks />
       <ChatPreview />
       <DashboardPreview />

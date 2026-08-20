@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, CheckCircle2, Clock, Shield } from 'lucide-react'
+import { ArrowRight, CheckCircle2, Zap, Heart, Shield } from 'lucide-react'
 
 const PURPLE = '#7C5CFC'
 const PURPLE_DARK = '#5B3DF0'
@@ -13,9 +13,9 @@ export default function Hero() {
   const t = useTranslations('home.hero')
 
   const trustItems = [
-    { icon: CheckCircle2, text: t('trustFixedPrice') },
-    { icon: Clock, text: t('trustResponseTime') },
-    { icon: Shield, text: t('trustGdpr') },
+    { icon: CheckCircle2, text: t('trustPersonalAssistance') },
+    { icon: Zap, text: t('trustFastReliable') },
+    { icon: Heart, text: t('trustStressFree') },
   ]
 
   return (
@@ -81,6 +81,8 @@ export default function Hero() {
               </Button>
             </a>
           </div>
+
+          <p className="mt-4 text-sm text-gray-400">{t('priceCaption')}</p>
         </div>
 
         {/* Mascot column */}
@@ -89,6 +91,66 @@ export default function Hero() {
             className="absolute w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] rounded-full blur-3xl opacity-40"
             style={{ backgroundColor: PURPLE }}
           />
+
+          {/* Hand-drawn annotations */}
+          <div
+            className="hidden sm:flex absolute -top-2 left-2 items-start gap-1 z-10"
+            style={{ color: PURPLE_DARK }}
+          >
+            <span className="font-hand text-2xl leading-none -rotate-3">{t('mascotGreeting')}</span>
+          </div>
+          <svg
+            className="hidden sm:block absolute top-9 left-14 w-10 h-14 z-10"
+            viewBox="0 0 40 56"
+            fill="none"
+            style={{ color: PURPLE_DARK }}
+          >
+            <path
+              d="M4 2C4 20 10 34 26 44"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              fill="none"
+            />
+            <path
+              d="M17 42L26 44L23 35"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              fill="none"
+            />
+          </svg>
+
+          <div
+            className="hidden sm:flex absolute -bottom-4 right-0 items-end gap-1 text-right z-10"
+            style={{ color: PURPLE_DARK }}
+          >
+            <span className="font-hand text-2xl leading-none rotate-2">{t('mascotTagline')}</span>
+          </div>
+          <svg
+            className="hidden sm:block absolute bottom-14 right-4 w-10 h-10 z-10 -scale-x-100"
+            viewBox="0 0 40 40"
+            fill="none"
+            style={{ color: PURPLE_DARK }}
+          >
+            <path
+              d="M4 4C10 16 16 24 32 30"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              fill="none"
+            />
+            <path
+              d="M22 30L32 30L30 21"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              fill="none"
+            />
+          </svg>
+
           <div className="relative w-[240px] sm:w-[340px]">
             <Image
               src="/images/mascot.png"

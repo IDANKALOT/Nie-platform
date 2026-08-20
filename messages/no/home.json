@@ -11,10 +11,31 @@
     "subtitle": "Vi håndterer hele søknadsprosessen for deg — fra utfylling av skjemaer til behandling hos spanske myndigheter. Du trenger ikke reise til Spania.",
     "ctaPrimary": "Start søknad nå",
     "ctaSecondary": "Se hvordan det fungerer",
-    "trustFixedPrice": "Fast pris – 195 EUR",
-    "trustResponseTime": "Svar innen 48 timer",
-    "trustGdpr": "GDPR-kompatibel behandling",
+    "trustPersonalAssistance": "Personlig assistanse",
+    "trustFastReliable": "Raskt og pålitelig",
+    "trustStressFree": "100% stressfritt",
+    "priceCaption": "Fra 195 EUR – alt inkludert",
+    "mascotGreeting": "Hei! Jeg er Espallo",
+    "mascotTagline": "Din NIE-følgesvenn",
     "disclaimer": "Espallo er et administrativt servicebyrå og ikke et advokatfirma. Vi yter ikke juridisk rådgivning. Våre samarbeidende advokater og notarer i Spania er selvstendige og har et direkte rettsforhold med deg som kunde."
+  },
+  "whyEspallo": {
+    "eyebrow": "Hvorfor Espallo",
+    "headingPrefix": "Mer enn",
+    "headingHighlight": "papirarbeid.",
+    "cards": [
+      { "title": "Personlig støtte", "description": "Få ekte veiledning fra vårt vennlige team — alltid." },
+      { "title": "Raskt og pålitelig", "description": "Vi håndterer det kompliserte, så du slipper." },
+      { "title": "100% stressfritt", "description": "Klare steg, ingen overraskelser, bare resultater." },
+      { "title": "Ekte mennesker", "description": "Vi er her for deg, fra start til slutt." }
+    ]
+  },
+  "ctaBanner": {
+    "eyebrow": "Klar til å gjøre din NIE enkel?",
+    "heading": "La oss komme i gang.",
+    "subtext": "Bli en del av hundrevis av fornøyde kunder.",
+    "button": "Start din NIE",
+    "priceCaption": "Fra 195 EUR – alt inkludert"
   },
   "howItWorks": {
     "eyebrow": "Prosessen",

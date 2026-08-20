@@ -11,10 +11,31 @@
     "subtitle": "Wir übernehmen den gesamten Antragsprozess für Sie — von der Formularausfüllung bis zur Bearbeitung bei den spanischen Behörden. Sie müssen nicht nach Spanien reisen.",
     "ctaPrimary": "Jetzt Antrag starten",
     "ctaSecondary": "So funktioniert es",
-    "trustFixedPrice": "Festpreis – 195 EUR",
-    "trustResponseTime": "Antwort innerhalb von 48 Stunden",
-    "trustGdpr": "DSGVO-konforme Verarbeitung",
+    "trustPersonalAssistance": "Persönliche Unterstützung",
+    "trustFastReliable": "Schnell und zuverlässig",
+    "trustStressFree": "100% stressfrei",
+    "priceCaption": "Ab 195 EUR – alles inklusive",
+    "mascotGreeting": "Hallo! Ich bin Espallo",
+    "mascotTagline": "Dein NIE-Begleiter",
     "disclaimer": "Espallo ist ein administratives Dienstleistungsunternehmen und keine Anwaltskanzlei. Wir erbringen keine Rechtsberatung. Unsere Partneranwälte und -notare in Spanien sind selbstständig und stehen in einem direkten Rechtsverhältnis zu Ihnen als Kunde."
+  },
+  "whyEspallo": {
+    "eyebrow": "Warum Espallo",
+    "headingPrefix": "Mehr als",
+    "headingHighlight": "Papierkram.",
+    "cards": [
+      { "title": "Persönliche Unterstützung", "description": "Echte Beratung von unserem freundlichen Team — immer." },
+      { "title": "Schnell und zuverlässig", "description": "Wir kümmern uns um das Komplizierte, damit du es nicht musst." },
+      { "title": "100% stressfrei", "description": "Klare Schritte, keine Überraschungen, nur Ergebnisse." },
+      { "title": "Echte Menschen", "description": "Wir sind für dich da, von Anfang bis Ende." }
+    ]
+  },
+  "ctaBanner": {
+    "eyebrow": "Bereit, deine NIE einfach zu machen?",
+    "heading": "Lass uns loslegen.",
+    "subtext": "Schließ dich Hunderten zufriedenen Kunden an.",
+    "button": "Starte deine NIE",
+    "priceCaption": "Ab 195 EUR – alles inklusive"
   },
   "howItWorks": {
     "eyebrow": "Der Ablauf",
