@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { CreditCard, Loader2 } from 'lucide-react'
+import { PURPLE } from '@/lib/theme'
 
 export default function PayButton({ applicationId, label }: { applicationId: string; label: string }) {
   const [loading, setLoading] = useState(false)
@@ -27,7 +28,7 @@ export default function PayButton({ applicationId, label }: { applicationId: str
   }
 
   return (
-    <Button size="sm" onClick={handlePay} disabled={loading} style={{ backgroundColor: '#1B3A6B' }}>
+    <Button size="sm" onClick={handlePay} disabled={loading} style={{ backgroundColor: PURPLE }}>
       {loading ? <Loader2 className="w-3 h-3 mr-1 animate-spin" /> : <CreditCard className="w-3 h-3 mr-1" />}
       {label}
     </Button>

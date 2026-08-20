@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl'
 import { CheckCircle2, Circle, Loader2 } from 'lucide-react'
 import { STATUS_ORDER, type ApplicationStatus } from '@/types'
+import { PURPLE } from '@/lib/theme'
 
 interface Props {
   currentStatus: ApplicationStatus
@@ -35,7 +36,7 @@ export default function StatusStepper({ currentStatus }: Props) {
                 {isDone ? (
                   <CheckCircle2 className="w-6 h-6" style={{ color: '#2D8E6C' }} />
                 ) : isCurrent ? (
-                  <Loader2 className="w-6 h-6 animate-spin" style={{ color: '#1B3A6B' }} />
+                  <Loader2 className="w-6 h-6 animate-spin" style={{ color: PURPLE }} />
                 ) : (
                   <Circle className="w-6 h-6 text-gray-300" />
                 )}
@@ -50,7 +51,7 @@ export default function StatusStepper({ currentStatus }: Props) {
                     ? 'font-semibold'
                     : 'text-gray-400'
                 }`}
-                style={isCurrent ? { color: '#1B3A6B' } : undefined}
+                style={isCurrent ? { color: PURPLE } : undefined}
               >
                 {t(status)}
               </p>

@@ -9,6 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { createClient } from '@/lib/supabase/client'
 import { toast } from 'sonner'
 import type { Profile } from '@/types'
+import { PURPLE } from '@/lib/theme'
 
 interface Props {
   profile: Profile | null
@@ -67,7 +68,7 @@ export default function ProfileSettings({ profile, userEmail }: Props) {
                 placeholder={t('namePlaceholder')}
               />
             </div>
-            <Button type="submit" disabled={loading} style={{ backgroundColor: '#1B3A6B' }}>
+            <Button type="submit" disabled={loading} style={{ backgroundColor: PURPLE }}>
               {loading ? t('saving') : t('save')}
             </Button>
           </form>

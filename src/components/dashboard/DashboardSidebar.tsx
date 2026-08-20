@@ -2,8 +2,10 @@
 
 import { useTranslations } from 'next-intl'
 import { Link, usePathname, useRouter } from '@/i18n/navigation'
-import { LayoutDashboard, FileText, FolderOpen, Settings, Shield, LogOut } from 'lucide-react'
+import { LayoutDashboard, FileText, FolderOpen, Settings, LogOut } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
+import Logo from '@/components/layout/Logo'
+import { PURPLE, PURPLE_DARK } from '@/lib/theme'
 import type { Profile } from '@/types'
 
 interface Props {
@@ -34,9 +36,7 @@ export default function DashboardSidebar({ profile }: Props) {
       {/* Logo */}
       <div className="p-5 border-b border-gray-100">
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#1B3A6B' }}>
-            <Shield className="w-3.5 h-3.5 text-white" />
-          </div>
+          <Logo size={28} />
           <span className="font-semibold text-gray-900 text-sm">Espallo</span>
         </Link>
       </div>
@@ -54,7 +54,7 @@ export default function DashboardSidebar({ profile }: Props) {
                   ? 'text-white shadow-sm'
                   : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
               }`}
-              style={active ? { backgroundColor: '#1B3A6B' } : undefined}
+              style={active ? { backgroundColor: PURPLE } : undefined}
             >
               <item.icon className="w-4 h-4 shrink-0" />
               {item.label}
@@ -68,7 +68,7 @@ export default function DashboardSidebar({ profile }: Props) {
         <div className="flex items-center gap-3 px-3 py-2 rounded-lg mb-1">
           <div
             className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0"
-            style={{ backgroundColor: '#2A5298' }}
+            style={{ backgroundColor: PURPLE_DARK }}
           >
             {profile?.name?.[0]?.toUpperCase() ?? t('fallbackName')[0]}
           </div>

@@ -3,9 +3,11 @@
 import { useTranslations } from 'next-intl'
 import { Link, usePathname, useRouter } from '@/i18n/navigation'
 import {
-  LayoutDashboard, FileText, Users, Settings, Shield, LogOut, Scale, Package
+  LayoutDashboard, FileText, Users, Settings, LogOut, Scale, Package
 } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
+import Logo from '@/components/layout/Logo'
+import { PURPLE, PURPLE_DARK } from '@/lib/theme'
 import type { Profile } from '@/types'
 
 interface Props { profile: Profile | null }
@@ -35,9 +37,7 @@ export default function AdminSidebar({ profile }: Props) {
     <aside className="hidden lg:flex flex-col w-64 bg-gray-900 text-white shrink-0">
       <div className="p-5 border-b border-gray-700">
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg flex items-center justify-center bg-blue-600">
-            <Shield className="w-3.5 h-3.5 text-white" />
-          </div>
+          <Logo size={28} />
           <div>
             <span className="font-semibold text-sm block">Espallo</span>
             <span className="text-xs text-gray-400">Admin Panel</span>
@@ -53,8 +53,9 @@ export default function AdminSidebar({ profile }: Props) {
               key={item.href}
               href={item.href}
               className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all ${
-                active ? 'bg-blue-600 text-white' : 'text-gray-300 hover:bg-gray-800 hover:text-white'
+                active ? 'text-white' : 'text-gray-300 hover:bg-gray-800 hover:text-white'
               }`}
+              style={active ? { backgroundColor: PURPLE } : undefined}
             >
               <item.icon className="w-4 h-4 shrink-0" />
               {item.label}
@@ -65,7 +66,7 @@ export default function AdminSidebar({ profile }: Props) {
 
       <div className="p-3 border-t border-gray-700">
         <div className="flex items-center gap-3 px-3 py-2 rounded-lg mb-1">
-          <div className="w-7 h-7 rounded-full bg-blue-600 flex items-center justify-center text-xs font-bold shrink-0">
+          <div className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold shrink-0" style={{ backgroundColor: PURPLE_DARK }}>
             {profile?.name?.[0]?.toUpperCase() ?? 'A'}
           </div>
           <div className="min-w-0">

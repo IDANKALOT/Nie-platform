@@ -9,6 +9,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { createClient } from '@/lib/supabase/client'
 import { toast } from 'sonner'
 import { Eraser, ArrowRight, CheckCircle2 } from 'lucide-react'
+import { PURPLE } from '@/lib/theme'
 
 interface Props {
   applicationId: string
@@ -40,7 +41,7 @@ export default function SignaturePage({ applicationId, existingSignatureUrl }: P
     resizeCanvas()
 
     const pad = new SignaturePad(canvas, {
-      penColor: '#1B3A6B',
+      penColor: PURPLE,
       backgroundColor: 'rgba(0,0,0,0)',
     })
 
@@ -179,7 +180,7 @@ export default function SignaturePage({ applicationId, existingSignatureUrl }: P
         onClick={handleSubmit}
         disabled={loading}
         className="w-full h-12 text-base font-semibold"
-        style={{ backgroundColor: '#1B3A6B' }}
+        style={{ backgroundColor: PURPLE }}
       >
         {loading ? t('submitting') : (
           <>

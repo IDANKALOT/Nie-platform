@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl'
+import { PURPLE_DARK } from '@/lib/theme'
 import type { Profile } from '@/types'
 
 interface Props { profile: Profile | null }
@@ -16,7 +17,7 @@ export default function AdminHeader({ profile }: Props) {
       </div>
       <div className="flex items-center gap-2">
         <span className="text-sm text-gray-600">{profile?.name}</span>
-        <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold">
+        <div className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold" style={{ backgroundColor: PURPLE_DARK }}>
           {profile?.name?.[0]?.toUpperCase() ?? 'A'}
         </div>
       </div>

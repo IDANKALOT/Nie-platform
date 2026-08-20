@@ -14,6 +14,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { createClient } from '@/lib/supabase/client'
 import { toast } from 'sonner'
 import { ArrowRight, Save } from 'lucide-react'
+import { PURPLE, PURPLE_PILL_BG } from '@/lib/theme'
 
 interface Props {
   applicationId: string
@@ -117,7 +118,7 @@ export default function EX18Form({ applicationId, initialData }: Props) {
       {/* Personal data */}
       <Card className="bg-white shadow-sm">
         <CardHeader className="pb-3">
-          <CardTitle className="text-base" style={{ color: '#1B3A6B' }}>
+          <CardTitle className="text-base" style={{ color: PURPLE }}>
             {t('personalInfoTitle')}
           </CardTitle>
         </CardHeader>
@@ -165,7 +166,7 @@ export default function EX18Form({ applicationId, initialData }: Props) {
       {/* Passport */}
       <Card className="bg-white shadow-sm">
         <CardHeader className="pb-3">
-          <CardTitle className="text-base" style={{ color: '#1B3A6B' }}>{t('passportInfoTitle')}</CardTitle>
+          <CardTitle className="text-base" style={{ color: PURPLE }}>{t('passportInfoTitle')}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -191,7 +192,7 @@ export default function EX18Form({ applicationId, initialData }: Props) {
       {/* Address */}
       <Card className="bg-white shadow-sm">
         <CardHeader className="pb-3">
-          <CardTitle className="text-base" style={{ color: '#1B3A6B' }}>{t('contactAddressTitle')}</CardTitle>
+          <CardTitle className="text-base" style={{ color: PURPLE }}>{t('contactAddressTitle')}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="space-y-1.5">
@@ -235,7 +236,7 @@ export default function EX18Form({ applicationId, initialData }: Props) {
       {/* NIE Purpose */}
       <Card className="bg-white shadow-sm">
         <CardHeader className="pb-3">
-          <CardTitle className="text-base" style={{ color: '#1B3A6B' }}>{t('purposeTitle')}</CardTitle>
+          <CardTitle className="text-base" style={{ color: PURPLE }}>{t('purposeTitle')}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -244,16 +245,16 @@ export default function EX18Form({ applicationId, initialData }: Props) {
                 key={p.value}
                 className={`flex items-center gap-2 p-3 rounded-lg border cursor-pointer transition-all text-sm ${
                   watchPurpose === p.value
-                    ? 'border-blue-300 bg-blue-50 font-medium'
+                    ? 'font-medium'
                     : 'border-gray-200 hover:border-gray-300'
                 }`}
-                style={watchPurpose === p.value ? { borderColor: '#1B3A6B', backgroundColor: '#EBF0FF' } : undefined}
+                style={watchPurpose === p.value ? { borderColor: PURPLE, backgroundColor: PURPLE_PILL_BG } : undefined}
               >
                 <input
                   type="radio"
                   value={p.value}
                   {...register('nie_purpose')}
-                  className="accent-blue-700"
+                  className="accent-[#7C5CFC]"
                 />
                 {p.label}
               </label>
@@ -272,7 +273,7 @@ export default function EX18Form({ applicationId, initialData }: Props) {
       {/* Additional info */}
       <Card className="bg-white shadow-sm">
         <CardHeader className="pb-3">
-          <CardTitle className="text-base" style={{ color: '#1B3A6B' }}>{t('additionalInfoTitle')}</CardTitle>
+          <CardTitle className="text-base" style={{ color: PURPLE }}>{t('additionalInfoTitle')}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -281,7 +282,7 @@ export default function EX18Form({ applicationId, initialData }: Props) {
               <div className="space-y-2">
                 {maritalStatuses.map((m) => (
                   <label key={m.value} className="flex items-center gap-2 text-sm cursor-pointer">
-                    <input type="radio" value={m.value} {...register('marital_status')} className="accent-blue-700" />
+                    <input type="radio" value={m.value} {...register('marital_status')} className="accent-[#7C5CFC]" />
                     {m.label}
                   </label>
                 ))}
@@ -293,7 +294,7 @@ export default function EX18Form({ applicationId, initialData }: Props) {
               <div className="space-y-2">
                 {genders.map((g) => (
                   <label key={g.value} className="flex items-center gap-2 text-sm cursor-pointer">
-                    <input type="radio" value={g.value} {...register('gender')} className="accent-blue-700" />
+                    <input type="radio" value={g.value} {...register('gender')} className="accent-[#7C5CFC]" />
                     {g.label}
                   </label>
                 ))}
@@ -317,7 +318,7 @@ export default function EX18Form({ applicationId, initialData }: Props) {
         <Button
           type="submit"
           className="ml-auto"
-          style={{ backgroundColor: '#1B3A6B' }}
+          style={{ backgroundColor: PURPLE }}
           disabled={isSubmitting}
         >
           {isSubmitting ? t('submitting') : t('continueToSignature')}

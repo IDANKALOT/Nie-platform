@@ -3,6 +3,7 @@ import { getTranslations, getLocale } from 'next-intl/server'
 import { Link } from '@/i18n/navigation'
 import { Card, CardContent } from '@/components/ui/card'
 import { STATUS_ORDER, type ApplicationStatus } from '@/types'
+import { PURPLE } from '@/lib/theme'
 
 const dateLocales: Record<string, string> = { da: 'da-DK', en: 'en-US', no: 'nb-NO', sv: 'sv-SE', de: 'de-DE', nl: 'nl-NL' }
 
@@ -73,7 +74,7 @@ export default async function AdminAnsogningerPage({ searchParams }: Props) {
           name="search"
           defaultValue={params.search}
           placeholder={t('searchPlaceholder')}
-          className="flex-1 h-9 px-3 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-200"
+          className="flex-1 h-9 px-3 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-200"
         />
         <select
           name="status"
@@ -88,7 +89,7 @@ export default async function AdminAnsogningerPage({ searchParams }: Props) {
         <button
           type="submit"
           className="h-9 px-4 text-sm font-medium text-white rounded-lg"
-          style={{ backgroundColor: '#1B3A6B' }}
+          style={{ backgroundColor: PURPLE }}
         >
           {t('search')}
         </button>
@@ -130,7 +131,7 @@ export default async function AdminAnsogningerPage({ searchParams }: Props) {
                       <Link
                         href={`/admin/ansogninger/${app.id}`}
                         className="text-xs font-medium hover:underline"
-                        style={{ color: '#1B3A6B' }}
+                        style={{ color: PURPLE }}
                       >
                         {t('open')}
                       </Link>

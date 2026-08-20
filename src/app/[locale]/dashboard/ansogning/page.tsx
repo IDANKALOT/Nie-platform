@@ -7,6 +7,7 @@ import StatusStepper from '@/components/dashboard/StatusStepper'
 import PayButton from '@/components/dashboard/PayButton'
 import { Plus, ArrowRight } from 'lucide-react'
 import { type ApplicationStatus } from '@/types'
+import { PURPLE } from '@/lib/theme'
 
 const dateLocales: Record<string, string> = { da: 'da-DK', en: 'en-US', no: 'nb-NO', sv: 'sv-SE', de: 'de-DE', nl: 'nl-NL' }
 
@@ -30,7 +31,7 @@ export default async function AnsogningPage() {
           <p className="text-sm text-gray-500 mt-0.5">{t('subtitle')}</p>
         </div>
         <Link href="/dashboard/ansogning/ny">
-          <Button size="sm" style={{ backgroundColor: '#1B3A6B' }}>
+          <Button size="sm" style={{ backgroundColor: PURPLE }}>
             <Plus className="w-4 h-4 mr-2" />
             {t('newApplication')}
           </Button>
@@ -42,7 +43,7 @@ export default async function AnsogningPage() {
           <CardContent className="py-10 text-center">
             <p className="text-gray-500 text-sm">{t('emptyText')}</p>
             <Link href="/dashboard/ansogning/ny" className="mt-4 inline-block">
-              <Button style={{ backgroundColor: '#1B3A6B' }}>{t('startApplication')}</Button>
+              <Button style={{ backgroundColor: PURPLE }}>{t('startApplication')}</Button>
             </Link>
           </CardContent>
         </Card>

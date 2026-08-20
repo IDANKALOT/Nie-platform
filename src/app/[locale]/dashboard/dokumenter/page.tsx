@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import PayButton from '@/components/dashboard/PayButton'
 import { FileText, Download, Eye, Lock } from 'lucide-react'
 import type { Document } from '@/types'
+import { PURPLE } from '@/lib/theme'
 
 const typeColors: Record<string, string> = {
   ex18_filled: 'bg-blue-100 text-blue-700',
@@ -91,7 +92,7 @@ export default async function DokumenterPage() {
                 className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
                 style={{ backgroundColor: '#EBF0FF' }}
               >
-                <FileText className="w-5 h-5" style={{ color: '#1B3A6B' }} />
+                <FileText className="w-5 h-5" style={{ color: PURPLE }} />
               </div>
 
               <div className="flex-1 min-w-0">

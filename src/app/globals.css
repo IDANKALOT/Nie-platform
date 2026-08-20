@@ -67,12 +67,12 @@
   --radius: 0.5rem;
   --sidebar: oklch(0.98 0.005 250);
   --sidebar-foreground: oklch(0.15 0.03 250);
-  --sidebar-primary: oklch(0.28 0.09 250);
+  --sidebar-primary: #7C5CFC;
   --sidebar-primary-foreground: oklch(0.99 0 0);
-  --sidebar-accent: oklch(0.96 0.005 250);
-  --sidebar-accent-foreground: oklch(0.28 0.09 250);
+  --sidebar-accent: #EDE9FE;
+  --sidebar-accent-foreground: #5B3DF0;
   --sidebar-border: oklch(0.91 0.01 250);
-  --sidebar-ring: oklch(0.28 0.09 250);
+  --sidebar-ring: #7C5CFC;
   /* Custom brand tokens */
   --brand-blue: #7C5CFC;
   --brand-blue-light: #5B3DF0;

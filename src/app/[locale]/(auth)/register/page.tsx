@@ -132,7 +132,7 @@ export default function RegisterPage() {
               id="consent"
               checked={consent}
               onChange={(e) => setConsent(e.target.checked)}
-              className="mt-0.5 w-4 h-4 rounded border-gray-300 accent-blue-700"
+              className="mt-0.5 w-4 h-4 rounded border-gray-300 accent-[#7C5CFC]"
             />
             <label htmlFor="consent" className="text-xs text-gray-500 leading-relaxed cursor-pointer">
               {t('consentPrefix')}{' '}

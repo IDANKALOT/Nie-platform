@@ -19,6 +19,7 @@ import { createClient } from '@/lib/supabase/client'
 import { toast } from 'sonner'
 import { Plus, Pencil, Trash2, GripVertical } from 'lucide-react'
 import type { Package } from '@/types'
+import { PURPLE } from '@/lib/theme'
 
 interface FormState {
   name: string
@@ -132,7 +133,7 @@ export default function PackagesManager({ initialPackages }: { initialPackages: 
   return (
     <>
       <div className="flex justify-end">
-        <Button onClick={openCreate} style={{ backgroundColor: '#1B3A6B' }}>
+        <Button onClick={openCreate} style={{ backgroundColor: PURPLE }}>
           <Plus className="w-4 h-4 mr-2" />
           {t('addButton')}
         </Button>
@@ -250,7 +251,7 @@ export default function PackagesManager({ initialPackages }: { initialPackages: 
             <Button variant="outline" onClick={() => setDialogOpen(false)}>
               {t('cancel')}
             </Button>
-            <Button onClick={handleSave} disabled={saving} style={{ backgroundColor: '#1B3A6B' }}>
+            <Button onClick={handleSave} disabled={saving} style={{ backgroundColor: PURPLE }}>
               {t('save')}
             </Button>
           </DialogFooter>

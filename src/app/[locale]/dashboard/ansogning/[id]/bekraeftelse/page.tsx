@@ -5,6 +5,7 @@ import { Link } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { CheckCircle2, FileText, ArrowRight, Home } from 'lucide-react'
+import { PURPLE } from '@/lib/theme'
 
 interface Props {
   params: Promise<{ id: string }>
@@ -79,7 +80,7 @@ export default async function BekraeftelsePage({ params }: Props) {
               </Button>
             </Link>
             <Link href="/dashboard">
-              <Button className="w-full sm:w-auto" style={{ backgroundColor: '#1B3A6B' }}>
+              <Button className="w-full sm:w-auto" style={{ backgroundColor: PURPLE }}>
                 <Home className="w-4 h-4 mr-2" />
                 {t('bekraeftelse.goToDashboard')}
               </Button>

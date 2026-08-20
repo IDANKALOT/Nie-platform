@@ -2,6 +2,7 @@ import { redirect, notFound } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
 import { createClient } from '@/lib/supabase/server'
 import EX18Form from '@/components/forms/EX18Form'
+import { PURPLE } from '@/lib/theme'
 
 interface Props {
   params: Promise<{ id: string }>
@@ -44,14 +45,14 @@ export default async function FormularPage({ params }: Props) {
           <span>33%</span>
         </div>
         <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-          <div className="h-full rounded-full w-1/3" style={{ backgroundColor: '#1B3A6B' }} />
+          <div className="h-full rounded-full w-1/3" style={{ backgroundColor: PURPLE }} />
         </div>
         <div className="flex justify-between mt-3">
           {steps.map((step, i) => (
             <span
               key={step}
               className={`text-xs font-medium ${i === 0 ? 'font-semibold' : 'text-gray-400'}`}
-              style={i === 0 ? { color: '#1B3A6B' } : undefined}
+              style={i === 0 ? { color: PURPLE } : undefined}
             >
               {step}
             </span>

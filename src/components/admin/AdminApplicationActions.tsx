@@ -16,6 +16,7 @@ import {
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Textarea } from '@/components/ui/textarea'
 import { STATUS_ORDER, type ApplicationStatus } from '@/types'
+import { PURPLE } from '@/lib/theme'
 
 interface Props {
   applicationId: string
@@ -86,7 +87,7 @@ export default function AdminApplicationActions({ applicationId, currentStatus }
         <DropdownMenu>
           <DropdownMenuTrigger
             className="inline-flex items-center justify-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium text-white disabled:opacity-50"
-            style={{ backgroundColor: '#1B3A6B' }}
+            style={{ backgroundColor: PURPLE }}
             disabled={loading}
           >
             {t('changeStatus')}
@@ -125,7 +126,7 @@ export default function AdminApplicationActions({ applicationId, currentStatus }
               <Button
                 onClick={handleAddNote}
                 disabled={loading || !noteText.trim()}
-                style={{ backgroundColor: '#1B3A6B' }}
+                style={{ backgroundColor: PURPLE }}
               >
                 {t('saveNote')}
               </Button>

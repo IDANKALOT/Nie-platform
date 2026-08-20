@@ -3,8 +3,10 @@
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { Link, usePathname, useRouter } from '@/i18n/navigation'
-import { Menu, X, Shield, LayoutDashboard, FileText, FolderOpen, Settings, LogOut } from 'lucide-react'
+import { Menu, X, LayoutDashboard, FileText, FolderOpen, Settings, LogOut } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
+import Logo from '@/components/layout/Logo'
+import { PURPLE_DARK } from '@/lib/theme'
 import type { Profile } from '@/types'
 
 interface Props {
@@ -60,7 +62,7 @@ export default function DashboardHeader({ profile }: Props) {
           <span className="text-sm text-gray-500 hidden sm:block">{profile?.name}</span>
           <div
             className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold"
-            style={{ backgroundColor: '#2A5298' }}
+            style={{ backgroundColor: PURPLE_DARK }}
           >
             {profile?.name?.[0]?.toUpperCase() ?? t('fallbackName')[0]}
           </div>
@@ -74,9 +76,7 @@ export default function DashboardHeader({ profile }: Props) {
           <div className="relative w-64 bg-white h-full flex flex-col shadow-xl">
             <div className="p-4 border-b flex items-center justify-between">
               <Link href="/" className="flex items-center gap-2">
-                <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#1B3A6B' }}>
-                  <Shield className="w-3.5 h-3.5 text-white" />
-                </div>
+                <Logo size={28} />
                 <span className="font-semibold text-sm">Espallo</span>
               </Link>
               <button onClick={() => setMobileOpen(false)}>

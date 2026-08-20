@@ -7,6 +7,7 @@ import StatusStepper from '@/components/dashboard/StatusStepper'
 import PaymentStatCard from '@/components/dashboard/PaymentStatCard'
 import { FileText, FolderOpen, CreditCard, ArrowRight, Plus } from 'lucide-react'
 import { type ApplicationStatus } from '@/types'
+import { PURPLE } from '@/lib/theme'
 
 export default async function DashboardPage() {
   const t = await getTranslations('dashboard.page')
@@ -47,14 +48,14 @@ export default async function DashboardPage() {
               className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4"
               style={{ backgroundColor: '#EBF0FF' }}
             >
-              <FileText className="w-7 h-7" style={{ color: '#1B3A6B' }} />
+              <FileText className="w-7 h-7" style={{ color: PURPLE }} />
             </div>
             <h3 className="font-semibold text-gray-900 mb-2">{t('noApplicationTitle')}</h3>
             <p className="text-sm text-gray-500 mb-6 max-w-xs mx-auto">
               {t('noApplicationText')}
             </p>
             <Link href="/dashboard/ansogning/ny">
-              <Button style={{ backgroundColor: '#1B3A6B' }}>
+              <Button style={{ backgroundColor: PURPLE }}>
                 <Plus className="w-4 h-4 mr-2" />
                 {t('startApplication')}
               </Button>

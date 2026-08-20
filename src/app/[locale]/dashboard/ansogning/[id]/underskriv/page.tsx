@@ -2,6 +2,7 @@ import { notFound, redirect } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
 import { createClient } from '@/lib/supabase/server'
 import SignaturePage from '@/components/forms/SignaturePage'
+import { PURPLE } from '@/lib/theme'
 
 interface Props {
   params: Promise<{ id: string }>
@@ -44,14 +45,14 @@ export default async function UnderscrivPage({ params }: Props) {
           <span>66%</span>
         </div>
         <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-          <div className="h-full rounded-full w-2/3" style={{ backgroundColor: '#1B3A6B' }} />
+          <div className="h-full rounded-full w-2/3" style={{ backgroundColor: PURPLE }} />
         </div>
         <div className="flex justify-between mt-3">
           {steps.map((step, i) => (
             <span
               key={step}
               className="text-xs font-medium"
-              style={i === 1 ? { color: '#1B3A6B' } : { color: i < 1 ? '#2D8E6C' : '#9CA3AF' }}
+              style={i === 1 ? { color: PURPLE } : { color: i < 1 ? '#2D8E6C' : '#9CA3AF' }}
             >
               {step}
             </span>

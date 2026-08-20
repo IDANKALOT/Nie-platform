@@ -4,6 +4,7 @@ import { Link } from '@/i18n/navigation'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { FileText, Clock, CheckCircle2, CreditCard, ArrowRight } from 'lucide-react'
 import { type ApplicationStatus } from '@/types'
+import { PURPLE } from '@/lib/theme'
 
 const dateLocales: Record<string, string> = { da: 'da-DK', en: 'en-US', no: 'nb-NO', sv: 'sv-SE', de: 'de-DE', nl: 'nl-NL' }
 
@@ -40,7 +41,7 @@ export default async function AdminDashboardPage() {
   }
 
   const statCards = [
-    { label: t('statNew'), value: stats.received, icon: FileText, color: '#1B3A6B' },
+    { label: t('statNew'), value: stats.received, icon: FileText, color: PURPLE },
     { label: t('statProcessing'), value: stats.processing, icon: Clock, color: '#D97706' },
     { label: t('statCompleted'), value: stats.completed, icon: CheckCircle2, color: '#2D8E6C' },
     { label: t('statPaid'), value: stats.paid, icon: CreditCard, color: '#7C3AED' },
@@ -79,7 +80,7 @@ export default async function AdminDashboardPage() {
             <Link
               href="/admin/ansogninger"
               className="text-xs font-medium flex items-center gap-1 hover:underline"
-              style={{ color: '#1B3A6B' }}
+              style={{ color: PURPLE }}
             >
               {t('viewAll')}
               <ArrowRight className="w-3 h-3" />
@@ -125,7 +126,7 @@ export default async function AdminDashboardPage() {
                       <Link
                         href={`/admin/ansogninger/${app.id}`}
                         className="text-xs font-medium hover:underline"
-                        style={{ color: '#1B3A6B' }}
+                        style={{ color: PURPLE }}
                       >
                         {t('viewCase')}
                       </Link>
