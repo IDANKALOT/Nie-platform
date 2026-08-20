@@ -20,13 +20,13 @@ function detectLocaleFromCountry(request: NextRequest): string {
   return (country && COUNTRY_LOCALE_MAP[country]) || 'en'
 }
 
-function stripLocale(pathname: string): { pathname: string; locale: string } {
+function stripLocale(pathname: string): { pathname: string; locale: string; hadPrefix: boolean } {
   for (const locale of routing.locales) {
     if (pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)) {
-      return { pathname: pathname.slice(locale.length + 1) || '/', locale }
+      return { pathname: pathname.slice(locale.length + 1) || '/', locale, hadPrefix: true }
     }
   }
-  return { pathname, locale: routing.defaultLocale }
+  return { pathname, locale: routing.defaultLocale, hadPrefix: false }
 }
 
 function localizedPath(path: string, locale: string) {
@@ -41,11 +41,13 @@ function redirectTo(path: string, locale: string, request: NextRequest, base: Ne
 
 export async function proxy(request: NextRequest) {
   const intlResponse = intlMiddleware(request)
-  const { pathname, locale } = stripLocale(request.nextUrl.pathname)
+  const { pathname, locale, hadPrefix } = stripLocale(request.nextUrl.pathname)
 
-  // Bare paths (no locale prefix) resolve to the visitor's saved locale
-  // preference, or — on their very first visit — to their country.
-  if (locale === routing.defaultLocale) {
+  // Bare paths (no locale prefix at all) resolve to the visitor's saved
+  // locale preference, or — on their very first visit — to their country.
+  // An explicit /da/... URL is always honored as-is, even if a different
+  // locale is saved from an earlier visit.
+  if (locale === routing.defaultLocale && !hadPrefix) {
     const cookieLocale = request.cookies.get('NEXT_LOCALE')?.value
     const isValidCookieLocale =
       !!cookieLocale && (routing.locales as readonly string[]).includes(cookieLocale)

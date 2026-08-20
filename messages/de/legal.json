@@ -1,1 +1,222 @@
-{}
+{
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "lastUpdated": "Zuletzt aktualisiert: Juni 2025",
+    "s1": {
+      "heading": "1. Verantwortlicher",
+      "body": "Espallo ist verantwortlich für die Verarbeitung der personenbezogenen Daten, die wir im Zusammenhang mit der Nutzung unseres Dienstes über dich erheben. Kontakt: info@espallo.com"
+    },
+    "s2": {
+      "heading": "2. Welche Daten wir verarbeiten",
+      "intro": "Wir verarbeiten folgende Kategorien personenbezogener Daten:",
+      "items": [
+        {
+          "label": "Kontaktdaten:",
+          "text": "Name, E-Mail-Adresse, Telefonnummer"
+        },
+        {
+          "label": "Ausweisdaten:",
+          "text": "Passnummer, Ausstellungsdatum, Ablaufdatum"
+        },
+        {
+          "label": "Persönliche Daten:",
+          "text": "Geburtsdatum, Geburtsort, Staatsangehörigkeit, Geschlecht, Familienstand"
+        },
+        {
+          "label": "Adressdaten:",
+          "text": "Wohnadresse, Postleitzahl, Stadt, Land"
+        },
+        {
+          "label": "Digitale Unterschrift:",
+          "text": "Bilddatei deiner digitalen Unterschrift"
+        },
+        {
+          "label": "Technische Daten:",
+          "text": "IP-Adresse, Browsertyp (über Cookies)"
+        }
+      ]
+    },
+    "s3": {
+      "heading": "3. Zweck und Rechtsgrundlage",
+      "items": [
+        {
+          "label": "Erbringung unserer Dienstleistung (Vertrag, Art. 6 Abs. 1 lit. b DSGVO):",
+          "text": "Wir verarbeiten deine Daten, um deinen NIE-Antrag auszufüllen und einzureichen sowie mit unseren Partneranwälten und -notaren in Spanien zu koordinieren."
+        },
+        {
+          "label": "Rechtliche Verpflichtung (Art. 6 Abs. 1 lit. c DSGVO):",
+          "text": "Wir sind verpflichtet, bestimmte Daten aus buchhalterischen Gründen gemäß dänischem Buchführungsrecht aufzubewahren."
+        },
+        {
+          "label": "Berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO):",
+          "text": "Wir verarbeiten technische Daten, um unsere Plattform abzusichern und zu verbessern."
+        }
+      ]
+    },
+    "s4": {
+      "heading": "4. Weitergabe von Daten",
+      "body": "Wir geben deine personenbezogenen Daten an die Partneranwälte oder -notare in Spanien weiter, die deinen NIE-Antrag bearbeiten. Dies ist zur Erbringung unserer Dienstleistung erforderlich.",
+      "processorsIntro": "Wir nutzen folgende Auftragsverarbeiter (Dienstleister):",
+      "processors": [
+        {
+          "label": "Supabase Inc. (USA):",
+          "text": "Datenbanken und Dateispeicherung. Die Übermittlung erfolgt auf Grundlage von Standardvertragsklauseln (SCC), die von der EU-Kommission genehmigt wurden."
+        },
+        {
+          "label": "Vercel Inc. (USA):",
+          "text": "Hosting der Plattform. Die Übermittlung erfolgt auf Grundlage von SCC."
+        }
+      ],
+      "note": "Wir verkaufen deine personenbezogenen Daten niemals an Dritte."
+    },
+    "s5": {
+      "heading": "5. Speicherdauer",
+      "intro": "Wir speichern deine Daten so lange, wie es zur Erbringung unserer Dienstleistung und zur Erfüllung rechtlicher Verpflichtungen erforderlich ist:",
+      "items": [
+        "Antragsdaten: 5 Jahre nach Abschluss des Falls (dänisches Buchführungsrecht)",
+        "Kontodaten: Werden 2 Jahre nach Deaktivierung deines Kontos gelöscht",
+        "Technische Protokolle: 90 Tage"
+      ]
+    },
+    "s6": {
+      "heading": "6. Deine Rechte",
+      "intro": "Nach der DSGVO stehen dir folgende Rechte zu:",
+      "items": [
+        {
+          "label": "Auskunft:",
+          "text": "Du kannst eine Kopie deiner Daten anfordern"
+        },
+        {
+          "label": "Berichtigung:",
+          "text": "Du kannst falsche Daten korrigieren lassen"
+        },
+        {
+          "label": "Löschung:",
+          "text": "Du kannst die Löschung beantragen (eingeschränkt durch rechtliche Verpflichtungen)"
+        },
+        {
+          "label": "Einschränkung:",
+          "text": "Du kannst eine Einschränkung der Verarbeitung verlangen"
+        },
+        {
+          "label": "Datenübertragbarkeit:",
+          "text": "Du kannst deine Daten in einem maschinenlesbaren Format erhalten"
+        },
+        {
+          "label": "Widerspruch:",
+          "text": "Du kannst der Verarbeitung auf Grundlage berechtigten Interesses widersprechen"
+        }
+      ],
+      "contactBefore": "Um deine Rechte auszuüben, kontaktiere uns unter info@espallo.com. Du kannst dich auch bei der dänischen Datenschutzbehörde (Datatilsynet) beschweren: ",
+      "contactLinkText": "datatilsynet.dk",
+      "contactAfter": ", Borgergade 28, 5., 1300 Kopenhagen K, Dänemark."
+    },
+    "s7": {
+      "heading": "7. Cookies",
+      "before": "Wir verwenden Cookies, um die Funktionalität unserer Plattform sicherzustellen und für Analysezwecke. Weitere Informationen findest du in unserer ",
+      "linkText": "Cookie-Richtlinie",
+      "after": "."
+    },
+    "metaDescription": "Lies, wie Espallo deine personenbezogenen Daten verarbeitet."
+  },
+  "terms": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "lastUpdated": "Zuletzt aktualisiert: Juni 2025",
+    "s1": {
+      "heading": "1. Über Espallo",
+      "body": "Espallo ist ein administratives Dienstleistungsunternehmen, das Kunden dabei unterstützt, Anträge auf eine spanische NIE-Nummer (Número de Identificación de Extranjero) vorzubereiten und einzureichen.",
+      "noticeLabel": "Wichtig:",
+      "noticeBoldPart": "keine Anwaltskanzlei",
+      "noticeRest": " und ist nicht als Rechtsanwaltskanzlei registriert. Wir erbringen keine Rechtsberatung. Unsere Leistung besteht ausschließlich aus administrativer Unterstützung und der Vermittlung des Kontakts zu unabhängigen Partneranwälten und -notaren in Spanien."
+    },
+    "s2": {
+      "heading": "2. Unsere Leistung",
+      "intro": "Der Servicepreis von 195 EUR (zzgl. MwSt.) umfasst:",
+      "items": [
+        "Digitales Ausfüllen des EX-18-Antragsformulars",
+        "Digitale Unterzeichnung der Vollmachtsurkunde",
+        "Automatische Erstellung und Archivierung der Antragsunterlagen",
+        "Koordination und Weiterleitung an einen Partneranwalt oder -notar in Spanien",
+        "Laufende Statusaktualisierungen über die Kundenplattform",
+        "Kundensupport"
+      ],
+      "notIncludedLabel": "Nicht enthalten:",
+      "notIncludedText": "Anwalts-, Notar- und Behördengebühren in Spanien werden vom Kunden direkt an den jeweiligen Partner gezahlt. Diese Gebühren variieren und werden direkt mit dem Anwalt/Notar vereinbart."
+    },
+    "s3": {
+      "heading": "3. Partneranwälte und -notare",
+      "body1": "Die Anwälte und Notare, mit denen wir in Spanien zusammenarbeiten, sind selbstständige Unternehmer, die nach spanischem Recht registriert und zugelassen sind. Sie gehen ein direktes Rechtsverhältnis mit dem Kunden ein und sind für die rechtliche Bearbeitung des Antrags verantwortlich.",
+      "body2": "Espallo ist nicht Vertragspartei der Vereinbarung zwischen Kunde und Anwalt/Notar und haftet nicht für deren Handlungen, Beratung oder Fehler."
+    },
+    "s4": {
+      "heading": "4. Keine Garantie für die Genehmigung",
+      "body": "Wir können nicht garantieren, dass ein NIE-Antrag von den spanischen Behörden genehmigt wird. Die Entscheidung trifft ausschließlich die zuständige spanische Behörde (Policía Nacional oder die spanische Botschaft). Unser Servicepreis wird nicht erstattet, wenn ein Antrag von den Behörden abgelehnt wird, da unsere Leistung (administrative Unterstützung und Vermittlung) vollständig erbracht wurde."
+    },
+    "s5": {
+      "heading": "5. Zahlung und Mehrwertsteuer",
+      "body": "Der Servicepreis beträgt 195 EUR zzgl. MwSt. Für Kunden mit Wohnsitz in Dänemark wird dänische Mehrwertsteuer (25 %) erhoben, sofern es sich nicht um einen Geschäftskunden mit gültiger USt-IdNr. handelt. Die Zahlung erfolgt sicher über unsere Zahlungsplattform."
+    },
+    "s6": {
+      "heading": "6. Widerrufsrecht",
+      "body1": "Als Verbraucher hast du grundsätzlich ein 14-tägiges Widerrufsrecht bei Online-Käufen gemäß dänischem Verbrauchervertragsrecht. Da unsere Leistung sofort nach Zahlung und auf deinen ausdrücklichen Wunsch beginnt, akzeptierst du mit deiner Bestellung, dass das Widerrufsrecht erlischt, sobald wir mit der Bearbeitung deines Antrags begonnen haben.",
+      "body2Bold": "nicht",
+      "body2Before": "Wurde mit der Bearbeitung ",
+      "body2After": " begonnen, kannst du innerhalb von 14 Tagen widerrufen und erhältst eine vollständige Rückerstattung. Kontaktiere uns unter info@espallo.com."
+    },
+    "s7": {
+      "heading": "7. Haftungsbeschränkung",
+      "body": "Espallo haftet nicht für Verzögerungen oder Ablehnungen, die durch spanische Behörden, Partneranwälte/-notare, fehlerhafte Angaben des Kunden oder Umstände außerhalb unserer Kontrolle verursacht werden. Unsere Haftung ist in jedem Fall auf den gezahlten Servicepreis begrenzt."
+    },
+    "s8": {
+      "heading": "8. Beschwerden",
+      "before": "Beschwerden können an info@espallo.com gerichtet werden. Verbraucher können sich außerdem an die dänische Verbraucherbeschwerdestelle (Forbrugerklagenævnet, Nævnenes Hus), Toldboden 2, 8800 Viborg, Dänemark, wenden, ",
+      "linkText": "www.naevneneshus.dk",
+      "after": "."
+    },
+    "s9": {
+      "heading": "9. Anwendbares Recht und Gerichtsstand",
+      "body": "Diese Geschäftsbedingungen unterliegen dänischem Recht. Streitigkeiten werden vor dänischen Gerichten entschieden, mit dem Amtsgericht Kopenhagen (Københavns Byret) als erster Instanz, sofern zwingendes Recht nichts anderes vorschreibt."
+    },
+    "s10": {
+      "heading": "10. Kontakt",
+      "line1": "Espallo",
+      "line2": "E-Mail: info@espallo.com",
+      "line3": "Telefon: +34 603 527 252"
+    },
+    "metaDescription": "Lies unsere Allgemeinen Geschäftsbedingungen für Espallo."
+  },
+  "cookies": {
+    "title": "Cookie-Richtlinie",
+    "lastUpdated": "Zuletzt aktualisiert: Juni 2025",
+    "s1": {
+      "heading": "Was sind Cookies?",
+      "body": "Cookies sind kleine Textdateien, die beim Besuch einer Website auf deinem Gerät gespeichert werden. Sie dienen dazu, deine Präferenzen zu speichern und sicherzustellen, dass die Plattform korrekt funktioniert."
+    },
+    "s2": {
+      "heading": "Cookies, die wir verwenden",
+      "necessaryTitle": "Notwendige Cookies",
+      "necessaryItems": [
+        {
+          "name": "sb-auth-token",
+          "text": "Authentifizierungs-Cookie von Supabase. Hält dich angemeldet. Läuft nach der Sitzung oder nach 1 Woche ab."
+        },
+        {
+          "name": "cookie-consent",
+          "text": "Speichert deine Cookie-Einwilligung. Läuft nach 1 Jahr ab."
+        }
+      ],
+      "functionalTitle": "Funktionale Cookies",
+      "functionalText": "Wir verwenden keine Analyse- oder Marketing-Cookies von Drittanbietern."
+    },
+    "s3": {
+      "heading": "Einwilligung und Ablehnung",
+      "body1": "Notwendige Cookies können nicht abgelehnt werden, da sie für die Funktion der Plattform erforderlich sind (z. B. um angemeldet zu bleiben). Beim ersten Besuch der Website wird ein Cookie-Banner angezeigt, über den du nicht notwendige Cookies akzeptieren oder ablehnen kannst.",
+      "body2": "Du kannst Cookies jederzeit in den Einstellungen deines Browsers löschen. Beachte, dass dies dich von der Plattform abmeldet."
+    },
+    "s4": {
+      "heading": "Kontakt",
+      "before": "Fragen zu unserer Cookie-Richtlinie kannst du richten an: "
+    },
+    "metaDescription": "Lies über unsere Verwendung von Cookies bei Espallo."
+  }
+}

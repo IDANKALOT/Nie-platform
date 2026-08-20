@@ -1,115 +1,101 @@
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
+import { Link } from '@/i18n/navigation'
 
-export const metadata: Metadata = {
-  title: 'Privatlivspolitik – Espallo',
-  description: 'Læs hvordan Espallo behandler dine personoplysninger.',
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'legal.privacy' })
+  return { title: `${t('title')} – Espallo`, description: t('metaDescription') }
 }
 
-export default function PrivatlivspolitikPage() {
+export default async function PrivatlivspolitikPage() {
+  const t = await getTranslations('legal.privacy')
+  const s2Items = t.raw('s2.items') as { label: string; text: string }[]
+  const s3Items = t.raw('s3.items') as { label: string; text: string }[]
+  const processors = t.raw('s4.processors') as { label: string; text: string }[]
+  const s5Items = t.raw('s5.items') as string[]
+  const s6Items = t.raw('s6.items') as { label: string; text: string }[]
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-16 sm:px-6">
-      <h1 className="text-3xl font-bold text-gray-900 mb-2">Privatlivspolitik</h1>
-      <p className="text-sm text-gray-500 mb-10">Sidst opdateret: juni 2025</p>
+      <h1 className="text-3xl font-bold text-gray-900 mb-2">{t('title')}</h1>
+      <p className="text-sm text-gray-500 mb-10">{t('lastUpdated')}</p>
 
       <div className="prose prose-gray max-w-none space-y-8 text-gray-700 leading-relaxed">
 
         <section>
-          <h2 className="text-xl font-semibold text-gray-900 mb-3">1. Den dataansvarlige</h2>
-          <p>
-            Espallo er dataansvarlig for behandlingen af de
-            personoplysninger, vi indsamler om dig i forbindelse med brug af vores tjeneste.
-            Kontakt: info@espallo.com
-          </p>
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('s1.heading')}</h2>
+          <p>{t('s1.body')}</p>
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-gray-900 mb-3">2. Hvilke oplysninger vi behandler</h2>
-          <p>Vi behandler følgende kategorier af personoplysninger:</p>
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('s2.heading')}</h2>
+          <p>{t('s2.intro')}</p>
           <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
-            <li><strong>Kontaktoplysninger:</strong> Navn, e-mailadresse, telefonnummer</li>
-            <li><strong>Identifikationsoplysninger:</strong> Pasnummer, udstedelsesdato, udløbsdato</li>
-            <li><strong>Personoplysninger:</strong> Fødselsdato, fødested, nationalitet, køn, civilstatus</li>
-            <li><strong>Adresseoplysninger:</strong> Bopælsadresse, postnummer, by, land</li>
-            <li><strong>Digital underskrift:</strong> Billedfil af din digitale underskrift</li>
-            <li><strong>Tekniske data:</strong> IP-adresse, browsertype (via cookies)</li>
+            {s2Items.map((item) => (
+              <li key={item.label}><strong>{item.label}</strong> {item.text}</li>
+            ))}
           </ul>
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-gray-900 mb-3">3. Formål og retsgrundlag</h2>
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('s3.heading')}</h2>
           <div className="space-y-3 text-sm">
-            <div className="p-3 bg-gray-50 rounded-lg">
-              <strong>Levering af vores service (kontrakt, art. 6(1)(b) GDPR):</strong> Vi behandler dine
-              oplysninger for at kunne udfylde og indsende din NIE-ansøgning samt koordinere med
-              samarbejdende advokater og notarer i Spanien.
-            </div>
-            <div className="p-3 bg-gray-50 rounded-lg">
-              <strong>Retlig forpligtelse (art. 6(1)(c) GDPR):</strong> Vi er forpligtet til at opbevare
-              visse oplysninger af regnskabsmæssige årsager i henhold til bogføringsloven.
-            </div>
-            <div className="p-3 bg-gray-50 rounded-lg">
-              <strong>Berettiget interesse (art. 6(1)(f) GDPR):</strong> Vi behandler tekniske data for
-              at sikre og forbedre vores platform.
-            </div>
+            {s3Items.map((item) => (
+              <div key={item.label} className="p-3 bg-gray-50 rounded-lg">
+                <strong>{item.label}</strong> {item.text}
+              </div>
+            ))}
           </div>
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-gray-900 mb-3">4. Videregivelse af oplysninger</h2>
-          <p>
-            Vi videregiver dine personoplysninger til de samarbejdende advokater eller notarer i
-            Spanien, der behandler din NIE-ansøgning. Dette er nødvendigt for at levere vores service.
-          </p>
-          <p className="mt-2">
-            Vi benytter følgende databehandlere (leverandører):
-          </p>
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('s4.heading')}</h2>
+          <p>{t('s4.body')}</p>
+          <p className="mt-2">{t('s4.processorsIntro')}</p>
           <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
-            <li><strong>Supabase Inc. (USA):</strong> Databaser og fillagring. Overførsel sker med
-            standardkontraktklausuler (SCC) godkendt af EU-Kommissionen.</li>
-            <li><strong>Vercel Inc. (USA):</strong> Hosting af platformen. Overførsel sker med SCC.</li>
+            {processors.map((item) => (
+              <li key={item.label}><strong>{item.label}</strong> {item.text}</li>
+            ))}
           </ul>
-          <p className="mt-2 text-sm">
-            Vi sælger aldrig dine personoplysninger til tredjeparter.
-          </p>
+          <p className="mt-2 text-sm">{t('s4.note')}</p>
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-gray-900 mb-3">5. Opbevaring</h2>
-          <p>
-            Vi opbevarer dine oplysninger så længe det er nødvendigt for at levere vores service og
-            overholde retlige forpligtelser:
-          </p>
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('s5.heading')}</h2>
+          <p>{t('s5.intro')}</p>
           <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
-            <li>Ansøgningsdata: 5 år efter afsluttet sag (bogføringsloven)</li>
-            <li>Kontooplysninger: Slettes 2 år efter din konto deaktiveres</li>
-            <li>Tekniske logs: 90 dage</li>
+            {s5Items.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-gray-900 mb-3">6. Dine rettigheder</h2>
-          <p>Du har følgende rettigheder i henhold til GDPR:</p>
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('s6.heading')}</h2>
+          <p>{t('s6.intro')}</p>
           <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
-            <li><strong>Indsigt:</strong> Du kan anmode om en kopi af dine oplysninger</li>
-            <li><strong>Berigtigelse:</strong> Du kan få forkerte oplysninger rettet</li>
-            <li><strong>Sletning:</strong> Du kan anmode om sletning (begrænset af retlige forpligtelser)</li>
-            <li><strong>Begrænsning:</strong> Du kan anmode om begrænsning af behandlingen</li>
-            <li><strong>Dataportabilitet:</strong> Du kan modtage dine data i et maskinlæsbart format</li>
-            <li><strong>Indsigelse:</strong> Du kan gøre indsigelse mod behandling baseret på berettiget interesse</li>
+            {s6Items.map((item) => (
+              <li key={item.label}><strong>{item.label}</strong> {item.text}</li>
+            ))}
           </ul>
           <p className="mt-3">
-            For at udøve dine rettigheder kontaktes vi på info@espallo.com. Du kan også klage til
-            Datatilsynet: <a href="https://www.datatilsynet.dk" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">datatilsynet.dk</a>, Borgergade 28, 5., 1300 København K.
+            {t('s6.contactBefore')}
+            <a href="https://www.datatilsynet.dk" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">{t('s6.contactLinkText')}</a>
+            {t('s6.contactAfter')}
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-gray-900 mb-3">7. Cookies</h2>
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('s7.heading')}</h2>
           <p>
-            Vi anvender cookies for at sikre funktionaliteten af vores platform og til
-            analyseformål. Se vores{' '}
-            <a href="/cookiepolitik" className="text-blue-600 underline">cookiepolitik</a> for
-            nærmere oplysninger.
+            {t('s7.before')}
+            <Link href="/cookiepolitik" className="text-blue-600 underline">{t('s7.linkText')}</Link>
+            {t('s7.after')}
           </p>
         </section>
 

@@ -1,1 +1,222 @@
-{}
+{
+  "privacy": {
+    "title": "Privatlivspolitik",
+    "lastUpdated": "Sidst opdateret: juni 2025",
+    "s1": {
+      "heading": "1. Den dataansvarlige",
+      "body": "Espallo er dataansvarlig for behandlingen af de personoplysninger, vi indsamler om dig i forbindelse med brug af vores tjeneste. Kontakt: info@espallo.com"
+    },
+    "s2": {
+      "heading": "2. Hvilke oplysninger vi behandler",
+      "intro": "Vi behandler følgende kategorier af personoplysninger:",
+      "items": [
+        {
+          "label": "Kontaktoplysninger:",
+          "text": "Navn, e-mailadresse, telefonnummer"
+        },
+        {
+          "label": "Identifikationsoplysninger:",
+          "text": "Pasnummer, udstedelsesdato, udløbsdato"
+        },
+        {
+          "label": "Personoplysninger:",
+          "text": "Fødselsdato, fødested, nationalitet, køn, civilstatus"
+        },
+        {
+          "label": "Adresseoplysninger:",
+          "text": "Bopælsadresse, postnummer, by, land"
+        },
+        {
+          "label": "Digital underskrift:",
+          "text": "Billedfil af din digitale underskrift"
+        },
+        {
+          "label": "Tekniske data:",
+          "text": "IP-adresse, browsertype (via cookies)"
+        }
+      ]
+    },
+    "s3": {
+      "heading": "3. Formål og retsgrundlag",
+      "items": [
+        {
+          "label": "Levering af vores service (kontrakt, art. 6(1)(b) GDPR):",
+          "text": "Vi behandler dine oplysninger for at kunne udfylde og indsende din NIE-ansøgning samt koordinere med samarbejdende advokater og notarer i Spanien."
+        },
+        {
+          "label": "Retlig forpligtelse (art. 6(1)(c) GDPR):",
+          "text": "Vi er forpligtet til at opbevare visse oplysninger af regnskabsmæssige årsager i henhold til bogføringsloven."
+        },
+        {
+          "label": "Berettiget interesse (art. 6(1)(f) GDPR):",
+          "text": "Vi behandler tekniske data for at sikre og forbedre vores platform."
+        }
+      ]
+    },
+    "s4": {
+      "heading": "4. Videregivelse af oplysninger",
+      "body": "Vi videregiver dine personoplysninger til de samarbejdende advokater eller notarer i Spanien, der behandler din NIE-ansøgning. Dette er nødvendigt for at levere vores service.",
+      "processorsIntro": "Vi benytter følgende databehandlere (leverandører):",
+      "processors": [
+        {
+          "label": "Supabase Inc. (USA):",
+          "text": "Databaser og fillagring. Overførsel sker med standardkontraktklausuler (SCC) godkendt af EU-Kommissionen."
+        },
+        {
+          "label": "Vercel Inc. (USA):",
+          "text": "Hosting af platformen. Overførsel sker med SCC."
+        }
+      ],
+      "note": "Vi sælger aldrig dine personoplysninger til tredjeparter."
+    },
+    "s5": {
+      "heading": "5. Opbevaring",
+      "intro": "Vi opbevarer dine oplysninger så længe det er nødvendigt for at levere vores service og overholde retlige forpligtelser:",
+      "items": [
+        "Ansøgningsdata: 5 år efter afsluttet sag (bogføringsloven)",
+        "Kontooplysninger: Slettes 2 år efter din konto deaktiveres",
+        "Tekniske logs: 90 dage"
+      ]
+    },
+    "s6": {
+      "heading": "6. Dine rettigheder",
+      "intro": "Du har følgende rettigheder i henhold til GDPR:",
+      "items": [
+        {
+          "label": "Indsigt:",
+          "text": "Du kan anmode om en kopi af dine oplysninger"
+        },
+        {
+          "label": "Berigtigelse:",
+          "text": "Du kan få forkerte oplysninger rettet"
+        },
+        {
+          "label": "Sletning:",
+          "text": "Du kan anmode om sletning (begrænset af retlige forpligtelser)"
+        },
+        {
+          "label": "Begrænsning:",
+          "text": "Du kan anmode om begrænsning af behandlingen"
+        },
+        {
+          "label": "Dataportabilitet:",
+          "text": "Du kan modtage dine data i et maskinlæsbart format"
+        },
+        {
+          "label": "Indsigelse:",
+          "text": "Du kan gøre indsigelse mod behandling baseret på berettiget interesse"
+        }
+      ],
+      "contactBefore": "For at udøve dine rettigheder kontaktes vi på info@espallo.com. Du kan også klage til Datatilsynet: ",
+      "contactLinkText": "datatilsynet.dk",
+      "contactAfter": ", Borgergade 28, 5., 1300 København K."
+    },
+    "s7": {
+      "heading": "7. Cookies",
+      "before": "Vi anvender cookies for at sikre funktionaliteten af vores platform og til analyseformål. Se vores ",
+      "linkText": "cookiepolitik",
+      "after": " for nærmere oplysninger."
+    },
+    "metaDescription": "Læs hvordan Espallo behandler dine personoplysninger."
+  },
+  "terms": {
+    "title": "Handelsbetingelser",
+    "lastUpdated": "Sidst opdateret: juni 2025",
+    "s1": {
+      "heading": "1. Om Espallo",
+      "body": "Espallo er et administrativt servicebureau, der hjælper danske kunder med at forberede og indsende ansøgninger om spansk NIE-nummer (Número de Identificación de Extranjero).",
+      "noticeLabel": "Vigtigt:",
+      "noticeBoldPart": "ikke et advokatfirma",
+      "noticeRest": " og er ikke registreret som advokat i henhold til retsplejeloven. Vi yder ikke juridisk rådgivning. Vores ydelse består alene af administrativ bistand og formidling af kontakt til selvstændige, samarbejdende advokater og notarer i Spanien."
+    },
+    "s2": {
+      "heading": "2. Vores ydelse",
+      "intro": "Serviceprisen på 195 EUR (ekskl. moms) inkluderer:",
+      "items": [
+        "Digital formularudfyldelse af EX-18 ansøgning",
+        "Digital underskrift af fuldmagtsdokument",
+        "Automatisk generering og arkivering af ansøgningsdokumenter",
+        "Koordinering og videreformidling til samarbejdende advokat eller notar i Spanien",
+        "Løbende statusopdateringer via kundeplatform",
+        "Kundesupport på dansk"
+      ],
+      "notIncludedLabel": "Ikke inkluderet:",
+      "notIncludedText": "Advokat-, notar- og myndighedsgebyrer i Spanien betales direkte af kunden til den pågældende samarbejdspartner. Disse gebyrer varierer og aftales direkte med advokaten/notaren."
+    },
+    "s3": {
+      "heading": "3. Samarbejdende advokater og notarer",
+      "body1": "De advokater og notarer, vi samarbejder med i Spanien, er selvstændige erhvervsdrivende, der er registrerede og autoriserede i overensstemmelse med spansk ret. De indgår et direkte retsforhold med kunden og er ansvarlige for den juridiske behandling af ansøgningen.",
+      "body2": "Espallo er ikke part i aftalen mellem kunden og advokaten/notaren og hæfter ikke for disses handlinger, rådgivning eller fejl."
+    },
+    "s4": {
+      "heading": "4. Ingen garanti for godkendelse",
+      "body": "Vi kan ikke garantere, at en NIE-ansøgning godkendes af de spanske myndigheder. Afgørelsen træffes udelukkende af de relevante spanske myndigheder (Policía Nacional eller den spanske ambassade). Vores servicepris refunderes ikke, hvis en ansøgning afvises af myndighederne, da vores ydelse (administrativ bistand og formidling) er leveret fuldt ud."
+    },
+    "s5": {
+      "heading": "5. Betaling og moms",
+      "body": "Serviceprisen er 195 EUR ekskl. moms. Dansk moms (25%) tillægges for kunder med bopæl i Danmark, medmindre der er tale om en erhvervskunde med gyldigt momsregistreringsnummer. Betaling sker sikkert via vores betalingsplatform."
+    },
+    "s6": {
+      "heading": "6. Fortrydelsesret",
+      "body1": "Som forbruger har du som udgangspunkt 14 dages fortrydelsesret ved køb online, jf. forbrugeraftaleloven. Da vores service påbegyndes straks efter betaling og på din udtrykkelige anmodning, accepterer du ved bestilling, at fortrydelsesretten bortfalder, når vi har påbegyndt behandlingen af din ansøgning.",
+      "body2Bold": "ikke",
+      "body2Before": "Hvis behandlingen ",
+      "body2After": " er påbegyndt, kan du fortryde inden 14 dage og modtage fuld refundering. Kontakt os på info@espallo.com."
+    },
+    "s7": {
+      "heading": "7. Ansvarsbegrænsning",
+      "body": "Espallo er ikke ansvarlig for forsinkelser eller afvisninger forårsaget af spanske myndigheder, samarbejdende advokater/notarer, forkerte oplysninger fra kunden, eller forhold uden for vores kontrol. Vores erstatningsansvar er under alle omstændigheder begrænset til den betalte servicepris."
+    },
+    "s8": {
+      "heading": "8. Klager",
+      "before": "Klager kan rettes til info@espallo.com. Forbrugere kan desuden indbringe sagen for Forbrugerklagenævnet, Nævnenes Hus, Toldboden 2, 8800 Viborg, ",
+      "linkText": "www.naevneneshus.dk",
+      "after": "."
+    },
+    "s9": {
+      "heading": "9. Lovvalg og værneting",
+      "body": "Disse handelsbetingelser er underlagt dansk ret. Tvister afgøres ved de danske domstole med Københavns Byret som første instans, medmindre andet følger af ufravigelig lovgivning."
+    },
+    "s10": {
+      "heading": "10. Kontakt",
+      "line1": "Espallo",
+      "line2": "E-mail: info@espallo.com",
+      "line3": "Telefon: +34 603 527 252"
+    },
+    "metaDescription": "Læs vores handelsbetingelser for Espallo."
+  },
+  "cookies": {
+    "title": "Cookiepolitik",
+    "lastUpdated": "Sidst opdateret: juni 2025",
+    "s1": {
+      "heading": "Hvad er cookies?",
+      "body": "Cookies er små tekstfiler, der gemmes på din enhed, når du besøger et website. De bruges til at huske dine præferencer og sikre, at platformen fungerer korrekt."
+    },
+    "s2": {
+      "heading": "Cookies vi anvender",
+      "necessaryTitle": "Nødvendige cookies",
+      "necessaryItems": [
+        {
+          "name": "sb-auth-token",
+          "text": "Autentificeringscookie fra Supabase. Holder dig logget ind. Udløber efter sessionen eller 1 uge."
+        },
+        {
+          "name": "cookie-consent",
+          "text": "Gemmer dit samtykke til cookies. Udløber efter 1 år."
+        }
+      ],
+      "functionalTitle": "Funktionelle cookies",
+      "functionalText": "Vi anvender ingen tredjeparts analytiske eller markedsføringscookies."
+    },
+    "s3": {
+      "heading": "Samtykke og afvisning",
+      "body1": "Nødvendige cookies kan ikke fravælges, da de er påkrævede for at platformen fungerer (f.eks. at forblive logget ind). Første gang du besøger siden, vises en cookiebanner hvor du kan acceptere eller afvise ikke-nødvendige cookies.",
+      "body2": "Du kan til enhver tid slette cookies i din browsers indstillinger. Bemærk at dette vil logge dig ud af platformen."
+    },
+    "s4": {
+      "heading": "Kontakt",
+      "before": "Spørgsmål til vores cookiepolitik kan rettes til: "
+    },
+    "metaDescription": "Læs om vores brug af cookies på Espallo."
+  }
+}

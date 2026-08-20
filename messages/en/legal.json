@@ -1,1 +1,222 @@
-{}
+{
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: June 2025",
+    "s1": {
+      "heading": "1. Data controller",
+      "body": "Espallo is the data controller for the personal data we collect about you in connection with your use of our service. Contact: info@espallo.com"
+    },
+    "s2": {
+      "heading": "2. What data we process",
+      "intro": "We process the following categories of personal data:",
+      "items": [
+        {
+          "label": "Contact details:",
+          "text": "Name, email address, phone number"
+        },
+        {
+          "label": "Identification details:",
+          "text": "Passport number, issue date, expiry date"
+        },
+        {
+          "label": "Personal details:",
+          "text": "Date of birth, place of birth, nationality, gender, marital status"
+        },
+        {
+          "label": "Address details:",
+          "text": "Home address, postal code, city, country"
+        },
+        {
+          "label": "Digital signature:",
+          "text": "Image file of your digital signature"
+        },
+        {
+          "label": "Technical data:",
+          "text": "IP address, browser type (via cookies)"
+        }
+      ]
+    },
+    "s3": {
+      "heading": "3. Purpose and legal basis",
+      "items": [
+        {
+          "label": "Delivery of our service (contract, GDPR art. 6(1)(b)):",
+          "text": "We process your data to complete and submit your NIE application and to coordinate with our partner lawyers and notaries in Spain."
+        },
+        {
+          "label": "Legal obligation (GDPR art. 6(1)(c)):",
+          "text": "We are required to retain certain data for accounting purposes under Danish bookkeeping law."
+        },
+        {
+          "label": "Legitimate interest (GDPR art. 6(1)(f)):",
+          "text": "We process technical data to secure and improve our platform."
+        }
+      ]
+    },
+    "s4": {
+      "heading": "4. Disclosure of data",
+      "body": "We disclose your personal data to the partner lawyers or notaries in Spain who process your NIE application. This is necessary to deliver our service.",
+      "processorsIntro": "We use the following data processors (vendors):",
+      "processors": [
+        {
+          "label": "Supabase Inc. (USA):",
+          "text": "Databases and file storage. Transfers rely on Standard Contractual Clauses (SCCs) approved by the European Commission."
+        },
+        {
+          "label": "Vercel Inc. (USA):",
+          "text": "Hosting of the platform. Transfers rely on SCCs."
+        }
+      ],
+      "note": "We never sell your personal data to third parties."
+    },
+    "s5": {
+      "heading": "5. Retention",
+      "intro": "We retain your data for as long as necessary to deliver our service and comply with legal obligations:",
+      "items": [
+        "Application data: 5 years after the case is closed (Danish bookkeeping law)",
+        "Account details: Deleted 2 years after your account is deactivated",
+        "Technical logs: 90 days"
+      ]
+    },
+    "s6": {
+      "heading": "6. Your rights",
+      "intro": "Under the GDPR, you have the following rights:",
+      "items": [
+        {
+          "label": "Access:",
+          "text": "You can request a copy of your data"
+        },
+        {
+          "label": "Rectification:",
+          "text": "You can have incorrect data corrected"
+        },
+        {
+          "label": "Erasure:",
+          "text": "You can request deletion (subject to our legal obligations)"
+        },
+        {
+          "label": "Restriction:",
+          "text": "You can request restriction of processing"
+        },
+        {
+          "label": "Data portability:",
+          "text": "You can receive your data in a machine-readable format"
+        },
+        {
+          "label": "Objection:",
+          "text": "You can object to processing based on legitimate interest"
+        }
+      ],
+      "contactBefore": "To exercise your rights, contact us at info@espallo.com. You can also file a complaint with the Danish Data Protection Agency (Datatilsynet): ",
+      "contactLinkText": "datatilsynet.dk",
+      "contactAfter": ", Borgergade 28, 5., 1300 Copenhagen K, Denmark."
+    },
+    "s7": {
+      "heading": "7. Cookies",
+      "before": "We use cookies to ensure our platform functions correctly and for analytics purposes. See our ",
+      "linkText": "cookie policy",
+      "after": " for further details."
+    },
+    "metaDescription": "Read how Espallo processes your personal data."
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: June 2025",
+    "s1": {
+      "heading": "1. About Espallo",
+      "body": "Espallo is an administrative service bureau that helps customers prepare and submit applications for a Spanish NIE number (Número de Identificación de Extranjero).",
+      "noticeLabel": "Important:",
+      "noticeBoldPart": "not a law firm",
+      "noticeRest": " and is not registered as a legal practice. We do not provide legal advice. Our service consists solely of administrative assistance and putting you in contact with independent partner lawyers and notaries in Spain."
+    },
+    "s2": {
+      "heading": "2. Our service",
+      "intro": "The service fee of 195 EUR (excl. VAT) includes:",
+      "items": [
+        "Digital completion of the EX-18 application form",
+        "Digital signing of the power-of-attorney document",
+        "Automatic generation and storage of application documents",
+        "Coordination and handoff to a partner lawyer or notary in Spain",
+        "Ongoing status updates via the customer platform",
+        "Customer support"
+      ],
+      "notIncludedLabel": "Not included:",
+      "notIncludedText": "Lawyer, notary, and government fees in Spain are paid directly by the customer to the relevant partner. These fees vary and are agreed directly with the lawyer/notary."
+    },
+    "s3": {
+      "heading": "3. Partner lawyers and notaries",
+      "body1": "The lawyers and notaries we work with in Spain are independent professionals, registered and authorized under Spanish law. They enter into a direct legal relationship with the customer and are responsible for the legal handling of the application.",
+      "body2": "Espallo is not a party to the agreement between the customer and the lawyer/notary and is not liable for their actions, advice, or errors."
+    },
+    "s4": {
+      "heading": "4. No guarantee of approval",
+      "body": "We cannot guarantee that a NIE application will be approved by the Spanish authorities. The decision is made solely by the relevant Spanish authorities (Policía Nacional or the Spanish embassy). Our service fee is not refunded if an application is rejected by the authorities, since our service (administrative assistance and coordination) has been fully delivered."
+    },
+    "s5": {
+      "heading": "5. Payment and VAT",
+      "body": "The service fee is 195 EUR excl. VAT. Danish VAT (25%) is added for customers residing in Denmark, unless the customer is a business with a valid VAT registration number. Payment is processed securely via our payment platform."
+    },
+    "s6": {
+      "heading": "6. Right of withdrawal",
+      "body1": "As a consumer, you generally have a 14-day right of withdrawal for online purchases under Danish consumer contracts law. Since our service begins immediately upon payment and at your express request, by placing an order you accept that the right of withdrawal lapses once we have begun processing your application.",
+      "body2Bold": "not",
+      "body2Before": "If processing has ",
+      "body2After": " begun, you can withdraw within 14 days and receive a full refund. Contact us at info@espallo.com."
+    },
+    "s7": {
+      "heading": "7. Limitation of liability",
+      "body": "Espallo is not liable for delays or rejections caused by Spanish authorities, partner lawyers/notaries, incorrect information provided by the customer, or circumstances beyond our control. In any event, our liability is limited to the service fee paid."
+    },
+    "s8": {
+      "heading": "8. Complaints",
+      "before": "Complaints can be directed to info@espallo.com. Consumers can also bring the matter before the Danish Consumer Complaints Board (Forbrugerklagenævnet, Nævnenes Hus), Toldboden 2, 8800 Viborg, Denmark, ",
+      "linkText": "www.naevneneshus.dk",
+      "after": "."
+    },
+    "s9": {
+      "heading": "9. Governing law and venue",
+      "body": "These terms are governed by Danish law. Disputes are settled in the Danish courts, with the Copenhagen City Court (Københavns Byret) as the court of first instance, unless mandatory law provides otherwise."
+    },
+    "s10": {
+      "heading": "10. Contact",
+      "line1": "Espallo",
+      "line2": "Email: info@espallo.com",
+      "line3": "Phone: +34 603 527 252"
+    },
+    "metaDescription": "Read our terms of service for Espallo."
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: June 2025",
+    "s1": {
+      "heading": "What are cookies?",
+      "body": "Cookies are small text files stored on your device when you visit a website. They are used to remember your preferences and ensure the platform works correctly."
+    },
+    "s2": {
+      "heading": "Cookies we use",
+      "necessaryTitle": "Necessary cookies",
+      "necessaryItems": [
+        {
+          "name": "sb-auth-token",
+          "text": "Authentication cookie from Supabase. Keeps you logged in. Expires after the session or 1 week."
+        },
+        {
+          "name": "cookie-consent",
+          "text": "Stores your cookie consent. Expires after 1 year."
+        }
+      ],
+      "functionalTitle": "Functional cookies",
+      "functionalText": "We do not use any third-party analytics or marketing cookies."
+    },
+    "s3": {
+      "heading": "Consent and rejection",
+      "body1": "Necessary cookies cannot be opted out of, as they are required for the platform to function (e.g. staying logged in). The first time you visit the site, a cookie banner is shown where you can accept or reject non-necessary cookies.",
+      "body2": "You can delete cookies in your browser settings at any time. Note that this will log you out of the platform."
+    },
+    "s4": {
+      "heading": "Contact",
+      "before": "Questions about our cookie policy can be directed to: "
+    },
+    "metaDescription": "Read about our use of cookies at Espallo."
+  }
+}

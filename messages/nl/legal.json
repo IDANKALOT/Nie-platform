@@ -1,1 +1,222 @@
-{}
+{
+  "privacy": {
+    "title": "Privacybeleid",
+    "lastUpdated": "Laatst bijgewerkt: juni 2025",
+    "s1": {
+      "heading": "1. Verwerkingsverantwoordelijke",
+      "body": "Espallo is verwerkingsverantwoordelijke voor de persoonsgegevens die wij over jou verzamelen in verband met het gebruik van onze dienst. Contact: info@espallo.com"
+    },
+    "s2": {
+      "heading": "2. Welke gegevens wij verwerken",
+      "intro": "Wij verwerken de volgende categorieën persoonsgegevens:",
+      "items": [
+        {
+          "label": "Contactgegevens:",
+          "text": "Naam, e-mailadres, telefoonnummer"
+        },
+        {
+          "label": "Identificatiegegevens:",
+          "text": "Paspoortnummer, afgiftedatum, vervaldatum"
+        },
+        {
+          "label": "Persoonlijke gegevens:",
+          "text": "Geboortedatum, geboorteplaats, nationaliteit, geslacht, burgerlijke staat"
+        },
+        {
+          "label": "Adresgegevens:",
+          "text": "Woonadres, postcode, plaats, land"
+        },
+        {
+          "label": "Digitale handtekening:",
+          "text": "Afbeeldingsbestand van je digitale handtekening"
+        },
+        {
+          "label": "Technische gegevens:",
+          "text": "IP-adres, browsertype (via cookies)"
+        }
+      ]
+    },
+    "s3": {
+      "heading": "3. Doel en rechtsgrondslag",
+      "items": [
+        {
+          "label": "Levering van onze dienst (overeenkomst, AVG art. 6(1)(b)):",
+          "text": "Wij verwerken je gegevens om je NIE-aanvraag in te vullen en in te dienen en om te coördineren met samenwerkende advocaten en notarissen in Spanje."
+        },
+        {
+          "label": "Wettelijke verplichting (AVG art. 6(1)(c)):",
+          "text": "Wij zijn verplicht bepaalde gegevens te bewaren om boekhoudkundige redenen op grond van de Deense boekhoudwet."
+        },
+        {
+          "label": "Gerechtvaardigd belang (AVG art. 6(1)(f)):",
+          "text": "Wij verwerken technische gegevens om ons platform te beveiligen en te verbeteren."
+        }
+      ]
+    },
+    "s4": {
+      "heading": "4. Verstrekking van gegevens",
+      "body": "Wij verstrekken je persoonsgegevens aan de samenwerkende advocaten of notarissen in Spanje die je NIE-aanvraag behandelen. Dit is noodzakelijk om onze dienst te kunnen leveren.",
+      "processorsIntro": "Wij maken gebruik van de volgende verwerkers (leveranciers):",
+      "processors": [
+        {
+          "label": "Supabase Inc. (VS):",
+          "text": "Databases en bestandsopslag. Doorgifte vindt plaats op basis van standaardcontractbepalingen (SCC's) goedgekeurd door de Europese Commissie."
+        },
+        {
+          "label": "Vercel Inc. (VS):",
+          "text": "Hosting van het platform. Doorgifte vindt plaats op basis van SCC's."
+        }
+      ],
+      "note": "Wij verkopen je persoonsgegevens nooit aan derden."
+    },
+    "s5": {
+      "heading": "5. Bewaartermijn",
+      "intro": "Wij bewaren je gegevens zolang als nodig is om onze dienst te leveren en te voldoen aan wettelijke verplichtingen:",
+      "items": [
+        "Aanvraaggegevens: 5 jaar na afsluiting van de zaak (Deense boekhoudwet)",
+        "Accountgegevens: Verwijderd 2 jaar nadat je account is gedeactiveerd",
+        "Technische logs: 90 dagen"
+      ]
+    },
+    "s6": {
+      "heading": "6. Jouw rechten",
+      "intro": "Onder de AVG heb je de volgende rechten:",
+      "items": [
+        {
+          "label": "Inzage:",
+          "text": "Je kunt een kopie van je gegevens opvragen"
+        },
+        {
+          "label": "Rectificatie:",
+          "text": "Je kunt onjuiste gegevens laten corrigeren"
+        },
+        {
+          "label": "Verwijdering:",
+          "text": "Je kunt verwijdering aanvragen (beperkt door wettelijke verplichtingen)"
+        },
+        {
+          "label": "Beperking:",
+          "text": "Je kunt beperking van de verwerking aanvragen"
+        },
+        {
+          "label": "Dataportabiliteit:",
+          "text": "Je kunt je gegevens ontvangen in een machineleesbaar formaat"
+        },
+        {
+          "label": "Bezwaar:",
+          "text": "Je kunt bezwaar maken tegen verwerking op basis van gerechtvaardigd belang"
+        }
+      ],
+      "contactBefore": "Om je rechten uit te oefenen, neem contact met ons op via info@espallo.com. Je kunt ook een klacht indienen bij de Deense Autoriteit Persoonsgegevens (Datatilsynet): ",
+      "contactLinkText": "datatilsynet.dk",
+      "contactAfter": ", Borgergade 28, 5., 1300 Kopenhagen K, Denemarken."
+    },
+    "s7": {
+      "heading": "7. Cookies",
+      "before": "Wij gebruiken cookies om de functionaliteit van ons platform te waarborgen en voor analysedoeleinden. Zie ons ",
+      "linkText": "cookiebeleid",
+      "after": " voor meer informatie."
+    },
+    "metaDescription": "Lees hoe Espallo je persoonsgegevens verwerkt."
+  },
+  "terms": {
+    "title": "Algemene voorwaarden",
+    "lastUpdated": "Laatst bijgewerkt: juni 2025",
+    "s1": {
+      "heading": "1. Over Espallo",
+      "body": "Espallo is een administratief dienstverleningsbureau dat klanten helpt bij het voorbereiden en indienen van aanvragen voor een Spaans NIE-nummer (Número de Identificación de Extranjero).",
+      "noticeLabel": "Belangrijk:",
+      "noticeBoldPart": "geen advocatenkantoor",
+      "noticeRest": " en is niet geregistreerd als juridische praktijk. Wij verlenen geen juridisch advies. Onze dienstverlening bestaat uitsluitend uit administratieve ondersteuning en het bemiddelen van contact met zelfstandige, samenwerkende advocaten en notarissen in Spanje."
+    },
+    "s2": {
+      "heading": "2. Onze dienst",
+      "intro": "De servicekosten van 195 EUR (excl. btw) omvatten:",
+      "items": [
+        "Digitaal invullen van het EX-18-aanvraagformulier",
+        "Digitaal ondertekenen van het volmachtdocument",
+        "Automatisch genereren en archiveren van aanvraagdocumenten",
+        "Coördinatie en doorverwijzing naar een samenwerkende advocaat of notaris in Spanje",
+        "Doorlopende statusupdates via het klantenplatform",
+        "Klantenondersteuning"
+      ],
+      "notIncludedLabel": "Niet inbegrepen:",
+      "notIncludedText": "Advocaat-, notaris- en overheidskosten in Spanje worden door de klant rechtstreeks betaald aan de betreffende partner. Deze kosten variëren en worden rechtstreeks met de advocaat/notaris overeengekomen."
+    },
+    "s3": {
+      "heading": "3. Samenwerkende advocaten en notarissen",
+      "body1": "De advocaten en notarissen waarmee wij in Spanje samenwerken, zijn zelfstandige ondernemers die geregistreerd en bevoegd zijn volgens Spaans recht. Zij gaan een directe rechtsverhouding aan met de klant en zijn verantwoordelijk voor de juridische behandeling van de aanvraag.",
+      "body2": "Espallo is geen partij bij de overeenkomst tussen de klant en de advocaat/notaris en is niet aansprakelijk voor hun handelen, advies of fouten."
+    },
+    "s4": {
+      "heading": "4. Geen garantie op goedkeuring",
+      "body": "Wij kunnen niet garanderen dat een NIE-aanvraag door de Spaanse autoriteiten wordt goedgekeurd. De beslissing wordt uitsluitend genomen door de bevoegde Spaanse autoriteiten (Policía Nacional of de Spaanse ambassade). Onze servicekosten worden niet terugbetaald als een aanvraag door de autoriteiten wordt afgewezen, aangezien onze dienst (administratieve ondersteuning en bemiddeling) volledig is geleverd."
+    },
+    "s5": {
+      "heading": "5. Betaling en btw",
+      "body": "De servicekosten bedragen 195 EUR excl. btw. Deense btw (25%) wordt toegevoegd voor klanten woonachtig in Denemarken, tenzij het een zakelijke klant met geldig btw-registratienummer betreft. Betaling verloopt veilig via ons betaalplatform."
+    },
+    "s6": {
+      "heading": "6. Herroepingsrecht",
+      "body1": "Als consument heb je in beginsel 14 dagen herroepingsrecht bij online aankopen, conform de Deense wet op consumentenovereenkomsten. Omdat onze dienst direct na betaling en op jouw uitdrukkelijk verzoek start, ga je er bij bestelling mee akkoord dat het herroepingsrecht vervalt zodra wij zijn begonnen met de behandeling van je aanvraag.",
+      "body2Bold": "nog niet",
+      "body2Before": "Als de behandeling ",
+      "body2After": " is begonnen, kun je binnen 14 dagen herroepen en een volledige terugbetaling ontvangen. Neem contact met ons op via info@espallo.com."
+    },
+    "s7": {
+      "heading": "7. Aansprakelijkheidsbeperking",
+      "body": "Espallo is niet aansprakelijk voor vertragingen of afwijzingen veroorzaakt door Spaanse autoriteiten, samenwerkende advocaten/notarissen, onjuiste informatie van de klant, of omstandigheden buiten onze controle. Onze aansprakelijkheid is in elk geval beperkt tot de betaalde servicekosten."
+    },
+    "s8": {
+      "heading": "8. Klachten",
+      "before": "Klachten kunnen worden gericht aan info@espallo.com. Consumenten kunnen de zaak ook voorleggen aan de Deense consumentenklachtencommissie (Forbrugerklagenævnet, Nævnenes Hus), Toldboden 2, 8800 Viborg, Denemarken, ",
+      "linkText": "www.naevneneshus.dk",
+      "after": "."
+    },
+    "s9": {
+      "heading": "9. Toepasselijk recht en bevoegde rechter",
+      "body": "Deze voorwaarden worden beheerst door Deens recht. Geschillen worden beslecht door de Deense rechter, met de rechtbank van Kopenhagen (Københavns Byret) als eerste aanleg, tenzij dwingend recht anders bepaalt."
+    },
+    "s10": {
+      "heading": "10. Contact",
+      "line1": "Espallo",
+      "line2": "E-mail: info@espallo.com",
+      "line3": "Telefoon: +34 603 527 252"
+    },
+    "metaDescription": "Lees onze algemene voorwaarden voor Espallo."
+  },
+  "cookies": {
+    "title": "Cookiebeleid",
+    "lastUpdated": "Laatst bijgewerkt: juni 2025",
+    "s1": {
+      "heading": "Wat zijn cookies?",
+      "body": "Cookies zijn kleine tekstbestanden die op je apparaat worden opgeslagen wanneer je een website bezoekt. Ze worden gebruikt om je voorkeuren te onthouden en ervoor te zorgen dat het platform correct werkt."
+    },
+    "s2": {
+      "heading": "Cookies die wij gebruiken",
+      "necessaryTitle": "Noodzakelijke cookies",
+      "necessaryItems": [
+        {
+          "name": "sb-auth-token",
+          "text": "Authenticatiecookie van Supabase. Houdt je ingelogd. Verloopt na de sessie of na 1 week."
+        },
+        {
+          "name": "cookie-consent",
+          "text": "Slaat je cookietoestemming op. Verloopt na 1 jaar."
+        }
+      ],
+      "functionalTitle": "Functionele cookies",
+      "functionalText": "Wij gebruiken geen analytische of marketingcookies van derden."
+    },
+    "s3": {
+      "heading": "Toestemming en weigering",
+      "body1": "Noodzakelijke cookies kunnen niet worden uitgeschakeld, omdat ze vereist zijn voor de werking van het platform (bijvoorbeeld om ingelogd te blijven). Bij je eerste bezoek aan de site wordt een cookiebanner getoond waarin je niet-noodzakelijke cookies kunt accepteren of weigeren.",
+      "body2": "Je kunt cookies te allen tijde verwijderen via de instellingen van je browser. Let op: hierdoor word je uitgelogd van het platform."
+    },
+    "s4": {
+      "heading": "Contact",
+      "before": "Vragen over ons cookiebeleid kun je richten aan: "
+    },
+    "metaDescription": "Lees over ons gebruik van cookies bij Espallo."
+  }
+}
